@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme{
+  --color-primary: #555B6E;
+  --color-secondary: #89B0AE;
+  --color-accent:#BEE3DB;
+  --color-background:#FAF9F9;
+  --color-soft-alert:#FFD6BA;
+  --color-text:#1C1C1E;
+
+ /* some minor color shades */
+ --color-secondary-shade:#89B0AE;
+}
+
+/* --- These are the tailwind css directives ---- */
+@layer base {
+  :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--background);
+    /*    color-scheme: light dark; */
+  }
+  h3{
+    @apply text-lg font-bold text-text;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 font-bold rounded ;
+  }
+
+  .btn-primary {
+    @apply px-6 py-2 bg-soft-alert rounded-lg  text-text font-medium shadow-md mt-[3rem] hover:bg-accent hover:shadow-lg transition duration-400 ease-in-out;
+  }
+
+  .btn-outline {
+    @apply text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white;
+  }
+
+  /*For all the headings within my project */
+  .header{
+    @apply font-bold text-3xl text-primary w-full text-center;
+  }
+  .headerSpan{
+    @apply font-light text-3xl;
+  }
+
+
+  /* Footer list settings */
+  .footerList{
+    @apply flex flex-col items-start justify-evenly w-1/3 h-fit gap-2 text-background text-sm;
+  }
+  
+
+  /*  socials section */
+  .myIcons{
+    @apply text-2xl text-soft-alert;
+  }
+
+
+  /* For the why us selling points abt page */
+  .whyUs{
+    @apply w-2/5 h-16 mb-4 flex items-center m-auto gap-2 pl-4 shadow-md rounded-xl text-text;
+  }
+  .whyCheckbox{
+    @apply text-3xl text-secondary;
+  }
+
+  .missionVission{
+    @apply w-1/4 mb-4 pb-2 leading-6.5 text-3xl text-primary border-b-2 border-secondary font-bold;
+  }
+}

@@ -1,0 +1,14 @@
+import React from "react";
+
+const SkillCard = ({cardTitle, cardDes}) => {
+
+    return(
+      <div className="bg-background shadow-xl w-50 h-80 p-5 rounded-2xl flex flex-col items-center justify-evenly">
+        <p className="text-2xl font-bold text-center text-primary">{cardTitle}</p>
+        <p className="text-md">{cardDes}</p>
+      </div>
+    );
+
+}
+
+export default SkillCard
