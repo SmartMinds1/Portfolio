@@ -39,7 +39,7 @@ const About = ()=>{
                         <div className="w-full h-7/8 flex flex-col items-left justify-evenly pl-[8vw]">
                             <div>
                                 <h3>Web Design & Development</h3>
-                                <p className="text-[#636363]">We Build beautiful, responsive websites that grow your business.</p>
+                                <p className="text-[#636363]">We Build Appealing, responsive websites that grow your business.</p>
                             </div>
 
                             <div>

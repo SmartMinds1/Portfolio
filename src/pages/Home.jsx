@@ -10,6 +10,8 @@ import Lauracia from "../assets/Lauracia.webp";
 import Juzman from "../assets/Juzman.webp";
 import Yuvala from "../assets/Yuvala.webp";
 import Footer from "../components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
         /* Index for looping testimonial cards */
@@ -47,7 +49,7 @@ const Home = () => {
                                         Your best partner in every business <br />
                                         solution <span className="text-4xl text-accent ">Grow with us!</span>
                                     </p>
-                                    <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer">View more ...</button>
+                                    <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer">View more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5"/></button>
                                 </div>
                             </div>
                         </div>
