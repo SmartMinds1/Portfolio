@@ -10,7 +10,7 @@ const Header = ()=> {
                 <li> <Link to="/">home</Link> </li>
                 <li> <Link to="about">about</Link></li>
                 <li>skills</li>
-                <li>contact</li>
+                <li> <Link to="contact">contact</Link></li>
             </ul>
             <button className="btn-primary text-text bg-soft-alert m-0">Call Now</button>
        </div>

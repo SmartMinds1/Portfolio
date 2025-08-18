@@ -5,7 +5,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import TeamCard from "../components/TeamCard";
 import Footer from "../components/Footer";
 
-const About = ()=>{
+const About = () => {
     return(
         <div className="bg-background">
             {/* SECTION 1 */}
