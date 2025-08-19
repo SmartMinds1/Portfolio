@@ -70,4 +70,16 @@
   .missionVission{
     @apply w-1/4 mb-4 pb-2 leading-6.5 text-3xl text-primary border-b-2 border-secondary font-bold;
   }
+
+
+ /*  contacts page */
+ .contactIconBox{
+  @apply w-20 h-20 shadow-xl flex items-center justify-center mr-4;
+ }
+ .contactIcon{
+  @apply text-2xl text-secondary;
+ }
+ .callEmailBox{
+  @apply w-full h-fit  flex flex-row items-center justify-start mb-8;
+ }
 }

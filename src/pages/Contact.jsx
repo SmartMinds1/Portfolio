@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faHome, faHomeAlt, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
+/* import { faCheckCircle } from "@fortawesome/free-solid-svg-icons"; */
 
 const Contact = ()=> {
 
@@ -7,7 +10,7 @@ const Contact = ()=> {
         <div>
 
             {/* CONTACT HEAD */}
-            <div className="w-full h-24 bg-transparent flex flex-row items-center justify-evenly">
+            <div className="w-full h-24 bg-background flex flex-row items-center justify-evenly">
                 <p className="text-text"> <i>smart</i><span className="text-secondary text-2xl font-bold">ADs</span></p>
                 <ul className="flex flex-row items-center justify-evenly w-1/3 h-12 text-text text-sm">
                     <li> <Link to="/">home</Link> </li>
@@ -20,14 +23,39 @@ const Contact = ()=> {
         
 
             {/* SECTION 1 */}
-            <div className="h-[40vh] w-full flex items-center justify-center">
-                <div className="w-full">
-                    <p className="header">| Connect <span className="headerSpan">with Us </span></p>
-                    <p className="w-1/2 text-md m-auto mt-4 text-primary text-center">We’ve managed to offer seamless business solutions country-wide. Here's why you should partner with us__</p>
+            <div className="w-full h-[85vh] bg-background">
+                <div className="h-[40vh] w-full flex items-center justify-center">
+                    <div className="w-full">
+                        <p className="header">| Connect <span className="headerSpan">with Us </span></p>
+                        <p className="w-1/2 text-md m-auto mt-4 text-primary text-center">We’ve managed to offer seamless business solutions country-wide. Here's why you should partner with us__</p>
+                    </div>
                 </div>
+               
+               {/* contacts div */}
+               <div className="w-[80vw] m-auto h-fit flex flex-row items-center justify-center flex-wrap-reverse gap-4">
+                    {/* visit div */}
+                    <div className="w-140 m-auto h-40 flex flex-row items-center justify-evenly">
+                        <div className=" contactIconBox rounded-full bg-secondary"> <FontAwesomeIcon icon={faHomeAlt} className="contactIcon text-background"></FontAwesomeIcon> </div>
+                        <p> Visit Us : </p>
+                        <p className="text-primary ml-1"> Twiga towers, 6th floor, Room 606, Murang'a Road, <br /> Opp Meridian Court Hotel, <br /> Nairobi Kenya </p>
+                    </div>
+                
+                    {/* call Email div */}
+                    <div className=" w-100">
+                        <div className="callEmailBox">
+                            <div className=" contactIconBox bg-background"> <FontAwesomeIcon icon={faPhoneFlip} className="contactIcon"></FontAwesomeIcon></div>
+                            <p>Call Us : <span className="text-primary">+254 115 154 402</span> </p>
+                        </div>
+                        <div className="callEmailBox">
+                            <div className="contactIconBox bg-background"> <FontAwesomeIcon icon={faEnvelope} className="contactIcon"></FontAwesomeIcon></div>
+                            <p>Email Us : <span className="text-primary">smartadsdigital@gmail.com</span> </p>
+                        </div>
+                    </div>
+                </div>      
             </div>
 
-            <div className=" w-20 h-20 rounded-[60%_40%_30%_70% / 60%_30%_70%_40%] bg-blue-400 "></div>
+
+            {/* SECTION 2 */}
 
         </div>
     );
