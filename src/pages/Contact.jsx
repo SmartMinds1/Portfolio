@@ -27,7 +27,7 @@ const Contact = ()=> {
                 <div className="h-[40vh] w-full flex items-center justify-center">
                     <div className="w-full">
                         <p className="header">| Connect <span className="headerSpan">with Us </span></p>
-                        <p className="w-1/2 text-md m-auto mt-4 text-primary text-center">We’ve managed to offer seamless business solutions country-wide. Here's why you should partner with us__</p>
+                        <p className="w-1/2 text-md m-auto mt-4 text-text text-center">We’ve managed to offer seamless business solutions country-wide. Here's why you should partner with us__</p>
                     </div>
                 </div>
                
@@ -36,8 +36,8 @@ const Contact = ()=> {
                     {/* visit div */}
                     <div className="w-140 m-auto h-40 flex flex-row items-center justify-evenly">
                         <div className=" contactIconBox rounded-full bg-secondary"> <FontAwesomeIcon icon={faHomeAlt} className="contactIcon text-background"></FontAwesomeIcon> </div>
-                        <p> Visit Us : </p>
-                        <p className="text-primary ml-1"> Twiga towers, 6th floor, Room 606, Murang'a Road, <br /> Opp Meridian Court Hotel, <br /> Nairobi Kenya </p>
+                        <p className="text-primary"> Visit Us : </p>
+                        <p className="text-text ml-1 text-sm"> Twiga towers, 6th floor, Room 606, Murang'a Road, <br /> Opp Meridian Court Hotel, <br /> Nairobi Kenya </p>
                     </div>
                 
                     {/* call Email div */}
@@ -56,6 +56,11 @@ const Contact = ()=> {
 
 
             {/* SECTION 2 */}
+            <div className="h-[100vh] w-full bg-primary">
+                <div className="w-full h-30">
+                    <p className="header text-left pl-[20vw] pt-12 text-background">| Send us <span className="headerSpan text-accent">a message </span></p>
+                </div>
+            </div>
 
         </div>
     );
