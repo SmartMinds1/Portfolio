@@ -9,7 +9,7 @@ const Header = ()=> {
             <ul className="flex flex-row items-center justify-evenly w-1/3 h-12 text-background text-sm">
                 <li> <Link to="/">home</Link> </li>
                 <li> <Link to="about">about</Link></li>
-                <li>skills</li>
+                <li> <Link to="services">services</Link></li>
                 <li> <Link to="contact">contact</Link></li>
             </ul>
             <button className="btn-primary text-text bg-soft-alert m-0">Call Now</button>
