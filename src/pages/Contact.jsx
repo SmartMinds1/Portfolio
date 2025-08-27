@@ -20,7 +20,7 @@ const Contact = ()=> {
                     <li> <Link to="services">services</Link></li>
                     <li> <Link to="contact">contact</Link></li>
                 </ul>
-                <button className="btn-primary text-text bg-soft-alert m-0">Call Now</button>
+                <button className="btn-primary text-text bg-soft-alert m-0 rounded-3xl">Call Now</button>
             </div>
         
 
@@ -68,35 +68,35 @@ const Contact = ()=> {
                       {/* chartForm */}
                         <div className="w-140 h-110 bg-background p-8 rounded-xl">
                             <input 
-                            className="w-[40%] shadow-md h-12 p-4"
-                            type="text"
-                            placeholder="full name"
-                            autoComplete="on"
+                              className="w-[40%] shadow-md h-12 p-4"
+                              type="text"
+                              placeholder="full name"
+                              autoComplete="on"
                              />
                             <input
-                             className="w-[60%] shadow-md h-12 p-4" 
-                            type="text"
-                            placeholder="email"
-                            autoComplete="on"
+                              className="w-[60%] shadow-md h-12 p-4" 
+                              type="text"
+                              placeholder="email"
+                              autoComplete="on"
                              />
 
                             <textarea 
-                            className="shadow-md resize-none p-4 mt-10 "
-                            name="" 
-                            id="" 
-                            cols="48" 
-                            rows="8"
-                            placeholder="Your message"
-                            ></textarea>
+                              className="shadow-md resize-none p-4 mt-10 "
+                              name="" 
+                              id="" 
+                              cols="48" 
+                              rows="8"
+                              placeholder="Your message"
+                            />
                             
                             <button className="btn-primary text-text bg-accent mt-4 w-40">send now</button>
                         </div>
 
                       {/* Form caption */}
-                         <div className="w-1/3 h-[70vh] flex flex-col items-center justify-evenly">
+                        <div className="w-1/3 h-[70vh] flex flex-col items-center justify-evenly">
                                <div class="w-64 h-64 rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] bg-[url('/CasualConversation.webp')] bg-cover bg-[center] bg-no-repeat bg-accent animate-pulse"></div>
-                               <p className=" w-2/3 text-center text-background">Fill out the form, and I’ll get back to you <span className="text-soft-alert font-bold">within 24 hours.</span> </p>
-                         </div>
+                               <p className=" w-2/3 text-center text-background">Fill out the form, and I’ll get back to you within<span className="text-soft-alert font-bold text-xl"> 24 hours.</span> </p>
+                        </div>
                 </div>
             </div>
 

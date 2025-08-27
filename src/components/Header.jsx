@@ -12,7 +12,7 @@ const Header = ()=> {
                 <li> <Link to="services">services</Link></li>
                 <li> <Link to="contact">contact</Link></li>
             </ul>
-            <button className="btn-primary text-text bg-soft-alert m-0">Call Now</button>
+            <button className="btn-primary text-text bg-soft-alert m-0 rounded-3xl">Call Now</button>
        </div>
     )
 }

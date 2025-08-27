@@ -61,6 +61,12 @@ const Services = () => {
                         <br />
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
                         <p  className="text-text">Instead of just “having a website,” you’ll have a sales tool that loads fast, looks professional, and guides visitors to take action.</p>
+
+
+                        <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
+                            <button className="btn-primary text-background bg-primary m-0">book now</button>
+                            <button className="btn-primary text-text bg-transparent border-1 border-primary m-0">get quote</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,9 +91,14 @@ const Services = () => {
                             <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> YouTube Ads (reach audiences with engaging video campaigns)</li>
                             <li className="list-disc ml-6"> Conversion tracking setup</li>
                         </ul>
-                        <br /> <br />
+                        <br />
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
                         <p  className="text-text">You’ll know exactly where your money goes and you’ll see real, measurable results like more leads, sales, or signups.</p>
+
+                        <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
+                            <button className="btn-primary text-background bg-primary m-0">book now</button>
+                            <button className="btn-primary text-text bg-transparent border-1 border-primary m-0">get quote</button>
+                        </div>
                     </div>
 
                     {/*  image div */}
@@ -121,9 +132,15 @@ const Services = () => {
                             <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> Performance dashboards for easy monitoring </li>
                             <li className="list-disc ml-6"> Ongoing optimization (continuous tweaks to improve results) </li>
                         </ul>
-                        <br /> <br />
+                        <br />
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
                         <p  className="text-text">Instead of just “having a website,” you’ll have a sales tool that loads fast, looks professional, and guides visitors to take action.</p>
+
+
+                        <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
+                            <button className="btn-primary text-background bg-primary m-0 ">book now</button>
+                            <button className="btn-primary text-text bg-transparent border-1 border-primary m-0">get quote</button>
+                        </div>
                     </div>
                 </div>
             </div>
