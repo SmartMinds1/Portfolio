@@ -55,7 +55,7 @@
 
   /*  socials section */
   .myIcons{
-    @apply text-2xl text-soft-alert;
+    @apply text-2xl text-soft-alert hover:brightness-80 transition-all duration-300 cursor-pointer;
   }
 
 

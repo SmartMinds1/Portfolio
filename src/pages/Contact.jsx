@@ -23,7 +23,6 @@ const Contact = ()=> {
                 <button className="btn-primary text-text bg-soft-alert m-0 rounded-3xl">Call Now</button>
             </div>
         
-
             {/* SECTION 1 */}
             <div className="w-full h-[85vh] bg-background">
                 <div className="h-[40vh] w-full flex items-center justify-center">

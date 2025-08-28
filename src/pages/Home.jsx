@@ -79,7 +79,7 @@ const Home = () => {
             {/* SECTION 3 */}
              <div className="W-full h-80 bg-[url('/woman-analyzing-data-digital-interface.jpg')] bg-top bg-cover">
                 <div className="w-full h-full bg-primary/80 flex items-center justify-center">
-                    <h1 className="text-2xl text-background">HERE FOR YOU! ____ let's get everything up and running</h1>
+                    <h1 className="text-2xl text-background"> <span className="font-bold">HERE FOR YOU!</span> ____ let's get everything up and running</h1>
                 </div>
              </div>
 
@@ -100,7 +100,7 @@ const Home = () => {
 
             {/* SECTION 5 */}
              <div className="w-full h-fit">
-                <p className="header">| Here's what our clients <span className="headerSpan">say about Us </span></p>
+                <p className="header">| Here's what our clients <span className="headerSpan">say about us </span></p>
                 <p className="w-1/2 text-md m-auto mt-4 text-primary text-center">We’re proud to let our happy clients do the talking—here’s what they have to say about working with us.</p>
                 {/* Importing the testimonial card and inserting all ther required props */}
                 <TestimonialCard rateImg={testimonialCards[currentIndex].rateImg} goForward={navigateForward} goBack={navigateBack} rateName={testimonialCards[currentIndex].rateName}  rateMessage={testimonialCards[currentIndex].rateMessage} cardRating={testimonialCards[currentIndex].cardRating} />

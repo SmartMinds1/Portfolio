@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import Footer from "../components/Footer";
 
 const Services = () => {
     return(
@@ -148,7 +149,7 @@ const Services = () => {
         <br /><br /><br /><br /><br />
 
              
-
+            <Footer/>
         </div>
     );
 
