@@ -34,9 +34,7 @@
     @apply px-6 py-2 bg-soft-alert rounded-sm cursor-pointer text-text font-medium shadow-md mt-[3rem] hover:bg-accent hover:shadow-lg transition duration-400 ease-in-out;
   }
 
-  .btn-outline {
-    @apply text-blue-600 border border-blue-600 hover:bg-blue-600 hover:text-white;
-  }
+ 
 
   /*For all the headings within my project */
   .header{
@@ -59,7 +57,7 @@
   }
 
 
-  /* For the why us selling points abt page */
+  /* For the ___why us___ selling points abt page */
   .whyUs{
     @apply w-2/5 h-16 mb-4 flex items-center m-auto gap-2 pl-4 shadow-md rounded-xl text-text;
   }
