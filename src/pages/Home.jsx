@@ -59,7 +59,7 @@ const Home = () => {
             {/* This is the home page body section, SECTION1 */}
             <div className="w-[60vw] h-50 pt-8 m-auto text-text text-center">
                 <p className="text-2xl ">From building stunning and secure websites to running targeted Google Ads that bring real customers</p>
-                <p className="w-2/3 text-md m-auto mt-4 text-primary text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
+                <p className="w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
             </div>
             
 
@@ -88,7 +88,7 @@ const Home = () => {
             {/* SECTION 4 */}
              <div className="w-full h-fit">
                 <p className="header">| Let client statistics <span className="headerSpan">speak for us </span></p>
-                <p className="w-1/2 text-md m-auto mt-4 text-primary text-center">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
+                <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
                 <div className="w-2/3 m-auto h-fit flex flex-row items-center justify-evenly flex-wrap gap-2 mt-10">
                     <StatsBox statsNum="500+" statsDes="Clients"/>
                     <StatsBox statsNum="100+" statsDes="Businesses"/>
@@ -101,7 +101,7 @@ const Home = () => {
             {/* SECTION 5 */}
              <div className="w-full h-fit">
                 <p className="header">| Here's what our clients <span className="headerSpan">say about us </span></p>
-                <p className="w-1/2 text-md m-auto mt-4 text-primary text-center">We’re proud to let our happy clients do the talking—here’s what they have to say about working with us.</p>
+                <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">We’re proud to let our happy clients do the talking—here’s what they have to say about working with us.</p>
                 {/* Importing the testimonial card and inserting all ther required props */}
                 <TestimonialCard rateImg={testimonialCards[currentIndex].rateImg} goForward={navigateForward} goBack={navigateBack} rateName={testimonialCards[currentIndex].rateName}  rateMessage={testimonialCards[currentIndex].rateMessage} cardRating={testimonialCards[currentIndex].cardRating} />
              </div>

@@ -4,12 +4,17 @@
   --color-primary: #555B6E;
   --color-secondary: #89B0AE;
   --color-accent:#BEE3DB;
-  --color-background:#FAF9F9;
+  --color-background:hsl(0,9%,98%);
+
   --color-soft-alert:#FFD6BA;
-  --color-text:#1C1C1E;
+  --color-text:hsl(0,0%,5%);
+  --color-text-muted:hsl(0,0%,40%);
+
 
  /* some minor color shades */
  --color-secondary-shade:#89B0AE;
+ --color-bg-dark:hsl(0,9%,90%);
+
 }
 
 /* --- These are the tailwind css directives ---- */
@@ -47,7 +52,7 @@
 
   /* Footer list settings */
   .footerList{
-    @apply flex flex-col items-start justify-evenly w-1/3 h-fit gap-2 text-background text-sm;
+    @apply flex flex-col items-start justify-evenly w-fit h-fit gap-2 text-background text-sm;
   }
   
 

@@ -17,7 +17,7 @@ const Services = () => {
                              <p className="h-full text-5xl text-background">Services Designed to Build & <span className=" text-accent headerSpan"> Grow Your Business </span></p>
                         </div>
                         <br /><br /><br />
-                        <p className="text-sm text-background">Creating a powerful online presence by providing everything you need to succeed!</p>
+                        <p className="text-sm text-bg-dark">Creating a powerful online presence by providing everything you need to succeed!</p>
                    </div>
 
                    <div className=" w-1/3 h-full flex flex-row items-center justify-center">
@@ -40,7 +40,7 @@ const Services = () => {
             <div className="w-[80vw] m-auto h-[100vh]">
                 <div>
                     <p className="header">| Modern  <span className="headerSpan">Websites </span></p>
-                    <p className="w-4/5 text-md m-auto mt-4 text-text text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
+                    <p className="w-4/5 text-md m-auto mt-4 text-text-muted text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
                 </div>
 
                 <br /><br />
@@ -51,7 +51,7 @@ const Services = () => {
 
                     <div className="w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
-                        <ul className="pl-8">
+                        <ul className="pl-8 text-text-muted">
                             <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> Custom website design (built for your brand)</li>
                             <li className="list-disc ml-6"> Responsive design</li>
                             <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> High-performance speed optimization</li>
@@ -61,7 +61,7 @@ const Services = () => {
                         </ul>
                         <br />
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
-                        <p  className="text-text">Instead of just “having a website,” you’ll have a sales tool that loads fast, looks professional, and guides visitors to take action.</p>
+                        <p  className="text-text-muted">Instead of just “having a website,” you’ll have a sales tool that loads fast, looks professional, and guides visitors to take action.</p>
 
 
                         <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
@@ -78,7 +78,7 @@ const Services = () => {
             <div className="w-full m-auto h-[100vh] p-4 pl-[20vh] pr-[20vh]">
                 <div>
                     <p className="header">| Google Ads  <span className="headerSpan">Management </span></p>
-                    <p className="w-4/5 text-md m-auto mt-4 text-text text-center">I set up and manage Google Ads campaigns that attract the right people at the right time, ensuring every click has the potential to become a customer</p>
+                    <p className="w-4/5 text-md m-auto mt-4 text-text-muted text-center">I set up and manage Google Ads campaigns that attract the right people at the right time, ensuring every click has the potential to become a customer</p>
                 </div>
 
                 <br /><br />
@@ -86,7 +86,7 @@ const Services = () => {
                 <div className="flex flex-row items-center justify-center gap-12">
                     <div className="w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
-                        <ul className="pl-8">
+                        <ul className="pl-8 text-text-muted">
                             <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> Display Ads (build awareness with visual banners)</li>
                             <li className="list-disc ml-6"> Search Ads </li>
                             <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> YouTube Ads (reach audiences with engaging video campaigns)</li>
@@ -94,7 +94,7 @@ const Services = () => {
                         </ul>
                         <br />
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
-                        <p  className="text-text">You’ll know exactly where your money goes and you’ll see real, measurable results like more leads, sales, or signups.</p>
+                        <p  className="text-text-muted">You’ll know exactly where your money goes and you’ll see real, measurable results like more leads, sales, or signups.</p>
 
                         <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
                             <button className="btn-primary text-background bg-primary m-0">book now</button>
@@ -116,7 +116,7 @@ const Services = () => {
             <div className="w-[80vw] m-auto h-[100vh]">
                 <div>
                     <p className="header">| Analytics &  <span className="headerSpan">Optimization </span></p>
-                    <p className="w-4/5 text-md m-auto mt-4 text-text text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
+                    <p className="w-4/5 text-md m-auto mt-4 text-text-muted text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
                 </div>
 
                 <br /><br />
@@ -127,7 +127,7 @@ const Services = () => {
 
                     <div className="w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
-                        <ul className="pl-8">
+                        <ul className="pl-8 text-text-muted">
                         <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> Google Analytics (GA4) setup & reporting</li>
                             <li className="list-disc ml-6"> Custom conversion tracking (sales, signups, calls, etc.) </li>
                             <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> Performance dashboards for easy monitoring </li>
@@ -135,7 +135,7 @@ const Services = () => {
                         </ul>
                         <br />
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
-                        <p  className="text-text">Instead of just “having a website,” you’ll have a sales tool that loads fast, looks professional, and guides visitors to take action.</p>
+                        <p  className="text-text-muted">Instead of just “having a website,” you’ll have a sales tool that loads fast, looks professional, and guides visitors to take action.</p>
 
 
                         <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">

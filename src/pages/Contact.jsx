@@ -13,7 +13,7 @@ const Contact = ()=> {
 
             {/* CONTACT HEAD */}
             <div className="w-full h-24 bg-background flex flex-row items-center justify-evenly">
-                <p className="text-text"> <i>smart</i><span className="text-secondary text-2xl font-bold">ADs</span></p>
+                <p className="text-text text-xl">biz<span className="text-secondary text-2xl font-bold">Nutritia</span></p>
                 <ul className="flex flex-row items-center justify-evenly w-1/3 h-12 text-text text-sm">
                     <li> <Link to="/">home</Link> </li>
                     <li> <Link to="about">about</Link></li>
@@ -28,7 +28,7 @@ const Contact = ()=> {
                 <div className="h-[40vh] w-full flex items-center justify-center">
                     <div className="w-full">
                         <p className="header">| Connect <span className="headerSpan">with Us </span></p>
-                        <p className="w-1/2 text-md m-auto mt-4 text-text text-center">Whether you need a new website, a marketing strategy, or both — I’d love to hear from you today!</p>
+                        <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">Whether you need a new website, a marketing strategy, or both — I’d love to hear from you today!</p>
                     </div>
                 </div>
                
@@ -37,19 +37,19 @@ const Contact = ()=> {
                     {/* visit div */}
                     <div className="w-140 m-auto h-40 flex flex-row items-center justify-evenly">
                         <div className=" contactIconBox rounded-full bg-secondary"> <FontAwesomeIcon icon={faHomeAlt} className="contactIcon text-background"></FontAwesomeIcon> </div>
-                        <p className="text-primary"> Visit Us : </p>
-                        <p className="text-text ml-1 text-sm"> Twiga towers, 6th floor, Room 606, Murang'a Road, <br /> Opp Meridian Court Hotel, <br /> Nairobi Kenya </p>
+                        <p className="text-text"> Visit Us : </p>
+                        <p className="text-text-muted ml-1 text-sm"> Twiga towers, 6th floor, Room 606, Murang'a Road, <br /> Opp Meridian Court Hotel, <br /> Nairobi Kenya </p>
                     </div>
                 
                     {/* call Email div */}
                     <div className=" w-100">
                         <div className="callEmailBox">
                             <div className=" contactIconBox bg-background"> <FontAwesomeIcon icon={faPhoneFlip} className="contactIcon"></FontAwesomeIcon></div>
-                            <p>Call Us : <span className="text-primary">+254 115 154 402</span> </p>
+                            <p>Call Us : <span className="text-text-muted">+254 115 154 402</span> </p>
                         </div>
                         <div className="callEmailBox">
                             <div className="contactIconBox bg-background"> <FontAwesomeIcon icon={faEnvelope} className="contactIcon"></FontAwesomeIcon></div>
-                            <p>Email Us : <span className="text-primary">smartadsdigital@gmail.com</span> </p>
+                            <p>Email Us : <span className="text-text-muted">smartadsdigital@gmail.com</span> </p>
                         </div>
                     </div>
                 </div>      
@@ -94,7 +94,7 @@ const Contact = ()=> {
                       {/* Form caption */}
                         <div className="w-1/3 h-[70vh] flex flex-col items-center justify-evenly">
                                <div class="w-64 h-64 rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] bg-[url('/CasualConversation.webp')] bg-cover bg-[center] bg-no-repeat bg-accent animate-pulse"></div>
-                               <p className=" w-2/3 text-center text-background">Fill out the form, and I’ll get back to you within<span className="text-soft-alert font-bold text-xl"> 24 hours.</span> </p>
+                               <p className=" w-2/3 text-center text-bg-dark">Fill out the form, and I’ll get back to you within<span className="text-soft-alert font-bold text-xl"> 24 hours.</span> </p>
                         </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@ const Contact = ()=> {
 
             {/* FINAL SECTION */}
             <div className="w-full h-fit">
-                <p className="w-full text-center">Ready to take your business online the smart way? <button className="btn-primary">Get started</button></p>
+                <p className="w-full text-center text-text-muted">Ready to take your business online the smart way? &nbsp;&nbsp; <button className="btn-primary">Get started</button></p>
             </div>
 
             <br /><br /><br /><br /><br /><br />

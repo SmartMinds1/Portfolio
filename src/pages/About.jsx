@@ -25,7 +25,7 @@ const About = () => {
             {/* SECTION3 */}
             <div className="w-[60vw] h-50 pt-8 m-auto text-text text-center translate-y-[-40px]">
                 <p className="text-2xl ">From building stunning and secure websites to running targeted Google Ads that bring real customers</p>
-                <p className="w-2/3 text-md m-auto mt-4 text-primary text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
+                <p className="w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
             </div>
 
            {/* SECTION4 */}
@@ -39,17 +39,17 @@ const About = () => {
                         <div className="w-full h-7/8 flex flex-col items-left justify-evenly pl-[8vw]">
                             <div>
                                 <h3>Web Design & Development</h3>
-                                <p className="text-[#636363]">We Build Appealing, responsive websites that grow your business.</p>
+                                <p className="text-text-muted">We Build Appealing, responsive websites that grow your business.</p>
                             </div>
 
                             <div>
                                 <h3>Digital marketting</h3>
-                                <p className="text-[#636363]">Promote your brand effectively to boost sales and visibility.</p>
+                                <p className="text-text-muted">Promote your brand effectively to boost sales and visibility.</p>
                             </div>
 
                             <div>
                                 <h3>Google ADs management</h3>
-                                <p className="text-[#636363]">Running targeted ads that attract more customers fast.</p>
+                                <p className="text-text-muted">Running targeted ads that attract more customers fast.</p>
                             </div>
                         </div>
                     </div> 
@@ -63,7 +63,7 @@ const About = () => {
                 {/* Header caption */}
                 <div>
                     <p className="header">| Why work <span className="headerSpan">with Us </span></p>
-                    <p className="w-1/2 text-md m-auto mt-4 text-primary text-center">We’ve managed to offer seamless business solutions country-wide. Here's why you should partner with us__</p>
+                    <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">We’ve managed to offer seamless business solutions country-wide. Here's why you should partner with us__</p>
                 </div>
 
                 <br/>
@@ -88,13 +88,13 @@ const About = () => {
                 <div className="w-1/2 h-118 flex flex-col items-center justify-evenly gap-10">
                     <div className="w-full h-fit">
                         <h2 className="missionVission">Our <br /> Vission</h2>
-                        <p className="text-md text-left">To become the go-to partner for businesses that want both cutting-edge technology and effective digital marketing in one place — creating online experiences that inspire trust, drive sales, and fuel long-term growth.
+                        <p className="text-md text-left text-text-muted">To become the go-to partner for businesses that want both cutting-edge technology and effective digital marketing in one place — creating online experiences that inspire trust, drive sales, and fuel long-term growth.
                         </p>
                     </div>
 
                     <div className="w-full h-fit">
                         <h2 className="missionVission">Our <br /> Mission</h2>
-                        <p className="text-md text-left">To design and develop websites that are not only fast and reliable but also built to convert. By combining full-stack development with smart Google Ads strategies, I help businesses attract the right audience and turn clicks into loyal customers.</p>
+                        <p className="text-md text-left text-text-muted">To design and develop websites that are not only fast and reliable but also built to convert. By combining full-stack development with smart Google Ads strategies, I help businesses attract the right audience and turn clicks into loyal customers.</p>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@ const About = () => {
                 {/* heading */}
                 <div>
                     <p className="header">| Our<span className="headerSpan"> team </span></p>
-                    <p className="w-1/2 text-md m-auto mt-4 text-primary text-center">Behind every successful project is a dedicated team. We bring together creativity, technical expertise, and marketing insight to ensure your business not only looks good online but also grows steadily with real results.</p>
+                    <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">Behind every successful project is a dedicated team. We bring together creativity, technical expertise, and marketing insight to ensure your business not only looks good online but also grows steadily with real results.</p>
                 </div>
                       <br /><br /><br />
                 {/*Team div */}
@@ -121,7 +121,7 @@ const About = () => {
 
               {/* FINAL SECTION */}
               <div className="w-full h-fit">
-                <p className="w-full text-center">Let’s build it, launch it, and grow it together___ <button className="btn-primary">Book a Free Consultation</button></p>
+                <p className="w-full text-center">Let’s build it, launch it, and grow it together &nbsp;&nbsp;&nbsp;&nbsp; <button className="btn-primary">Book a Free Consultation</button></p>
               </div>
 
               <br /><br /><br /><br /><br /><br />

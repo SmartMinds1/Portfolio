@@ -48,8 +48,8 @@ const TestimonialCard = ({rateImg, rateMessage, rateName, cardRating, goForward,
                 <p>{cardRating}/5</p>
                 <h2 className="ml-[10vw] text-text font-bold">{rateName}</h2>
             </div>
-            <div className="w-140 h-28 m-auto p-4">
-                <p><FontAwesomeIcon icon={faQuoteLeft} className="text-sm ml-2 mr-2 text-soft-alert"/> {rateMessage} <FontAwesomeIcon icon={faQuoteRight} className="quotestext-sm ml-2 mr-2 text-soft-alert" /></p>
+            <div className="w-140 h-28 m-auto p-4 text-text-muted">
+                <p><FontAwesomeIcon icon={faQuoteLeft} className="text-sm ml-2 mr-2 text-primary"/> {rateMessage} <FontAwesomeIcon icon={faQuoteRight} className="text-sm ml-2 mr-2 text-primary" /></p>
             </div>
             <div className="w-140 h-16 m-auto flex items-center justify-center gap-2">
                 <FontAwesomeIcon onClick={goBack} icon={faArrowLeft} className="p-2 bg-background text-text rounded-full shadow-xl cursor-pointer hover:brightness-95 transition-all duration-400"/>
