@@ -10,6 +10,8 @@ const Header = ()=> {
                 <li> <Link to="/">home</Link> </li>
                 <li> <Link to="about">about</Link></li>
                 <li> <Link to="services">services</Link></li>
+                <li> <Link to="projects">projects</Link></li>
+                <li> <Link to="blog">blog</Link></li>
                 <li> <Link to="contact">contact</Link></li>
             </ul>
             <button className="btn-primary text-text bg-soft-alert m-0 rounded-3xl">Call Now</button>
