@@ -8,9 +8,11 @@ const Projects = () => {
     return(
         <div>
             <Header/>
-
-             <p>This is the section where I showcase my projects</p>
-
+               <div className="w-full h-fit bg-accent">
+                    <div className="w-1/2 m-auto h-[120vh] bg-green-400"></div>
+                    <div className="w-1/2 m-auto h-[120vh] bg-yellow-600"></div>
+                    <div className="w-1/2 m-auto h-[120vh] bg-blue-400"></div>
+               </div>
              <Footer/>
         </div>
     );

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import SkillCard from "../components/SkillCard";
 import StatsBox from "../components/StatsBox";
 import TestimonialCard from "../components/TestimonialCard";
@@ -9,7 +10,6 @@ import Halima from "../assets/Halima.webp";
 import Lauracia from "../assets/Lauracia.webp";
 import Juzman from "../assets/Juzman.webp";
 import Yuvala from "../assets/Yuvala.webp";
-import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
