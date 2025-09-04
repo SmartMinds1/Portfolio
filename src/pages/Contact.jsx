@@ -13,14 +13,14 @@ const Contact = ()=> {
 
             {/* CONTACT HEAD */}
             <div className="w-full h-24 bg-background flex flex-row items-center justify-evenly">
-                <p className="text-text text-xl">biz<span className="text-secondary text-2xl font-bold">Nutritia</span></p>
+                <p className="text-primary text-xl font-bold">bizN<span className="text-secondary text-2xl font-light">utritia</span></p>
                 <ul className="flex flex-row items-center justify-evenly w-1/3 h-12 text-text text-sm">
                     <li> <Link to="/">home</Link> </li>
                     <li> <Link to="about">about</Link></li>
                     <li> <Link to="services">services</Link></li>
                     <li> <Link to="contact">contact</Link></li>
                 </ul>
-                <button className="btn-primary text-text bg-soft-alert m-0 rounded-3xl">Call Now</button>
+                <button className="btn-primary text-background bg-soft-alert m-0 rounded-3xl">Call Now</button>
             </div>
         
             {/* SECTION 1 */}
@@ -59,7 +59,7 @@ const Contact = ()=> {
             {/* SECTION 2 */}
             <div className="h-[95vh] w-full bg-primary">
                 <div className="w-full h-30">
-                    <p className="header text-left pl-[8vw] pt-12 text-background">| Send us <span className="headerSpan text-accent">a message </span></p>
+                    <p className="header text-left pl-[8vw] pt-12 text-background">| Send us <span className="headerSpan text-soft-alert">a message </span></p>
                 </div>
 
                 {/* chart Form Box */}
@@ -88,13 +88,13 @@ const Contact = ()=> {
                               placeholder="Your message"
                             />
                             
-                            <button className="btn-primary text-text bg-accent mt-4 w-40">send now</button>
+                            <button className="btn-primary text-background bg-accent mt-4 w-40">send now</button>
                         </div>
 
                       {/* Form caption */}
                         <div className="w-1/3 h-[70vh] flex flex-col items-center justify-evenly">
-                               <div class="w-64 h-64 rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] bg-[url('/CasualConversation.webp')] bg-cover bg-[center] bg-no-repeat bg-accent animate-pulse"></div>
-                               <p className=" w-2/3 text-center text-bg-dark">Fill out the form, and I’ll get back to you within<span className="text-soft-alert font-bold text-xl"> 24 hours.</span> </p>
+                               <div class="w-64 h-64 rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] bg-[url('/CasualConversation.webp')] bg-cover bg-[center] bg-no-repeat bg-soft-alert"></div>
+                               <p className=" w-2/3 text-center text-bg-dark">Fill out the form, and I’ll get back to you within<span className="text-secondary font-bold text-xl"> 24 hours.</span> </p>
                         </div>
                 </div>
             </div>

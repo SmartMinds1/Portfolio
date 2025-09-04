@@ -1,18 +1,27 @@
 @import "tailwindcss";
 
 @theme{
-  --color-primary: #555B6E;
+  --color-primary: #191923;
+  --color-secondary: #3B82F6;
+  --color-accent:#3B82F6;
+  --color-background:hsl(0,9%,98%);
+
+  --color-soft-alert: #F59E0B;
+  --color-text:hsl(0,0%,5%);
+  --color-text-muted:hsl(0,0%,40%);
+
+/*   --color-primary: #555B6E;
   --color-secondary: #89B0AE;
   --color-accent:#BEE3DB;
   --color-background:hsl(0,9%,98%);
 
   --color-soft-alert:#FFD6BA;
   --color-text:hsl(0,0%,5%);
-  --color-text-muted:hsl(0,0%,40%);
+  --color-text-muted:hsl(0,0%,40%); */
 
 
 
-/*   Dark base: #191923 Accent blue: #3B82F6 Neutral light: #FAF9F9 Highlight warm: #F59E0B */
+ /*  Dark base:  Accent blue: #3B82F6 Neutral light: #FAF9F9 Highlight warm: #F59E0B */
 
 
  /* some minor color shades */
@@ -40,7 +49,7 @@
   }
 
   .btn-primary {
-    @apply px-6 py-2 bg-soft-alert rounded-sm cursor-pointer text-text font-medium shadow-md mt-[3rem] hover:bg-accent hover:shadow-lg transition duration-400 ease-in-out;
+    @apply px-6 py-2 bg-soft-alert rounded-sm cursor-pointer text-background font-medium shadow-md mt-[3rem] hover:bg-accent hover:shadow-lg transition duration-400 ease-in-out;
   }
 
  
@@ -56,7 +65,7 @@
 
   /* Footer list settings */
   .footerList{
-    @apply flex flex-col items-start justify-evenly w-fit h-fit gap-2 text-background text-sm;
+    @apply flex flex-col items-start justify-evenly w-fit h-fit gap-4 text-background text-sm;
   }
   
 

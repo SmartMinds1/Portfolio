@@ -47,7 +47,7 @@ const Home = () => {
                                 <div className="w-fit h-[85vh] flex flex-col items-start pl-16 pt-16 justify-start">
                                     <p className="text-6xl w-[50vw] text-background">
                                         Your best partner in every business <br />
-                                        solution <span className="text-4xl text-accent ">Grow with us!</span>
+                                        solution <span className="text-4xl text-soft-alert">Grow with us!</span>
                                     </p>
                                     <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer">View more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5"/></button>
                                 </div>
