@@ -5,19 +5,20 @@
   --color-secondary: #3B82F6;
   --color-accent:#3B82F6;
   --color-background:hsl(0,9%,98%);
-
   --color-soft-alert: #F59E0B;
   --color-text:hsl(0,0%,5%);
   --color-text-muted:hsl(0,0%,40%);
 
-/*   --color-primary: #555B6E;
-  --color-secondary: #89B0AE;
-  --color-accent:#BEE3DB;
-  --color-background:hsl(0,9%,98%);
+  /*   
+    --color-primary: #555B6E;
+    --color-secondary: #89B0AE;
+    --color-accent:#BEE3DB;
+    --color-background:hsl(0,9%,98%);
 
-  --color-soft-alert:#FFD6BA;
-  --color-text:hsl(0,0%,5%);
-  --color-text-muted:hsl(0,0%,40%); */
+    --color-soft-alert:#FFD6BA;
+    --color-text:hsl(0,0%,5%);
+    --color-text-muted:hsl(0,0%,40%);
+  */
 
 
 
@@ -26,7 +27,7 @@
 
  /* some minor color shades */
  --color-secondary-shade:#89B0AE;
- --color-bg-dark:hsl(0,9%,90%);
+ --color-bg-dark:hsl(0,0%,70%);
 
 }
 
@@ -52,7 +53,6 @@
     @apply px-6 py-2 bg-soft-alert rounded-sm cursor-pointer text-background font-medium shadow-md mt-[3rem] hover:bg-accent hover:shadow-lg transition duration-400 ease-in-out;
   }
 
- 
 
   /*For all the headings within my project */
   .header{
@@ -71,7 +71,7 @@
 
   /*  socials section */
   .myIcons{
-    @apply text-2xl text-soft-alert hover:brightness-80 transition-all duration-300 cursor-pointer;
+    @apply text-xl text-soft-alert hover:brightness-80 transition-all duration-300 cursor-pointer;
   }
 
 
@@ -99,13 +99,4 @@
   @apply w-full h-fit  flex flex-row items-center justify-start mb-8;
  }
 }
-
-
-/* The settings of a motion blob */
-@keyframes blob {
-  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
-  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-}
-
 

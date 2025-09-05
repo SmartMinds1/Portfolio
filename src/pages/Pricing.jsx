@@ -4,16 +4,16 @@ import Footer from "../components/Footer";
 /* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons"; */
 
-const Blog = () => {
+const Pricing = () => {
     return(
         <div>
             <Header/>
 
-             <p>This is my Blogs page!</p>
+             <p>This is my Pricings page!</p>
 
              <Footer/>
         </div>
     );
 }
 
-export default Blog;
+export default Pricing;
