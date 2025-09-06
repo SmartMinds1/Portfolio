@@ -13,7 +13,10 @@ const Contact = ()=> {
 
             {/* CONTACT HEAD */}
             <div className="w-full h-24 bg-background flex flex-row items-center justify-evenly">
-                <p className="text-primary text-xl font-bold">bizN<span className="text-secondary text-2xl font-light">utritia</span></p>
+                <div className="w-38 flex flex-row items-end justify-center">
+                  <div className="w-10 h-10 bg-[url('/bigStarBlack.png')] bg-contain bg-no-repeat bg-center rotate-270"></div>
+                  <p className="text-primary text-2xl font-bold">bizN<span className="text-secondary text-2xl font-light">utritia</span></p>
+                </div>
                 <ul className="flex flex-row items-center justify-evenly w-1/3 h-12 text-text text-sm">
                     <li> <Link to="/">home</Link> </li>
                     <li> <Link to="about">about</Link></li>

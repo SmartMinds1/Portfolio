@@ -10,10 +10,14 @@ const Footer = ()=> {
         <div className="flex flex-row items-center justify-evenly w-full h-4/5">
             {/* logo div */}
             <div className="w-1/4 h-full flex flex-col items-start justify-center pl-26">
-            <p className="text-background text-xl font-bold">bizN<span className="text-accent text-2xl font-light">utritia</span></p>
-              <p className="w-full text-md text-bg-dark text-sm mt-4">Ideas that grow, connections that scale.</p>
-              <button className="btn-primary text-background bg-accent">Call Now</button>
+                <div className="w-38 flex flex-row items-end justify-center">
+                  <div className="w-10 h-10 bg-[url('/bigStarWhite.png')] bg-contain bg-no-repeat bg-center rotate-270"></div>
+                  <p className="text-background text-2xl font-extrabold">bizN<span className="text-accent text-2xl font-light">utritia</span></p>
+                </div>
+                <p className="w-full text-md text-bg-dark text-sm mt-4">Ideas that grow, connections that scale.</p>
+                <button className="btn-primary text-background bg-accent">Call Now</button>
             </div>
+
            {/* links div */}
             <div className="w-2/3 h-full flex flex-col justify-evenly">
                 <div className="w-full h-fit m-auto flex flex-row items-start justify-between pt-6">
