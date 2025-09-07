@@ -17,7 +17,7 @@ const FAQcard = ({faqAns, faqTitle})=>{
                 { toggleIcon ? <FontAwesomeIcon icon={faAngleUp} className="text-6 text-secondary float-right mr-4 mt-1" /> : <FontAwesomeIcon icon={faAngleDown} className="text-6 text-secondary float-right mr-4 mt-1" /> }
         </summary>
 
-        {toggleIcon && <p className="ml-[4vw] text-primary">{faqAns}</p>}
+        {toggleIcon && <p className="ml-[4vw] text-text-muted">{faqAns}</p>}
 
     </details>
     )

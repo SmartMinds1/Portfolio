@@ -27,15 +27,15 @@ const Projects = () => {
             <div className="w-full h-fit">
                 <div>
                     <p className="header text-background">| Case<span className="headerSpan"> study </span></p>
-                    <p className="w-1/2 text-md m-auto mt-6 text-bg-dark text-center">Behind every successful project is a dedicated team. We bring together creativity, technical expertise, and marketing insight to ensure your business not only looks good online but also grows steadily with real results.</p>
+                    <p className="w-1/2 text-md m-auto mt-6 text-bg-dark text-center">Here's a Hotel booking system with real results. A successful project offering seamless user experience </p>
                 </div>
                   
 
-                  <div className="w-fit h-fit m-auto flex flex-row gap-8 bg-primary pt-10 pb-10">
-                    <img src="/smartyGrandHome.png" alt="" width="800" height="200"/>
-                 {/*    <img src="/microFinanceUpload.png" alt="" width="1500" height="2400"/>
-                    <img src="/microFinanceUpload.png" alt="" width="300" height="2400"/> */}
-
+                  <div className="w-[65%] h-fit m-auto flex flex-row justify-center items-center  pt-10 pb-10">
+                    <div className="w-200 m-auto h-200 bg-[url('/smartyGrandHomeCroped.png')] bg-contain bg-center bg-no-repeat "></div>
+                   {/*  <div className="w-65 m-auto h-150 bg-[url('/smartyGrandAbout.png')] bg-contain bg-center bg-no-repeat "></div>
+                    <div className="w-55 m-auto h-150 bg-[url('/smartyGrandContact.png')] bg-contain bg-center bg-no-repeat "></div>
+                    <div className="w-45 m-auto h-150 bg-[url('/smartyGrandReservation.png')] bg-contain bg-center bg-no-repeat "></div> */}
                   </div>
 
             </div>

@@ -49,7 +49,7 @@ const Home = () => {
                                         Your best partner in every business <br />
                                         solution <span className="text-4xl text-soft-alert">Grow with us!</span>
                                     </p>
-                                    <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer">View more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5"/></button>
+                                    <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer">Explore more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5"/></button>
                                 </div>
                             </div>
                         </div>

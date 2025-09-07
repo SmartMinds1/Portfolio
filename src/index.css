@@ -19,12 +19,7 @@
     --color-text:hsl(0,0%,5%);
     --color-text-muted:hsl(0,0%,40%);
   */
-
-
-
- /*  Dark base:  Accent blue: #3B82F6 Neutral light: #FAF9F9 Highlight warm: #F59E0B */
-
-
+  
  /* some minor color shades */
  --color-secondary-shade:#89B0AE;
  --color-bg-dark:hsl(0,0%,75%);

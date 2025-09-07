@@ -13,7 +13,7 @@ const Contact = ()=> {
 
             {/* CONTACT HEAD */}
             <div className="w-full h-24 bg-background flex flex-row items-center justify-evenly">
-                <div className="w-38 flex flex-row items-end justify-center">
+                <div className="w-40 flex flex-row items-end justify-center">
                   <div className="w-10 h-10 bg-[url('/bigStarBlack.png')] bg-contain bg-no-repeat bg-center rotate-270"></div>
                   <p className="text-primary text-2xl font-bold">bizN<span className="text-secondary text-2xl font-light">utritia</span></p>
                 </div>
@@ -21,7 +21,9 @@ const Contact = ()=> {
                     <li> <Link to="/">home</Link> </li>
                     <li> <Link to="about">about</Link></li>
                     <li> <Link to="services">services</Link></li>
+                    <li> <Link to="projects">projects</Link></li>
                     <li> <Link to="contact">contact</Link></li>
+                    <li> <Link to="pricing">pricing</Link></li>
                 </ul>
                 <button className="btn-primary text-background bg-soft-alert m-0 rounded-3xl">Call Now</button>
             </div>
