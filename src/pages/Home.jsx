@@ -45,16 +45,18 @@ const Home = () => {
                             <Header/>
                             <div className="w-full flex flex-row ">
                                 <div className="w-fit h-[85vh] flex flex-col items-start pl-16 pt-16 justify-start">
-                                    <p className="text-6xl w-[50vw] text-background">
-                                        Your best partner in every business <br />
-                                        solution <span className="text-4xl text-soft-alert">Grow with us!</span>
-                                    </p>
-                                    <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer">Explore more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5"/></button>
+                                    <p className="text-6xl w-[50vw] text-background">Your best <span className="text-soft-alert font-extralight">partner in every</span> business <br />solution </p>
+                                    <br /><br /><br />
+                                    <p className="text-sm text-bg-dark">Creating a powerful online presence by providing everything you  <br /> need to succeed!</p>
+                 
+                                    <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer">Explore more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/></button>
                                 </div>
                             </div>
                         </div>
                     </div>
             </div>
+
+            <br /><br /><br />
 
             {/* This is the home page body section, SECTION1 */}
             <div className="w-[60vw] h-50 pt-8 m-auto text-text text-center">
@@ -79,7 +81,7 @@ const Home = () => {
             {/* SECTION 3 */}
              <div className="W-full h-80 bg-[url('/woman-analyzing-data-digital-interface.jpg')] bg-top bg-cover">
                 <div className="w-full h-full bg-primary/80 flex items-center justify-center">
-                    <h1 className="text-2xl text-background"> <span className="font-bold">HERE FOR YOU!</span> ____ let's get everything up and running</h1>
+                    <h1 className="text-2xl text-background"> <span className="font-bold text-soft-alert">HERE FOR YOU!____</span> let's get everything up and running<span className="animate-pulse duration-300"> . . .</span></h1>
                 </div>
              </div>
 

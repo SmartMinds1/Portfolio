@@ -14,7 +14,7 @@ const Services = () => {
 
                    <div className="w-1/2 h-3/5">
                         <div className=" pl-4 border-l-1 border-background w-110">
-                             <p className="h-full text-5xl text-background">Services Designed to Build & <span className=" text-soft-alert headerSpan"> Grow Your Business </span></p>
+                             <p className="h-full text-5xl text-background">Services Designed to Build & <span className=" text-soft-alert headerSpan"> Scale Your Business </span></p>
                         </div>
                         <br /><br /><br />
                         <p className="text-sm text-bg-dark">Creating a powerful online presence by providing everything you need to succeed!</p>
@@ -52,11 +52,11 @@ const Services = () => {
                     <div className="w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
                         <ul className="pl-8 text-text-muted">
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> Custom website design (built for your brand)</li>
+                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> Custom website design (built for your brand)</li>
                             <li className="list-disc ml-6"> Responsive design</li>
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> High-performance speed optimization</li>
+                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> High-performance speed optimization</li>
                             <li className="list-disc ml-6"> Secure and scalable back-end development</li>
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> E-commerce setup (if needed)</li>
+                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> E-commerce setup (if needed)</li>
                             <li className="list-disc ml-6"> SEO-friendly structure for better search visibility</li>
                         </ul>
                         <br />
@@ -87,9 +87,9 @@ const Services = () => {
                     <div className="w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
                         <ul className="pl-8 text-text-muted">
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> Display Ads (build awareness with visual banners)</li>
+                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> Display Ads (build awareness with visual banners)</li>
                             <li className="list-disc ml-6"> Search Ads </li>
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> YouTube Ads (reach audiences with engaging video campaigns)</li>
+                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> YouTube Ads (reach audiences with engaging video campaigns)</li>
                             <li className="list-disc ml-6"> Conversion tracking setup</li>
                         </ul>
                         <br />
@@ -128,9 +128,9 @@ const Services = () => {
                     <div className="w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
                         <ul className="pl-8 text-text-muted">
-                        <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> Google Analytics (GA4) setup & reporting</li>
+                        <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> Google Analytics (GA4) setup & reporting</li>
                             <li className="list-disc ml-6"> Custom conversion tracking (sales, signups, calls, etc.) </li>
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-secondary"/> Performance dashboards for easy monitoring </li>
+                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> Performance dashboards for easy monitoring </li>
                             <li className="list-disc ml-6"> Ongoing optimization (continuous tweaks to improve results) </li>
                         </ul>
                         <br />

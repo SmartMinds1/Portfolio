@@ -23,8 +23,8 @@ const Footer = ()=> {
                 <div className="w-full h-fit m-auto flex flex-row items-start justify-between pt-6">
                     <div  className="footerList">
                         <p className="font-bold text-lg">Pages</p>
-                        <ul className="text-bg-dark flex flex-col justify-between gap-2">
-                            <li> <Link to="/"></Link> home</li>
+                        <ul className="text-bg-dark flex flex-col justify-between gap-2 footerLink">
+                            <li> <Link to="/" ></Link> home</li>
                             <li>about</li>
                             <li>services</li>
                             <li>contact</li>
@@ -33,7 +33,7 @@ const Footer = ()=> {
 
                     <div  className="footerList">
                         <p className="font-bold text-lg">support</p>
-                        <ul className="text-bg-dark flex flex-col justify-between gap-2">
+                        <ul className="text-bg-dark flex flex-col justify-between gap-2 footerLink">
                             <li>google ADs community</li>
                             <li>smartADsupport</li>
                             <li>FAQs</li>
@@ -42,7 +42,7 @@ const Footer = ()=> {
 
                     <div  className="footerList">
                         <p className="font-bold text-lg">Let's connect</p>
-                        <ul className="footerList gap-6 w-100 text-bg-dark">
+                        <ul className="footerList gap-6 w-100 text-bg-dark footerLink">
                             <li><FontAwesomeIcon icon={faPhone} className="text-xl text-background mr-3" /> +254 115 154 402  </li>
                             <li><FontAwesomeIcon icon={faEnvelope} className="text-xl text-background mr-3" /> smartadsdigital@gmail.com  </li>
                             <li><FontAwesomeIcon icon={faLocationDot} className="text-xl text-background mr-3" />Twiga towers, 6th floor, Room 606, Murang'a Road, <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Opp Meridian Court Hotel, Nairobi Kenya  </li>

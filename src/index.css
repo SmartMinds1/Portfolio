@@ -37,6 +37,7 @@
   h3{
     @apply text-lg font-bold text-text;
   }
+ 
 }
 
 @layer components {
@@ -56,11 +57,17 @@
   .headerSpan{
     @apply font-light text-3xl;
   }
+  .headerLink li{
+    @apply cursor-pointer hover:brightness-90 hover:text-soft-alert duration-200;
+  }
 
 
   /* Footer list settings */
   .footerList{
     @apply flex flex-col items-start justify-evenly w-fit h-fit gap-4 text-background text-sm;
+  }
+  .footerLink li{
+    @apply cursor-pointer hover:brightness-80 duration-200;
   }
   
 
