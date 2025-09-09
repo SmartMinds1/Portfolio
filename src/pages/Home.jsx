@@ -59,14 +59,14 @@ const Home = () => {
             <br /><br /><br />
 
             {/* This is the home page body section, SECTION1 */}
-            <div className="w-[60vw] h-50 pt-8 m-auto text-text text-center">
+            <div className="hidden w-[60vw] h-50 pt-8 m-auto text-text text-center">
                 <p className="text-2xl ">From building stunning and secure websites to running targeted Google Ads that bring real customers</p>
                 <p className="w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
             </div>
             
 
              {/* SECTION 2  */}
-             <div className="w-full h-fit">
+             <div className="w-full h-fit hidden">
              {/*        <p className="text-primary text-3xl pl-10">Our Services</p> */}
                 
                      <div className="h-fit w-2/3 m-auto  flex flex-row items-center justify-evenly">
@@ -79,7 +79,7 @@ const Home = () => {
              <br /><br /><br /><br />
 
             {/* SECTION 3 */}
-             <div className="W-full h-80 bg-[url('/woman-analyzing-data-digital-interface.jpg')] bg-top bg-cover">
+             <div className="hidden W-full h-80 bg-[url('/woman-analyzing-data-digital-interface.jpg')] bg-top bg-cover">
                 <div className="w-full h-full bg-primary/80 flex items-center justify-center">
                     <h1 className="text-2xl text-background"> <span className="font-bold text-soft-alert">HERE FOR YOU!____</span> let's get everything up and running<span className="animate-pulse duration-300"> . . .</span></h1>
                 </div>
@@ -88,7 +88,7 @@ const Home = () => {
              <br /><br /> <br /> <br />    
 
             {/* SECTION 4 */}
-             <div className="w-full h-fit">
+             <div className="w-full h-fit hidden">
                 <p className="header">| Let client statistics <span className="headerSpan">speak for us </span></p>
                 <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
                 <div className="w-2/3 m-auto h-fit flex flex-row items-center justify-evenly flex-wrap gap-2 mt-10">
@@ -101,7 +101,7 @@ const Home = () => {
              <br /><br /><br /><br />
 
             {/* SECTION 5 */}
-             <div className="w-full h-fit">
+             <div className="w-full h-fit hidden">
                 <p className="header">| Here's what our clients <span className="headerSpan">say about us </span></p>
                 <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">We’re proud to let our happy clients do the talking—here’s what they have to say about working with us.</p>
                 {/* Importing the testimonial card and inserting all ther required props */}
@@ -111,7 +111,7 @@ const Home = () => {
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
             {/* FOOTER SECTION */}
-            <div>
+            <div className="hidden">
                 <Footer/>
             </div>
 

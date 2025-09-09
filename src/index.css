@@ -39,7 +39,21 @@
   }
  
 }
+@layer utilities{
+  .flex-row-center{
+    @apply flex flex-row items-center;
+  }
+  .flex-row-end{
+    @apply flex flex-row items-end;
+  }
+  .flex-col-start{
+    @apply flex flex-col items-start;
+  }
+  .flex-col-center{
+    @apply flex flex-col items-center;
+  }
 
+}
 @layer components {
   .btn {
     @apply px-4 py-2 font-bold rounded ;
@@ -59,6 +73,9 @@
   }
   .headerLink li{
     @apply cursor-pointer hover:brightness-90 hover:text-soft-alert duration-200;
+  }
+  .mobileList li{
+    @apply bg-background border-b-2 border-bg-dark text-primary pl-4 w-full h-10 flex flex-row items-center text-lg;
   }
 
 
