@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import PricingCard from "../components/PricingCard";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 /* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons"; */
 
@@ -16,12 +16,12 @@ const Pricing = () => {
                   <p className="text-primary text-2xl font-bold">bizN<span className="text-secondary text-2xl font-light">utritia</span></p>
                 </div>
                 <ul className="flex flex-row items-center justify-evenly w-1/3 h-12 text-text text-sm headerLink">
-                    <li> <Link to="/">home</Link> </li>
-                    <li> <Link to="about">about</Link></li>
-                    <li> <Link to="services">services</Link></li>
-                    <li> <Link to="projects">projects</Link></li>
-                    <li> <Link to="contact">contact</Link></li>
-                    <li> <Link to="pricing">pricing</Link></li>
+                    <li><NavLink to="/" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>home</NavLink> </li>
+                    <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>about</NavLink> </li>
+                    <li><NavLink to="/services" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>services</NavLink> </li>
+                    <li><NavLink to="/projects" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>projects</NavLink> </li>
+                    <li><NavLink to="/contact" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>contact</NavLink> </li>
+                    <li><NavLink to="/pricing" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>pricing</NavLink> </li>
                 </ul>
                 <button className="btn-primary text-background bg-soft-alert m-0 rounded-3xl">Call Now</button>
             </div>

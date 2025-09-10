@@ -11,7 +11,8 @@ import Lauracia from "../assets/Lauracia.webp";
 import Juzman from "../assets/Juzman.webp";
 import Yuvala from "../assets/Yuvala.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRightLong, faLaptopCode, faBullhorn} from "@fortawesome/free-solid-svg-icons";
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
         /* Index for looping testimonial cards */
@@ -40,15 +41,14 @@ const Home = () => {
         <div className="bg-background">
             {/* This is the home landing page section */}
             <div className="w-full bg-primary">
-                    <div className="w-full h-screen bg-[url('/portfolioCOVER.png')] bg-cover bg-bottom " >
+                    <div className="w-full h-screen bg-[url('/portfolioCOVER.png')] bg-cover sm:bg-bottom bg-[60%]" >
                         <div className="w-full h-screen bg-linear-to-r from-primary via-primary via-30% to-transparent">
                             <Header/>
-                            <div className="w-full flex flex-row ">
-                                <div className="w-fit h-[85vh] flex flex-col items-start pl-16 pt-16 justify-start">
-                                    <p className="text-6xl w-[50vw] text-background">Your best <span className="text-soft-alert font-extralight">partner in every</span> business <br />solution </p>
-                                    <br /><br /><br />
+                            <div className="w-full flex flex-row">
+                                <div className="w-fit h-[85vh] flex flex-col items-start p-[5%] justify-start  sm:pl-16 sm:pt-16">
+                                    <p className="sm:text-6xl text-5xl w-full sm:w-[50vw] text-background">Your best <span className="text-soft-alert font-extralight">partner in every</span> business <br />solution </p>
+                                    <br /><br />
                                     <p className="text-sm text-bg-dark">Creating a powerful online presence by providing everything you  <br /> need to succeed!</p>
-                 
                                     <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer">Explore more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/></button>
                                 </div>
                             </div>
@@ -65,15 +65,13 @@ const Home = () => {
             </div>
             
 
-             {/* SECTION 2  */}
+             {/* SECTION 2 OUR SERVICES CARDS */}
              <div className="w-full h-fit hidden">
-             {/*        <p className="text-primary text-3xl pl-10">Our Services</p> */}
-                
-                     <div className="h-fit w-2/3 m-auto  flex flex-row items-center justify-evenly">
-                        <SkillCard cardTitle="Web Developer/ Designer" cardDes="Build beautiful, responsive websites that grow your business."/>
-                        <SkillCard cardTitle="Google ADs Manager " cardDes="Running targeted ads that attract more customers fast."/>
-                        <SkillCard cardTitle="Marketting specialist" cardDes="Promote your brand effectively to boost sales and visibility."/>
-                     </div>
+                 <div className="h-fit w-2/3 m-auto  flex flex-row items-center justify-evenly">
+                    <SkillCard cardTitle="Web Developer/ Designer" cardDes="Build beautiful, responsive websites that grow your business." icon={<FontAwesomeIcon icon={faLaptopCode}/>} />
+                    <SkillCard cardTitle="Google ADs Manager " cardDes="Running targeted ads that attract more customers fast."  icon={<FontAwesomeIcon icon={faGoogle} />} />
+                    <SkillCard cardTitle="Marketting specialist" cardDes="Promote your brand effectively to boost sales and visibility." icon={<FontAwesomeIcon icon={faBullhorn} />} />
+                 </div>
              </div>
 
              <br /><br /><br /><br />
