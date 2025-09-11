@@ -43,6 +43,9 @@
   .flex-row-center{
     @apply flex flex-row items-center;
   }
+  .flex-row-start{
+    @apply flex flex-row items-start;
+  }
   .flex-row-end{
     @apply flex flex-row items-end;
   }
@@ -63,7 +66,10 @@
   .btn-primary {
     @apply px-6 py-2 bg-soft-alert rounded-sm cursor-pointer text-background font-medium shadow-md mt-[3rem] hover:bg-accent hover:shadow-lg transition duration-400 ease-in-out;
   }
+.btnHover{
+  @apply cursor-pointer hover:bg-accent hover:shadow-lg transition duration-400 ease-in-out;
 
+}
 
   /*For all the headings within my project */
     .header{

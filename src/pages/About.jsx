@@ -9,11 +9,13 @@ const About = () => {
     return(
         <div className="bg-background">
             {/* SECTION 1 */}
-            <div className="w-full h-[60vh] bg-primary flex flex-col items-center justify-between">
+            <div className="bg-primary w-full h-fit">
                 <Header/>
-                <div className="w-full h-fit flex flex-row items-center justify-center flex-wrap mb-32">
-                    <p className="h-full w-1/3 font-bold text-3xl text-background flex flex-row items-center justify-center gap-2">| Get to know <span className="headerSpan text-soft-alert"> about us </span></p>
-                    <p className="h-full w-1/3 text-left flex items-center text-bg-dark brightness-90">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
+                <div className="w-full h-[60vh] bg-primary flex flex-col items-center justify-between">
+                    <div className="w-full h-fit flex flex-row items-center justify-center flex-wrap mb-32">
+                        <p className="h-full w-1/3 font-bold text-3xl text-background flex flex-row items-center justify-center gap-2">| Get to know <span className="headerSpan text-soft-alert"> about us </span></p>
+                        <p className="h-full w-1/3 text-left flex items-center text-bg-dark brightness-90">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
+                    </div>
                 </div>
             </div>
 

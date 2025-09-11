@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import WhiteHeader from "../components/WhiteHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHomeAlt, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 import FAQcard from "../components/FAQcard";
@@ -9,24 +9,10 @@ import Footer from "../components/Footer";
 const Contact = ()=> {
 
     return(
-        <div>
+        <div className="bg-background">
 
-            {/* CONTACT HEAD */}
-            <div className="w-full h-24 bg-background flex flex-row items-center justify-evenly">
-                <div className="w-40 flex flex-row items-end justify-center">
-                  <div className="w-10 h-10 bg-[url('/bigStarBlack.png')] bg-contain bg-no-repeat bg-center rotate-270"></div>
-                  <p className="text-primary text-2xl font-bold">bizN<span className="text-secondary text-2xl font-light">utritia</span></p>
-                </div>
-                <ul className="flex flex-row items-center justify-evenly w-1/3 h-12 text-text text-sm headerLink">
-                    <li><NavLink to="/" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>home</NavLink> </li>
-                    <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>about</NavLink> </li>
-                    <li><NavLink to="/services" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>services</NavLink> </li>
-                    <li><NavLink to="/projects" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>projects</NavLink> </li>
-                    <li><NavLink to="/contact" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>contact</NavLink> </li>
-                    <li><NavLink to="/pricing" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>pricing</NavLink> </li>
-                </ul>
-                <button className="btn-primary text-background bg-soft-alert m-0 rounded-3xl">Call Now</button>
-            </div>
+           {/* CONTACT HEAD */}
+            <WhiteHeader/>
         
             {/* SECTION 1 */}
             <div className="w-full h-[85vh] bg-background">
@@ -41,7 +27,7 @@ const Contact = ()=> {
                <div className="w-[80vw] m-auto h-fit flex flex-row items-center justify-center flex-wrap-reverse gap-4">
                     {/* visit div */}
                     <div className="w-140 m-auto h-40 flex flex-row items-center justify-evenly">
-                        <div className=" contactIconBox rounded-full bg-secondary"> <FontAwesomeIcon icon={faHomeAlt} className="contactIcon text-background"></FontAwesomeIcon> </div>
+                        <div className=" contactIconBox rounded-full bg-secondary shadow-[#89B0AE]"> <FontAwesomeIcon icon={faHomeAlt} className="contactIcon text-background"></FontAwesomeIcon> </div>
                         <p className="text-text"> Visit Us : </p>
                         <p className="text-text-muted ml-1 text-sm"> Twiga towers, 6th floor, Room 606, Murang'a Road, <br /> Opp Meridian Court Hotel, <br /> Nairobi Kenya </p>
                     </div>
