@@ -5,6 +5,7 @@ import PricingCard from "../components/PricingCard";
 import { basicPlan, enterprisePlan, proPlan } from "../../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import BusinessCard from "../components/BusinessCard";
 
 
 const Pricing = () => {
@@ -55,6 +56,13 @@ const Pricing = () => {
                         ))}
                 </PricingCard>
             </div>
+
+            <br /><br /><br /><br /><br />
+
+            {/* This si my business card Sample */}
+             <div className="w-full h-[70vh] bg-primary">
+                <BusinessCard/>
+             </div>
 
             <br /><br /><br /><br /><br />
 
