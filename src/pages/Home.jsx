@@ -20,7 +20,7 @@ const Home = () => {
 
         /* An array of the testimoial cards Objects to be looped */
         const testimonialCards = [
-            {rateName:"Halima Sahim", rateImg:Halima, rateMessage:"I applied for a business loan and got approved within two days. The process was smooth, and the team was very helpful. Now my shop is running better than ever!", cardRating:"5"},
+            {rateName:"Halima Sahim", rateImg:Halima, rateMessage:"I applied for a business loan and got approved within two days. The process was smooth, and the team was very helpful. My shop is running better than ever!", cardRating:"5"},
     
             {rateName:"Samuel Josh", rateImg:Juzman, rateMessage:"When I had an emergency at home, I applied for a loan and received the money the same day. It was fast, easy, and truly lifesaving.", cardRating:"4"},
     
@@ -29,7 +29,7 @@ const Home = () => {
             {rateName:"David O. Rider", rateImg:Yuvala, rateMessage:"Thanks to their asset finance option, I bought a motorbike for my delivery business. The repayment plan is affordable, and I’m earning daily", cardRating:"3"}
         ]
     
-        /* Now lets craete two functions to facilitate forward and backword movement */
+        /* Now lets create two functions to facilitate forward and backword movement */
         const navigateForward = ()=> {
             setCurrentIndex((prev)=> (prev+1) % testimonialCards.length);
         }
@@ -56,57 +56,56 @@ const Home = () => {
                     </div>
             </div>
 
-            <br /><br /><br />
+            <br />
 
             {/* This is the home page body section, SECTION1 */}
-            <div className="hidden w-[60vw] h-50 pt-8 m-auto text-text text-center">
-                <p className="text-2xl ">From building stunning and secure websites to running targeted Google Ads that bring real customers</p>
-                <p className="w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
+            <div className="w-[90vw] h-fit md:w-[60vw] md:h-54 pt-8 m-auto text-text text-left sm:text-center md:mt-4">
+                <p className="text-xl sm:text-2xl ">From building stunning and secure websites, to running targeted Google Ads that bring real customers</p>
+                <p className="w-[90%] sm:w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
             </div>
-            
 
              {/* SECTION 2 OUR SERVICES CARDS */}
-             <div className="w-full h-fit hidden">
-                 <div className="h-fit w-2/3 m-auto  flex flex-row items-center justify-evenly">
+             <div className="w-full h-fit">
+                 <div className="h-fit w-[90%] lg:w-2/3 m-auto flex-row-center flex-wrap justify-evenly gap-6 mt-12">
                     <SkillCard cardTitle="Web Developer/ Designer" cardDes="Build beautiful, responsive websites that grow your business." icon={<FontAwesomeIcon icon={faLaptopCode}/>} />
                     <SkillCard cardTitle="Google ADs Manager " cardDes="Running targeted ads that attract more customers fast."  icon={<FontAwesomeIcon icon={faGoogle} />} />
                     <SkillCard cardTitle="Marketting specialist" cardDes="Promote your brand effectively to boost sales and visibility." icon={<FontAwesomeIcon icon={faBullhorn} />} />
                  </div>
              </div>
 
-             <br /><br /><br /><br />
+             <br /><br /><br />
 
             {/* SECTION 3 */}
-             <div className="hidden W-full h-80 bg-[url('/woman-analyzing-data-digital-interface.jpg')] bg-top bg-cover">
-                <div className="w-full h-full bg-primary/80 flex items-center justify-center">
-                    <h1 className="text-2xl text-background"> <span className="font-bold text-soft-alert">HERE FOR YOU!____</span> let's get everything up and running<span className="animate-pulse duration-300"> . . .</span></h1>
+             <div className="W-full h-80 bg-[url('/woman-analyzing-data-digital-interface.jpg')] bg-top bg-cover lg:mt-4">
+                <div className="w-full h-full bg-primary/80 flex items-center justify-center p-4">
+                    <h1 className="text-2xl text-background w-fit m-auto text-left"> <span className="font-bold text-soft-alert">HERE FOR YOU!____</span> let's get everything up and running<span className="animate-pulse duration-300"> . . .</span></h1>
                 </div>
              </div>
 
-             <br /><br /> <br /> <br />    
+             <br /><br />  
 
             {/* SECTION 4 */}
-             <div className="w-full h-fit hidden">
+             <div className="w-full h-fit md:mt-8">
                 <p className="header">| Let client statistics <span className="headerSpan">speak for us </span></p>
-                <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
-                <div className="w-2/3 m-auto h-fit flex flex-row items-center justify-evenly flex-wrap gap-2 mt-10">
+                <p className="w-[90%]  md:w-1/2 text-md m-auto mt-4 text-text-muted text-left sm:text-center">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
+                <div className="w-2/3 m-auto h-fit flex flex-row items-center justify-evenly flex-wrap gap-4 mt-10">
                     <StatsBox statsNum="500+" statsDes="Clients"/>
                     <StatsBox statsNum="100+" statsDes="Businesses"/>
                     <StatsBox statsNum="50+" statsDes="Websites"/>
                 </div>
              </div>
 
-             <br /><br /><br /><br />
+             <br /><br /><br />
 
             {/* SECTION 5 */}
-             <div className="w-full h-fit hidden">
+             <div className="w-full h-fit md:mt-8">
                 <p className="header">| Here's what our clients <span className="headerSpan">say about us </span></p>
-                <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">We’re proud to let our happy clients do the talking—here’s what they have to say about working with us.</p>
+                <p className="w-[90%]  md:w-1/2 text-md m-auto mt-4 text-text-muted text-left sm:text-center">We’re proud to let our happy clients do the talking—here’s what they have to say about working with us.</p>
                 {/* Importing the testimonial card and inserting all ther required props */}
                 <TestimonialCard rateImg={testimonialCards[currentIndex].rateImg} goForward={navigateForward} goBack={navigateBack} rateName={testimonialCards[currentIndex].rateName}  rateMessage={testimonialCards[currentIndex].rateMessage} cardRating={testimonialCards[currentIndex].cardRating} />
              </div>
 
-             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+             <br /><br /><br />
 
             {/* FOOTER SECTION */}
             <div className="hidden">
