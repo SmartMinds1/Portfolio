@@ -36,7 +36,7 @@ const Header = ()=> {
                 </ul>
             </div>
 
-            <button className="hidden sm:block text-background bg-soft-alert m-0 rounded-3xl w-20 md:w-28 h-10 btnHover translate-y-3 shadow-2xl">Call Now</button>
+            <button className="hidden sm:block text-background bg-soft-alert m-0 rounded-3xl w-20 md:w-28 h-10 btnHover translate-y-3 soft-shadow">Call Now</button>
             
             {/* Mobile menu button */}
             <div className="mobile-menu-button sm:hidden">
@@ -53,7 +53,7 @@ const Header = ()=> {
                     <li> <Link to="/" className="w-full"> <FontAwesomeIcon icon={faHouse} className="mobileNavIcon"/> home <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link> </li>
                     <li> <Link to="/about" className="w-full"> <FontAwesomeIcon icon={faUser} className="mobileNavIcon"/> about <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
                     <li> <Link to="/services" className="w-full"> <FontAwesomeIcon icon={faGears} className="mobileNavIcon"/> services <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
-                    <li> <Link to="/projects" className="w-full"> <FontAwesomeIcon icon={faBriefcase} className="mobileNavIcon"/> projects <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
+                    <li> <Link to="/case-studies" className="w-full"> <FontAwesomeIcon icon={faBriefcase} className="mobileNavIcon"/> case-studies <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
                     <li> <Link to="/contact" className="w-full"> <FontAwesomeIcon icon={faEnvelope} className="mobileNavIcon"/> contact <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
                     <li> <Link to="/pricing" className="w-full"> <FontAwesomeIcon icon={faTags} className="mobileNavIcon"/> pricing <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
                 </ul>

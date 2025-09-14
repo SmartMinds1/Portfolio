@@ -40,6 +40,12 @@
  
 }
 @layer utilities{
+  .blue-shadow{
+    @apply hover:shadow-2xl shadow-accent;
+  }
+  .soft-shadow{
+    @apply hover:shadow-2xl shadow-soft-alert;
+  }
   .flex-row-center{
     @apply flex flex-row items-center;
   }
@@ -73,7 +79,7 @@
 
   /*For all the headings within my project */
     .header{
-      @apply font-bold text-3xl text-primary w-full text-center;
+      @apply font-bold text-3xl text-primary sm:w-full  w-[95%] text-center;
     }
     .headerSpan{
       @apply font-light text-3xl;

@@ -26,7 +26,7 @@ const Pricing = () => {
              <br /><br />
              
 
-            <div className="w-[80%] h-fit m-auto flex flex-row items-center justify-evenly gap-4">
+            <div className="w-[80%] h-fit m-auto flex-row-center flex-wrap justify-evenly gap-4">
                 <PricingCard packageName="Basic" packagePrice="200" packageDes="Kickstart your online presence with essential tools" cta="Get started">
                     {basicPlan.map((basic)=>(
                         <ul className=" h-fit text-sm">

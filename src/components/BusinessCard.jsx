@@ -4,7 +4,7 @@ const BusinessCard = () => {
   return (
     <div className="flex flex-col md:flex-row gap-10 justify-center items-center py-20">
       {/* Front Side */}
-      <div className="w-[350px] h-[200px] bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-between">
+      <div className="w-[350px] h-[200px] bg-[aliceblue] rounded-2xl shadow-lg p-6 flex flex-col justify-between">
         {/* Logo + Brand Name */}
         <div>
           <div className="w-fit">

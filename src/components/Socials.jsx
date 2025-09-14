@@ -11,7 +11,7 @@ import {
 const Socials = ()=>{
     return(
         <div className="socialNav">
-            <div className="w-80 h-12 flex flex-row justify-evenly items-center list-none">
+            <div className="sm:w-80 w-60 h-12 flex-row-center justify-evenly list-none">
                 <li>  <FontAwesomeIcon icon={faWhatsapp}  className="myIcons list-none"/> </li>
                 <li>  <FontAwesomeIcon icon={faYoutube}   className="myIcons"/> </li>
                 <li>  <FontAwesomeIcon icon={faXTwitter}  className="myIcons"/> </li>

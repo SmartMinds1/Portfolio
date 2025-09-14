@@ -33,7 +33,7 @@ export default function CaseStudies() {
           {case_studies.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl shadow hover:shadow-xl transition duration-300"
+              className="rounded-2xl bg-background shadow-lg hover:shadow-2xl transition duration-300"
             >
               <div className="overflow-hidden rounded-t-2xl">
                 <img
