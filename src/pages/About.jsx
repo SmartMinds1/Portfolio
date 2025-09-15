@@ -11,34 +11,33 @@ const About = () => {
             {/* SECTION 1 */}
             <div className="bg-primary w-full h-fit">
                 <Header/>
-                <div className="w-full h-[60vh] bg-primary flex flex-col items-center justify-between">
-                    <div className="w-full h-fit flex flex-row items-center justify-center flex-wrap mb-32">
-                        <p className="h-full w-1/3 font-bold text-3xl text-background flex flex-row items-center justify-center gap-2">| Get to know <span className="headerSpan text-soft-alert"> about us </span></p>
-                        <p className="h-full w-1/3 text-left flex items-center text-bg-dark brightness-90">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
+                <div className="w-full h-[60vh] flex-col-center justify-center">
+                    <div className="w-[90%] lg:w-[78%] h-fit flex flex-col items-center sm:flex-row justify-evenly flex-wrap mb-32 mt-8">
+                        <p className="h-fit w-full sm:w-1/2 lg:w-fit sm:pr-4 font-bold text-3xl text-background text-center sm:text-left">| Get to know <span className="headerSpan text-soft-alert"> about us </span></p>
+                        <p className="h-fit  sm:w-1/2 lg:w-110 w-full mt-4 sm:mt-0 text-left flex-row-center text-bg-dark brightness-90">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
                     </div>
                 </div>
-            </div>
 
-            {/* SECTION 2 */}
-            <div className="w-2/4 h-87 bg-primary m-auto translate-y-[-6rem] rounded-2xl bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center_-30px]">
-                <p className="text-background bg-primary w-1/3 text-2xl p-4 h-24"></p>
             </div>
+            {/* SECTION 2 */}
+            <div className="sm:w-1/2 w-[75%]  sm:h-87 h-70 bg-primary m-auto sm:translate-y-[-9.2rem] -translate-y-[6rem] rounded-2xl bg-[url('/aboutIntroTransformed.png')] bg-cover bg-center md:bg-[center_-25px] bg-no-repeat"></div>
+
 
             {/* SECTION3 */}
-            <div className="w-[60vw] h-50 pt-8 m-auto text-text text-center translate-y-[-40px]">
-                <p className="text-2xl ">From building stunning and secure websites to running targeted Google Ads that bring real customers</p>
-                <p className="w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
+            <div className="w-[90vw] h-fit md:w-[60vw] md:h-54 pt-8 m-auto text-text text-left sm:text-center -translate-y-10">
+                <p className="text-xl sm:text-2xl ">From building stunning and secure websites, to running targeted Google Ads that bring real customers</p>
+                <p className="w-[90%] sm:w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
             </div>
 
            {/* SECTION4 */}
-            <div className="h-100 w-[90vw] m-auto flex flex-row items-center justify-center">
+            <div className="h-100 w-[90vw] m-auto flex flex-row items-center justify-center flex-wrap gap-10 sm:gap-0">
                 {/* img div */}
-                <div className="w-1/3 h-4/5 translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
+                <div className="sm:w-1/3 min-w-[300px] h-4/5 sm:translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
                 {/*  services div */}
-                <div className="w-2/3 h-full bg-background shadow-xl flex flex-row items-center justify-end">
-                    <div className="w-4/5 h-full">
-                        <p className="h-fit w-full font-bold text-3xl text-primary flex flex-row items-center justify-start gap-2 pl-8 ">| Our <span className="headerSpan"> services </span></p>
-                        <div className="w-full h-7/8 flex flex-col items-left justify-evenly pl-[8vw]">
+                <div className="w-2/3 h-full bg-background shadow-xl flex flex-row items-center justify-start sm:justify-end min-w-[300px]">
+                    <div className="h-full w-full sm:w-4/5">
+                        <p className="h-fit w-full mb-8 sm:mb-0 font-bold text-3xl text-primary flex flex-row items-center justify-start gap-2 pl-8 ">| Our <span className="headerSpan"> services </span></p>
+                        <div className="w-full h-fit gap-6 sm:gap-0 sm:h-7/8 flex flex-col items-left justify-evenly pl-[8vw]">
                             <div>
                                 <h3>Web Design & Development</h3>
                                 <p className="text-text-muted">We Build Appealing, responsive websites that grow your business.</p>
@@ -61,7 +60,7 @@ const About = () => {
             <br /><br /><br /><br />
 
             {/* SECTION 5 */}
-            <div>
+            <div className="hidden">
                 {/* Header caption */}
                 <div>
                     <p className="header">| Why work <span className="headerSpan">with Us </span></p>
@@ -82,7 +81,7 @@ const About = () => {
             <br /><br /><br /><br />
 
             {/* SECTION 6 */}
-            <div className="w-full h-fit flex flex-row items-center justify-center">
+            <div className="hidden w-full h-fit flex flex-row items-center justify-center">
                 <div className="w-1/4 h-fit shadow-2xl pt-2 mr-10 flex flex-col items-center">
                     <div className="w-60 h-60 [clip-path:polygon(50%_0%,100%_50%,50%_100%,0%_50%)] bg-[url('/vission.png')] bg-contain bg-no-repeat bg-center bg-soft-alert shadow-2xl"></div>
                     <div className="w-60 h-60 translate-y-[-10px] [clip-path:polygon(50%_0%,100%_50%,50%_100%,0%_50%)] bg-[url('/mission.webp')] bg-cover bg-no-repeat bg-center shadow-2xl"></div>
@@ -104,7 +103,7 @@ const About = () => {
             <br /><br /><br /><br /><br /><br /><br />
 
             {/* SECTION 7 */}
-            <div>
+            <div className="hidden">
                 {/* heading */}
                 <div>
                     <p className="header">| Our<span className="headerSpan"> team </span></p>

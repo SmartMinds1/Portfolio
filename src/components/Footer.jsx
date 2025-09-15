@@ -61,7 +61,7 @@ const Footer = ()=> {
         </div>
 
         {/* footer copyright */}
-         <div className="flex-row-center flex-wrap w-full h-fit pt-4 pb-4 gap-2 sm:gap-0 text-bg-dark bg-[#1d1d25] text-sm">
+         <div className="flex-row-center flex-wrap w-full h-fit pt-4 pb-4 gap-2 sm:gap-0 text-bg-dark bg-[#1d1d25] text-xs">
             <div className="w-full sm:w-[55%] sm:h-full h-1/2 flex-row-center justify-center sm:justify-end">
                 <p>&copy; 2025 biznutritia</p>
             </div>
