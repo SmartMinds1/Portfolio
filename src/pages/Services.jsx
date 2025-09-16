@@ -21,7 +21,7 @@ const Services = () => {
 
                     <div className=" w-full md:w-1/3 h-full flex-row-center justify-center md:ml-4 lg:ml-0">
                         <div className="scale-80 sm:scale-90 md:scale-none w-58 h-80 bg-background shadow-2xl rotate-30 rounded-2xl">
-                            <div className="w-58 h-80 bg-[#89b0aed8] -rotate-30 -translate-x-18 rounded-2xl shadow-2xl p-4">
+                            <div className="w-58 h-80 bg-[#3b83f680] -rotate-30 -translate-x-18 rounded-2xl shadow-2xl p-4"> {/* bg-[#89b0aed8] */}
                                 <ul className="flex flex-col items-start justify-evenly h-full text-xl  list-disc p-4">
                                     <li className="text-background">Web Development</li>
                                     <li >Google Ads Management</li>

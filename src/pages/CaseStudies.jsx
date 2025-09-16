@@ -45,7 +45,7 @@ export default function CaseStudies() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
                 <p className="text-gray-600 mt-3">{project.description}</p>
-                <button onClick={()=> {setShowModal(true); setProjectCase(project.link);}} className="inline-block mt-4 px-5 py-2 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition duration-300"> View Details → </button>
+                <button onClick={()=> {setShowModal(true); setProjectCase(project.link);}} className="inline-block mt-4 px-5 py-2 bg-accent text-white rounded-xl shadow blue-shadow"> View Details → </button>
               </div>
             </div>
           ))}

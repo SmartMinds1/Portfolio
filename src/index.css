@@ -41,7 +41,7 @@
 }
 @layer utilities{
   .blue-shadow{
-    @apply hover:shadow-2xl hover:shadow-accent;
+    @apply hover:shadow-2xl hover:shadow-accent duration-300;
   }
   .soft-shadow{
     @apply hover:shadow-2xl hover:shadow-soft-alert;
