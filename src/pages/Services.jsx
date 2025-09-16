@@ -8,19 +8,19 @@ const Services = () => {
     return(
         <div className="bg-background">
             {/* SECTION 1 */}
-            <div className="bg-primary h-[100vh] w-full">
+            <div className="bg-primary h-fit lg:h-[100vh] w-full pb-4">
                 {/* Header */}
                 <Header/>
-                <div className="w-full h-7/8 flex flex-row items-center justify-center flex-wrap">
-                    <div className="w-1/2 h-1/2 flex-col-start justify-between">
-                        <div className=" pl-4 border-l-1 border-background w-110">
-                            <p className="h-full text-5xl text-background">Services Designed to Build & <span className=" text-soft-alert headerSpan"> Scale Your Business </span></p>
+                <div className="sm:gap-8 w-full h-fit lg:mt-6 sm:mt-10 mt-6 md:h-[80vh] flex flex-col md:flex-row items-left md:items-center justify-center md:justify-start lg:justify-center flex-wrap">
+                    <div className="w-full md:w-1/2 mb-4 pl-2 lg:ml-0 h-1/2 flex-col-start justify-between">
+                        <div className=" pl-4 border-l-1 border-background w-[70%] md:w-[100%] md:max-w-110">
+                            <p className="h-full text-4xl md:text-5xl text-background sm:w-110 md:w-full">Services Designed to Build & <span className=" text-soft-alert headerSpan"> Scale Your Business </span></p>
                         </div>
-                        <p className="text-sm text-bg-dark">Creating a powerful online presence by providing everything you need to succeed!</p>
+                        <p className="text-sm text-bg-dark mt-4 w-{95%] lg:w-full p-2">Creating a powerful online presence by providing everything you need to succeed!</p>
                     </div>
 
-                    <div className=" w-1/3 h-full flex flex-row items-center justify-center">
-                        <div className="w-58 h-80 bg-background shadow-2xl rotate-30 rounded-2xl">
+                    <div className=" w-full md:w-1/3 h-full flex-row-center justify-center md:ml-4 lg:ml-0">
+                        <div className="scale-80 sm:scale-90 md:scale-none w-58 h-80 bg-background shadow-2xl rotate-30 rounded-2xl">
                             <div className="w-58 h-80 bg-[#89b0aed8] -rotate-30 -translate-x-18 rounded-2xl shadow-2xl p-4">
                                 <ul className="flex flex-col items-start justify-evenly h-full text-xl  list-disc p-4">
                                     <li className="text-background">Web Development</li>
@@ -36,7 +36,7 @@ const Services = () => {
         <br /><br /><br />
 
             {/*  SECTION 2 */}
-            <div className="w-[80vw] m-auto h-[100vh]">
+            <div className="hidden w-[80vw] m-auto h-[100vh]">
                 <div>
                     <p className="header">| Modern  <span className="headerSpan">Websites </span></p>
                     <p className="w-4/5 text-md m-auto mt-4 text-text-muted text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
@@ -74,7 +74,7 @@ const Services = () => {
         <br /><br /><br />
 
             {/*  SECTION 3 */}
-            <div className="w-full m-auto h-[100vh] p-4 pl-[20vh] pr-[20vh]">
+            <div className="hidden w-full m-auto h-[100vh] p-4 pl-[20vh] pr-[20vh]">
                 <div>
                     <p className="header">| Google Ads  <span className="headerSpan">Management </span></p>
                     <p className="w-4/5 text-md m-auto mt-4 text-text-muted text-center">I set up and manage Google Ads campaigns that attract the right people at the right time, ensuring every click has the potential to become a customer</p>
@@ -112,7 +112,7 @@ const Services = () => {
 
 
            {/*  SECTION 4 */}
-            <div className="w-[80vw] m-auto h-[100vh]">
+            <div className=" hidden w-[80vw] m-auto h-[100vh]">
                 <div>
                     <p className="header">| Analytics &  <span className="headerSpan">Optimization </span></p>
                     <p className="w-4/5 text-md m-auto mt-4 text-text-muted text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
