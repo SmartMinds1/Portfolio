@@ -24,20 +24,20 @@ const About = () => {
 
 
             {/* SECTION3 */}
-            <div className="w-[90vw] h-fit md:w-[60vw] md:h-54 pt-8 m-auto text-text text-left sm:text-center -translate-y-10">
+            <div className="w-[90vw] h-fit md:w-[80vw] lg:w-[65vw] md:h-54 pt-8 m-auto text-text text-left sm:text-center -translate-y-10">
                 <p className="text-xl sm:text-2xl ">From building stunning and secure websites, to running targeted Google Ads that bring real customers</p>
                 <p className="w-[90%] sm:w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
             </div>
 
            {/* SECTION4 */}
-            <div className="h-100 w-[90vw] m-auto flex flex-row items-center justify-center flex-wrap gap-10 sm:gap-0">
+            <div className="h-100 w-[90vw] m-auto flex flex-row items-center justify-center flex-wrap lg:flex-nowrap gap-10 lg:gap-0 ">
                 {/* img div */}
-                <div className="sm:w-1/3 min-w-[300px] h-4/5 sm:translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
+                <div className="sm:w-1/3 min-w-[300px] h-4/5 lg:translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
                 {/*  services div */}
-                <div className="w-2/3 h-full bg-background shadow-xl flex flex-row items-center justify-start sm:justify-end min-w-[300px]">
-                    <div className="h-full w-full sm:w-4/5">
+                <div className="w-[95%] sm:w-[80%] h-full bg-background shadow-xl flex flex-row items-center justify-start sm:justify-end min-w-[300px]">
+                    <div className="h-full w-full lg:w-4/5">
                         <p className="h-fit w-full mb-8 sm:mb-0 font-bold text-3xl text-primary flex flex-row items-center justify-start gap-2 pl-8 ">| Our <span className="headerSpan"> services </span></p>
-                        <div className="w-full h-fit gap-6 sm:gap-0 sm:h-7/8 flex flex-col items-left justify-evenly pl-[8vw]">
+                        <div className="w-ful h-fit gap-6 sm:gap-0 sm:h-7/8 flex flex-col items-left justify-evenly pl-[8vw]">
                             <div>
                                 <h3>Web Design & Development</h3>
                                 <p className="text-text-muted">We Build Appealing, responsive websites that grow your business.</p>
