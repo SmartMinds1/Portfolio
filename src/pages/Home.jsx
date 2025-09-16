@@ -59,7 +59,7 @@ const Home = () => {
             <br />
 
             {/* This is the home page body section, SECTION1 */}
-            <div className="w-[90vw] h-fit md:w-[60vw] md:h-54 pt-8 m-auto text-text text-left sm:text-center md:mt-4">
+            <div className="w-[90vw] h-fit md:w-[80vw] lg:w-[65vw] md:h-54 pt-8 m-auto text-text text-left sm:text-center md:mt-4">
                 <p className="text-xl sm:text-2xl ">From building stunning and secure websites, to running targeted Google Ads that bring real customers</p>
                 <p className="w-[90%] sm:w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
             </div>

@@ -14,7 +14,7 @@ const About = () => {
                 <div className="w-full h-[60vh] flex-col-center justify-center">
                     <div className="w-[90%] lg:w-[78%] h-fit flex flex-col items-center sm:flex-row justify-evenly flex-wrap mb-32 mt-8">
                         <p className="h-fit w-full sm:w-1/2 lg:w-fit sm:pr-4 font-bold text-3xl text-background text-center sm:text-left">| Get to know <span className="headerSpan text-soft-alert"> about us </span></p>
-                        <p className="h-fit  sm:w-1/2 lg:w-110 w-full mt-4 sm:mt-0 text-left flex-row-center text-bg-dark brightness-90">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
+                        <p className="h-fit text-sm sm:text-md sm:w-1/2 lg:w-110 w-full mt-4 sm:mt-0 text-left flex-row-center text-bg-dark brightness-90">Our results are measured in your success, real growth, higher traffic, and more customers backed by proven numbers!</p>
                     </div>
                 </div>
 
@@ -30,14 +30,14 @@ const About = () => {
             </div>
 
            {/* SECTION4 */}
-            <div className="h-100 w-[90vw] m-auto flex flex-row items-center justify-center flex-wrap lg:flex-nowrap gap-10 lg:gap-0 ">
+            <div className="h-fit w-[90vw] m-auto flex flex-row items-center justify-center flex-wrap lg:flex-nowrap gap-10 lg:gap-0 ">
                 {/* img div */}
-                <div className="sm:w-1/3 min-w-[300px] h-4/5 lg:translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
+                <div className="sm:w-1/3 min-w-[300px] h-[20rem] lg:translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
                 {/*  services div */}
-                <div className="w-[95%] sm:w-[80%] h-full bg-background shadow-xl flex flex-row items-center justify-start sm:justify-end min-w-[300px]">
-                    <div className="h-full w-full lg:w-4/5">
-                        <p className="h-fit w-full mb-8 sm:mb-0 font-bold text-3xl text-primary flex flex-row items-center justify-start gap-2 pl-8 ">| Our <span className="headerSpan"> services </span></p>
-                        <div className="w-ful h-fit gap-6 sm:gap-0 sm:h-7/8 flex flex-col items-left justify-evenly pl-[8vw]">
+                <div className="w-[95%] sm:w-[80%] h-full bg-background shadow-xl flex-row-center justify-start sm:justify-end min-w-[300px]">
+                    <div className="h-fit w-full lg:w-4/5">
+                        <p className="h-fit w-full font-bold text-3xl text-primary flex-row-center justify-start gap-2 pl-8 ">| Our <span className="headerSpan"> services </span></p>
+                        <div className="w-ful h-fit min-h-100 sm:h-7/8 flex flex-col items-left justify-evenly pl-[8vw]">
                             <div>
                                 <h3>Web Design & Development</h3>
                                 <p className="text-text-muted">We Build Appealing, responsive websites that grow your business.</p>
@@ -60,17 +60,18 @@ const About = () => {
             <br /><br /><br /><br />
 
             {/* SECTION 5 */}
-            <div className="hidden">
+            <div className="h-fit w-full">
                 {/* Header caption */}
                 <div>
                     <p className="header">| Why work <span className="headerSpan">with Us </span></p>
-                    <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">We’ve managed to offer seamless business solutions country-wide. Here's why you should partner with us__</p>
+                    <p className="m-auto mt-4 text-text-muted w-[90%] md:w-[70%] lg:w-[50%] text-md text-left sm:text-center">We’ve managed to offer seamless business solutions country-wide. Here's why you should partner with us__</p>
                 </div>
 
                 <br/>
                 <br/>
+
                 {/* key selling points */}
-                <div>
+                <div className="h-fit">
                     <p className="whyUs"> <FontAwesomeIcon icon={faCheckCircle} className="whyCheckbox"></FontAwesomeIcon>Quility services within your budget</p>
                     <p className="whyUs"> <FontAwesomeIcon icon={faCheckCircle} className="whyCheckbox"></FontAwesomeIcon>Fast, Appealing, secure & Scalable websites</p>
                     <p className="whyUs"> <FontAwesomeIcon icon={faCheckCircle} className="whyCheckbox"></FontAwesomeIcon>Great marketting skills to promote your business</p>
@@ -81,12 +82,12 @@ const About = () => {
             <br /><br /><br /><br />
 
             {/* SECTION 6 */}
-            <div className="hidden w-full h-fit flex flex-row items-center justify-center">
-                <div className="w-1/4 h-fit shadow-2xl pt-2 mr-10 flex flex-col items-center">
+            <div className="w-full h-fit flex-row-center justify-center flex-wrap gap-10 sm:gap-5">
+                <div className="w-1/4 min-w-75 sm:min-w-62 md:min-w-75 lg:min-w-80 h-fit shadow-2xl pt-2 md:mr-10 flex-col-center">
                     <div className="w-60 h-60 [clip-path:polygon(50%_0%,100%_50%,50%_100%,0%_50%)] bg-[url('/vission.png')] bg-contain bg-no-repeat bg-center bg-soft-alert shadow-2xl"></div>
                     <div className="w-60 h-60 translate-y-[-10px] [clip-path:polygon(50%_0%,100%_50%,50%_100%,0%_50%)] bg-[url('/mission.webp')] bg-cover bg-no-repeat bg-center shadow-2xl"></div>
                 </div>
-                <div className="w-1/2 h-118 flex flex-col items-center justify-evenly gap-10">
+                <div className=" w-[90%] sm:w-1/2 h-fit md:h-118 flex-col-center justify-evenly gap-10">
                     <div className="w-full h-fit">
                         <h2 className="missionVission">Our <br /> Vission</h2>
                         <p className="text-md text-left text-text-muted">To become the go-to partner for businesses that want both cutting-edge technology and effective digital marketing in one place — creating online experiences that inspire trust, drive sales, and fuel long-term growth.
@@ -103,15 +104,15 @@ const About = () => {
             <br /><br /><br /><br /><br /><br /><br />
 
             {/* SECTION 7 */}
-            <div className="hidden">
+            <div>
                 {/* heading */}
                 <div>
                     <p className="header">| Our<span className="headerSpan"> team </span></p>
-                    <p className="w-1/2 text-md m-auto mt-4 text-text-muted text-center">Behind every successful project is a dedicated team. We bring together creativity, technical expertise, and marketing insight to ensure your business not only looks good online but also grows steadily with real results.</p>
+                    <p className="m-auto mt-4 text-text-muted w-[90%] md:w-[70%] lg:w-[50%] text-md text-left sm:text-center">Behind every successful project is a dedicated team. We bring together creativity, technical expertise, and marketing insight to ensure your business not only looks good online but also grows steadily with real results.</p>
                 </div>
                       <br /><br /><br />
                 {/*Team div */}
-                <div className="w-2/3 h-fit m-auto flex flex-row items-center justify-evenly gap-4">
+                <div className="w-[95%] md:w-[85%] lg:w-2/3 h-fit m-auto flex-row-center justify-evenly flex-wrap gap-4">
                     <TeamCard memberName="Gretchen Paul" memberDesc="Managing director"/>
                     <TeamCard memberName="Bruno Marks" memberDesc="Our CEO"/>
                     <TeamCard memberName="Fave Mwangi" memberDesc="Senior HR"/>
@@ -125,7 +126,7 @@ const About = () => {
                 <p className="w-full text-center">Let’s build it, launch it, and grow it together &nbsp;&nbsp;&nbsp;&nbsp; <button className="btn-primary">Book a Free Consultation</button></p>
               </div>
 
-              <br /><br /><br /><br /><br /><br />
+              <br /><br /><br />
 
               <Footer/>
         </div>

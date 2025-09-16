@@ -41,10 +41,10 @@
 }
 @layer utilities{
   .blue-shadow{
-    @apply hover:shadow-2xl shadow-accent;
+    @apply hover:shadow-2xl hover:shadow-accent;
   }
   .soft-shadow{
-    @apply hover:shadow-2xl shadow-soft-alert;
+    @apply hover:shadow-2xl hover:shadow-soft-alert;
   }
   .flex-row-center{
     @apply flex flex-row items-center;
@@ -115,7 +115,7 @@
 
   /* For the ___why us___ selling points abt page */
   .whyUs{
-    @apply w-2/5 h-16 mb-4 flex items-center m-auto gap-2 pl-4 shadow-md rounded-xl text-text;
+    @apply w-[90%] sm:w-[60%] md:w-[50%] lg:w-2/5 h-16 mb-4 flex items-center m-auto gap-2 pl-4 shadow-md rounded-xl text-text hover:shadow-xl duration-300;
   }
   .whyCheckbox{
     @apply text-3xl text-secondary;
