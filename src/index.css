@@ -46,6 +46,10 @@
   .soft-shadow{
     @apply hover:shadow-2xl hover:shadow-soft-alert;
   }
+  .card-scale{
+    @apply hover:scale-95 duration-500;
+  }
+
   .flex-row-center{
     @apply flex flex-row items-center;
   }
@@ -136,5 +140,6 @@
  .callEmailBox{
   @apply w-full h-fit  flex flex-row items-center justify-start mb-8;
  }
+ 
 }
 

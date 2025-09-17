@@ -21,7 +21,7 @@ const Services = () => {
 
                     <div className=" w-full md:w-1/3 h-full flex-row-center justify-center md:ml-4 lg:ml-0">
                         <div className="scale-80 sm:scale-90 md:scale-none w-58 h-80 bg-background shadow-2xl rotate-30 rounded-2xl">
-                            <div className="w-58 h-80 bg-[#3b83f680] -rotate-30 -translate-x-18 rounded-2xl shadow-2xl p-4"> {/* bg-[#89b0aed8] */}
+                            <div className="w-58 h-80 bg-[#89b0aed8] -rotate-30 -translate-x-18 rounded-2xl shadow-2xl p-4">
                                 <ul className="flex flex-col items-start justify-evenly h-full text-xl  list-disc p-4">
                                     <li className="text-background">Web Development</li>
                                     <li >Google Ads Management</li>
@@ -36,32 +36,31 @@ const Services = () => {
         <br /><br /><br />
 
             {/*  SECTION 2 */}
-            <div className="hidden w-[80vw] m-auto h-[100vh]">
+            <div className="w-[95%] lg:w-[80vw] m-auto h-fit">
                 <div>
                     <p className="header">| Modern  <span className="headerSpan">Websites </span></p>
-                    <p className="w-4/5 text-md m-auto mt-4 text-text-muted text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
+                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
                 </div>
 
                 <br /><br />
 
-                <div className="flex flex-row items-center justify-center gap-12">
+                <div className="h-fit flex flex-col md:flex-row items-center justify-center md:gap-2 lg:gap-12">
                     {/*  image div */}
-                    <div className="w-1/3 h-[65vh] shadow-2xl rounded-2xl bg-[url('/modernWebsites.png')] bg-cover bg-no-repeat"></div>
+                    <div className="card-scale w-[95%] h-[86vh] sm:w-[65%]  md:w-[40%] lg:w-1/3 md:h-[25.8rem] shadow-2xl rounded-2xl bg-[url('/modernWebsites.png')] bg-cover bg-no-repeat bg-center-top"></div>
 
-                    <div className="w-4/7 h-fit p-4">
+                    <div className="w-[100%] sm:w-[1/2] md:w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
-                        <ul className="pl-8 text-text-muted">
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> Custom website design (built for your brand)</li>
+                        <ul className="pl-8 flex flex-col gap-2 text-text-muted">
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> <span>Custom website design (built for your brand)</span></li>
                             <li className="list-disc ml-6"> Responsive design</li>
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> High-performance speed optimization</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> High-performance speed optimization</li>
                             <li className="list-disc ml-6"> Secure and scalable back-end development</li>
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> E-commerce setup (if needed)</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> E-commerce setup (if needed)</li>
                             <li className="list-disc ml-6"> SEO-friendly structure for better search visibility</li>
                         </ul>
                         <br />
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
                         <p  className="text-text-muted">Instead of just “having a website,” you’ll have a sales tool that loads fast, looks professional, and guides visitors to take action.</p>
-
 
                         <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
                             <button className="btn-primary text-background bg-primary m-0">book now</button>
@@ -74,21 +73,24 @@ const Services = () => {
         <br /><br /><br />
 
             {/*  SECTION 3 */}
-            <div className="hidden w-full m-auto h-[100vh] p-4 pl-[20vh] pr-[20vh]">
+            <div className="w-[95%] lg:w-[80vw] m-auto h-fit"> {/* p-4 pl-[20vh] pr-[20vh] */}
                 <div>
                     <p className="header">| Google Ads  <span className="headerSpan">Management </span></p>
-                    <p className="w-4/5 text-md m-auto mt-4 text-text-muted text-center">I set up and manage Google Ads campaigns that attract the right people at the right time, ensuring every click has the potential to become a customer</p>
+                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">I set up and manage Google Ads campaigns that attract the right people at the right time, ensuring every click has the potential to become a customer</p>
                 </div>
 
                 <br /><br />
 
-                <div className="flex flex-row items-center justify-center gap-12">
-                    <div className="w-4/7 h-fit p-4">
+                <div className="h-fit flex flex-col md:flex-row items-center justify-center md:gap-2 lg:gap-12">
+                    {/*  image div */}
+                    <div className="card-scale md:hidden w-[95%] h-[86vh] sm:w-[65%]  md:w-[40%] lg:w-1/3 md:h-[25.8rem] shadow-2xl rounded-2xl bg-[url('/googleAds.png')] bg-[45%] bg-cover bg-no-repeat"></div>
+
+                    <div className="w-[100%] sm:w-[1/2] md:w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
-                        <ul className="pl-8 text-text-muted">
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> Display Ads (build awareness with visual banners)</li>
+                        <ul className="pl-8 flex flex-col gap-2 text-text-muted">
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> Display Ads (build awareness with visual banners)</li>
                             <li className="list-disc ml-6"> Search Ads </li>
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> YouTube Ads (reach audiences with engaging video campaigns)</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> YouTube Ads (reach audiences with engaging video campaigns)</li>
                             <li className="list-disc ml-6"> Conversion tracking setup</li>
                         </ul>
                         <br />
@@ -101,8 +103,8 @@ const Services = () => {
                         </div>
                     </div>
 
-                    {/*  image div */}
-                    <div className="w-1/3 h-[65vh] shadow-2xl rounded-2xl bg-[url('/googleAds.png')] bg-cover bg-[45%] bg-no-repeat"></div>
+                    {/* second image div which shows on medium devices */}
+                    <div className="card-scale hidden md:block w-[95%] h-[86vh] sm:w-[65%]  md:w-[40%] lg:w-1/3 md:h-[25.8rem] shadow-2xl rounded-2xl bg-[url('/googleAds.png')] bg-[45%] bg-cover bg-no-repeat"></div>
                 </div>
             </div>
 
@@ -112,24 +114,24 @@ const Services = () => {
 
 
            {/*  SECTION 4 */}
-            <div className=" hidden w-[80vw] m-auto h-[100vh]">
+            <div className="w-[95%] lg:w-[80vw] m-auto h-fit">
                 <div>
                     <p className="header">| Analytics &  <span className="headerSpan">Optimization </span></p>
-                    <p className="w-4/5 text-md m-auto mt-4 text-text-muted text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
+                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
                 </div>
 
                 <br /><br />
 
-                <div className="flex flex-row items-center justify-center gap-12">
+                <div className="h-fit flex flex-col md:flex-row items-center justify-center md:gap-2 lg:gap-12">
                     {/*  image div */}
-                    <div className="w-1/3 h-[65vh] shadow-2xl rounded-2xl bg-[url('/analytics.png')] bg-cover bg-[70%] bg-no-repeat"></div>
+                    <div className="card-scale w-[95%] h-[86vh] sm:w-[65%]  md:w-[40%] lg:w-1/3 md:h-[25.8rem] shadow-2xl rounded-2xl bg-[url('/analytics.png')] bg-cover bg-[70%] bg-no-repeat"></div>
 
-                    <div className="w-4/7 h-fit p-4">
+                    <div className="w-[100%] sm:w-[1/2] md:w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
-                        <ul className="pl-8 text-text-muted">
-                        <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> Google Analytics (GA4) setup & reporting</li>
+                        <ul className="pl-8 flex flex-col gap-2 text-text-muted">
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> Google Analytics (GA4) setup & reporting</li>
                             <li className="list-disc ml-6"> Custom conversion tracking (sales, signups, calls, etc.) </li>
-                            <li> <FontAwesomeIcon icon={faCheck} className="text-soft-alert"/> Performance dashboards for easy monitoring </li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> Performance dashboards for easy monitoring </li>
                             <li className="list-disc ml-6"> Ongoing optimization (continuous tweaks to improve results) </li>
                         </ul>
                         <br />

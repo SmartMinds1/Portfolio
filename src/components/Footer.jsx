@@ -37,7 +37,7 @@ const Footer = ()=> {
                         <p className="font-bold text-lg">support</p>
                         <ul className="text-bg-dark flex flex-col justify-between gap-2 footerLink">
                             <li>google ADs community</li>
-                            <li>smartADsupport</li>
+                            <li>support@biznutritia</li>
                             <li>FAQs</li>
                         </ul>
                     </div>
@@ -63,7 +63,7 @@ const Footer = ()=> {
         {/* footer copyright */}
          <div className="flex-row-center flex-wrap w-full h-fit pt-4 pb-4 gap-2 sm:gap-0 text-bg-dark bg-[#1d1d25] text-xs">
             <div className="w-full sm:w-[55%] sm:h-full h-1/2 flex-row-center justify-center sm:justify-end">
-                <p>&copy; 2025 biznutritia</p>
+                <p>&copy; 2025 biznutritia.com</p>
             </div>
             <div className="w-full sm:w-[45%] h-1/2 sm:h-full flex-row-center justify-evenly">  
                 <p className="text-[#7aacfd] border-b-1 border-text-muted">Terms of service</p>
