@@ -39,7 +39,7 @@ const TestimonialCard = ({rateImg, rateMessage, rateName, cardRating, goForward,
     return(
     <div className="h-fit md:w-[70vw] w-full m-auto flex-row-center justify-evenly flex-wrap mt-16 shadow-xl p-2 rounded-xl">
         {/* Image div */}
-        <div className="w-60 h-60 rounded-full bg-top bg-cover" style={{ backgroundImage: `url(${rateImg})` }}> </div>
+        <div className="w-60 h-60 rounded-full bg-top bg-cover" style={{ backgroundImage: `url(${rateImg})`}}> </div>
         <div className="w-[98%] md:w-160 h-fit mt-4">
             <div className="w-[80%] md:w-140 sm:h-20 h-fit m-auto flex-row-center flex-wrap-reverse  gap-2 mb-2">
                 {/* lets now render the stars */}

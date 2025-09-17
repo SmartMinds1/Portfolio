@@ -135,7 +135,7 @@ const Services = () => {
                             <li className="list-disc ml-6"> Ongoing optimization (continuous tweaks to improve results) </li>
                         </ul>
                         <br />
-                        <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
+                        <p className="text-2xl font-bold text-accent pb-2 pt-4">Client Benefit</p>
                         <p  className="text-text-muted">Instead of just “having a website,” you’ll have a sales tool that loads fast, looks professional, and guides visitors to take action.</p>
 
 
