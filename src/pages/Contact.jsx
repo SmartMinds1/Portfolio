@@ -1,12 +1,48 @@
-import React from "react";
 import WhiteHeader from "../components/WhiteHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHomeAlt, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 import FAQcard from "../components/FAQcard";
 import Footer from "../components/Footer";
-/* import { faCheckCircle } from "@fortawesome/free-solid-svg-icons"; */
+
+import React, {useState, useEffect} from "react";
+import axios from "axios";
+import Alert from "../components/Alert";
+import GenModal from "../components/GenModal";
 
 const Contact = ()=> {
+      //states for input fields and feedback message from the API
+      const[formData, setFormData] = useState({username:"", email:"", message:""});
+      const[responseMessage, setResponseMessage] = useState("");
+      const [showModal, setShowModal] = useState(false);
+
+      //The handle change function sets the formdata with the user inputs
+      const handleChange = (e)=>{
+        setFormData({...formData, [e.target.name]: e.target.value})
+      }
+
+      //handleSubmit sends the user inputs to the database
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log("submitting user message", formData);
+
+          try {
+              const response = await axios.post("http://localhost:5000/api/messages", formData);
+              setResponseMessage(response.data.message);
+              setFormData({username:"", email:"", message:""});
+              }
+              
+          catch(error){
+            setResponseMessage("ERROR! sending the message, Kindly try again later!");
+          }
+      }
+
+
+      // Show modal only when responseMessage changes and is not empty
+      useEffect(() => {
+        if (responseMessage) {
+           setShowModal(true);
+        }
+      }, [responseMessage]);
 
     return(
         <div className="bg-background">
@@ -56,37 +92,55 @@ const Contact = ()=> {
                 {/* chart Form Box */}
                 <div className="w-full flex md:flex-row flex-col flex-wrap items-center justify-evenly gap-8 lg:gap-0">
                       {/* chartForm */}
+                      <form onSubmit={handleSubmit}>
                         <div className="w-[95%] sm:w-140 h-fit lg:h-110 bg-background p-4 md:p-8 rounded-xl">
                             <div className="w-full flex flex-col sm:flex-row gap-4">
                               <input 
                                 className="w-full sm:w-[40%] shadow-md h-12 p-4"
                                 type="text"
                                 placeholder="Your name"
+                                name="username"
+                                id="username"
                                 autoComplete="on"
+                                maxLength="30"
+                                minLength="3"
+                                required
+                                value={formData.username}
+                                onChange={handleChange}
                               />
                               <input
                                 className="w-full sm:w-[60%] shadow-md h-12 p-4" 
-                                type="text"
-                                placeholder="Email"
+                                type="email"
+                                name="email"
                                 autoComplete="on"
+                                id="email"
+                                maxLength="40"
+                                required
+                                placeholder="Email"
+                                value={formData.email}
+                                onChange={handleChange}
                               />
                             </div>
 
                             <textarea 
                               className="shadow-md w-[100%] h-60 resize-none p-4 mt-10 "
-                              name="" 
-                              id="" 
+                              id="message"
+                              name="message"
+                              value={formData.message}
+                              onChange={handleChange}
+                              required
                               placeholder="Your message"
                             />
                             
                             <button className="btn-primary text-background bg-accent mt-4 w-40">send now</button>
                         </div>
+                      </form>
 
                       {/* Form caption */}
-                        <div className="w-fit sm:scale-none sm:w-[25rem] h-[70vh] flex flex-col items-center justify-evenly">
-                               <div class=" w-64 h-64 rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] bg-[url('/CasualConversation.webp')] bg-cover bg-[center] bg-no-repeat bg-soft-alert"></div>
-                               <p className=" w-[80%] text-center text-bg-dark">Fill out the form, and I’ll get back to you within<span className="text-background font-bold text-xl"> 24 hours.</span> </p>
-                        </div>
+                      <div className="w-fit sm:scale-none sm:w-[25rem] h-[70vh] flex flex-col items-center justify-evenly">
+                              <div class=" w-64 h-64 rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] bg-[url('/CasualConversation.webp')] bg-cover bg-[center] bg-no-repeat bg-soft-alert"></div>
+                              <p className=" w-[80%] text-center text-bg-dark">Fill out the form, and I’ll get back to you within<span className="text-background font-bold text-xl"> 24 hours.</span> </p>
+                      </div>
                 </div>
             </div>
 
@@ -143,6 +197,22 @@ const Contact = ()=> {
             <div className="w-full h-fit">
                 <p className="w-[90%] lg:w-[70%] gap-6 m-auto text-center text-text-muted flex flex-row-center justify-evenly flex-wrap ">Ready to take your business online the smart way?<button className="btn-primary mt-3">Get started</button></p>
             </div>
+
+
+    {/*  Displaying the response messsage using a pop up modal */}  
+              <GenModal isOpen={showModal} onClose={() => {
+                    setShowModal(false); 
+                    setResponseMessage("");//reset so that to trigger useEffect on the second time
+                  }}>
+
+                  <Alert onClose={() => {
+                    setShowModal(false); 
+                    setResponseMessage("");
+                  }}
+                  >
+                    <p className="responseMessage">{responseMessage}</p>
+                  </Alert>
+              </GenModal>
 
             <br /><br /><br /><br /><br /><br />
 
