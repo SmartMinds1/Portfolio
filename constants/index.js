@@ -68,7 +68,7 @@ export const projectData = {
     image: "https://via.placeholder.com/1200x600",
     client: "TrendyWear, an online clothing brand",
     problem:
-      "They had low sales despite good traffic. Their website was outdated and ads were underperforming.",
+      "They had low sales despite of good traffic. Their website was outdated and ads were underperforming.",
     solution:
       "We redesigned their store, optimized checkout, and ran smarter Google Ads campaigns.",
     results: [

@@ -45,7 +45,11 @@ const Modal = ({ isOpen, onClose, children}) => {
         zIndex: 1000,
       }}
     >
-      {children}
+      <div ref={modalRef} className="w-fit h-[100vh] p-0 modal-content overflow-y-scroll">
+         
+        {children}
+
+      </div>
 
     </div>
   );
