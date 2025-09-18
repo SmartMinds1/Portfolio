@@ -46,7 +46,7 @@ const Footer = ()=> {
                         <p className="font-bold text-lg">Let's connect</p>
                         <ul className="footerList gap-6 w-fit sm:w-100 text-bg-dark footerLink">
                             <li><FontAwesomeIcon icon={faMobileAlt} className="text-xl text-background mr-3" /> +254 115 154 402  </li>
-                            <li><FontAwesomeIcon icon={faEnvelope} className="text-xl text-background mr-3" /> smartadsdigital@gmail.com  </li>
+                            <li><FontAwesomeIcon icon={faEnvelope} className="text-xl text-background mr-3" /> biznutritia@gmail.com  </li>
                             <li className="flex-row-start pl-1 gap-1"><FontAwesomeIcon icon={faLocationDot} className="text-xl text-background mr-3" /> <span> Twiga towers, 6th floor, Room 606, Murang'a Road, Opp Meridian Court Hotel, Nairobi Kenya </span> </li>
                         </ul>
                     </div>
