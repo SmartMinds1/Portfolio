@@ -26,7 +26,7 @@ const About = () => {
             {/* SECTION3 */}
             <div className="w-[90vw] h-fit md:w-[80vw] lg:w-[65vw] md:h-54 pt-8 m-auto text-text text-left sm:text-center -translate-y-10">
                 <p className="text-xl sm:text-2xl ">From building stunning and secure websites, to running targeted Google Ads that bring real customers</p>
-                <p className="w-[90%] sm:w-2/3 text-md m-auto mt-4 text-text-muted text-left">I help businesses turn their online presence into a growth machine—so you can focus on what you do best !</p>
+                <p className="w-[90%] sm:w-2/3 text-md m-auto mt-4 text-text-muted text-left">We help businesses turn their online presence into a growth machine so you can focus on what you do best !</p>
             </div>
 
            {/* SECTION4 */}
@@ -96,7 +96,7 @@ const About = () => {
 
                     <div className="w-full h-fit">
                         <h2 className="missionVission">Our <br /> Mission</h2>
-                        <p className="text-md text-left text-text-muted">To design and develop websites that are not only fast and reliable but also built to convert. By combining full-stack development with smart Google Ads strategies, I help businesses attract the right audience and turn clicks into loyal customers.</p>
+                        <p className="text-md text-left text-text-muted">To design and develop websites that are not only fast and reliable but also built to convert. By combining full-stack development with smart Google Ads strategies, we help businesses attract the right audience and turn clicks into loyal customers.</p>
                     </div>
                 </div>
             </div>

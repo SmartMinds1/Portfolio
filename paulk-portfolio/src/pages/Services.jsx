@@ -39,7 +39,7 @@ const Services = () => {
             <div className="w-[95%] lg:w-[80vw] m-auto h-fit">
                 <div>
                     <p className="header">| Modern  <span className="headerSpan">Websites </span></p>
-                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
+                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">Your website is the first impression your customers get of your business. We design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
                 </div>
 
                 <br /><br />
@@ -76,7 +76,7 @@ const Services = () => {
             <div className="w-[95%] lg:w-[80vw] m-auto h-fit"> {/* p-4 pl-[20vh] pr-[20vh] */}
                 <div>
                     <p className="header">| Google Ads  <span className="headerSpan">Management </span></p>
-                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">I set up and manage Google Ads campaigns that attract the right people at the right time, ensuring every click has the potential to become a customer</p>
+                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">We set up and manage Google Ads campaigns that attract the right people at the right time, ensuring every click has the potential to become a customer</p>
                 </div>
 
                 <br /><br />
@@ -117,7 +117,7 @@ const Services = () => {
             <div className="w-[95%] lg:w-[80vw] m-auto h-fit">
                 <div>
                     <p className="header">| Analytics &  <span className="headerSpan">Optimization </span></p>
-                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">Your website is the first impression your customers get of your business. I design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
+                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">Your website is the first impression your customers get of your business. We design and develop websites that are fast, responsive, and optimized for both user experience and conversions</p>
                 </div>
 
                 <br /><br />
