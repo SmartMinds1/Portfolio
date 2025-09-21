@@ -52,8 +52,7 @@ router.post(
     const cleanedEmail = email.trim().replace(/[ \t]{3,}/g, "  ");
     const cleanedMessage = message.trim().replace(/[ \t]{3,}/g, "  ");
 
-    try {
-      // Insert into the database
+    /*    try {
       const result = await pool.query(
         "INSERT INTO smartygrand_messages (username, email, message) VALUES ($1, $2, $3) RETURNING *",
         [cleanedUsername, cleanedEmail, cleanedMessage]
@@ -63,6 +62,45 @@ router.post(
         message:
           "Message submitted SUCCESSFULLY! Kindly wait for our feedback.",
         data: result.rows[0],
+      });
+    } catch (err) {
+      console.error("Error inserting message:", err);
+      res
+        .status(500)
+        .json({ error: "Internal Server Error. Kindly try again later!" });
+    } */
+
+    try {
+      // 1. Check if the user already exists
+      let userResult = await pool.query(
+        "SELECT id FROM biznutritia_users WHERE email = $1",
+        [cleanedEmail]
+      );
+
+      let userId;
+
+      if (userResult.rows.length === 0) {
+        // 2. If user does not exist, insert into users table
+        const newUser = await pool.query(
+          "INSERT INTO biznutritia_users (username, email) VALUES ($1, $2) RETURNING id",
+          [cleanedUsername, cleanedEmail]
+        );
+        userId = newUser.rows[0].id;
+      } else {
+        // 3. If user exists, reuse the id
+        userId = userResult.rows[0].id;
+      }
+
+      // 4. Insert message into messages table, linked by user_id
+      const messageResult = await pool.query(
+        "INSERT INTO biznutritia_messages (user_id, message) VALUES ($1, $2) RETURNING *",
+        [userId, cleanedMessage]
+      );
+
+      // 5. Send response
+      res.status(201).json({
+        message: "Message submitted SUCCESSFULLY! Will get back to you soon...",
+        data: messageResult.rows[0],
       });
     } catch (err) {
       console.error("Error inserting message:", err);

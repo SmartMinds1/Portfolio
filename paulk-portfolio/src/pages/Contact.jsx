@@ -1,6 +1,6 @@
 import WhiteHeader from "../components/WhiteHeader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faHomeAlt, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeCircleCheck, faHomeAlt, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 import FAQcard from "../components/FAQcard";
 import Footer from "../components/Footer";
 
@@ -75,7 +75,7 @@ const Contact = ()=> {
                             <p>Call Us : <span className="text-text-muted">+254 115 154 402</span> </p>
                         </div>
                         <div className="callEmailBox">
-                            <div className="contactIconBox bg-background"> <FontAwesomeIcon icon={faEnvelope} className="contactIcon"></FontAwesomeIcon></div>
+                            <div className="contactIconBox bg-background"> <FontAwesomeIcon icon={faEnvelopeCircleCheck} className="contactIcon"></FontAwesomeIcon></div>
                             <p>Email Us : <span className="text-text-muted">biznutritia@gmail.com</span> </p>
                         </div>
                     </div>
