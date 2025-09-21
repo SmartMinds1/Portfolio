@@ -13,13 +13,44 @@ import {
     faAngleRight
   } from "@fortawesome/free-solid-svg-icons";
 
+  //for animations
+  import { gsap } from "gsap";
+  import { useGSAP } from "@gsap/react"
+  import {ScrollTrigger} from "gsap/all";
+      
+  gsap.registerPlugin(ScrollTrigger);
+
 const Header = ()=> {
   //mobile menu control 
   const [isOpen, setIsOpen] = useState(false);
+
+  //Gsap animation
+    useGSAP(() => {
+        const navTween = gsap.timeline({
+            scrollTrigger: {
+            trigger: ".nav",
+            start: "bottom top",
+            scrub: true,
+            },
+        });
+    
+        navTween.fromTo(
+            ".nav",
+            {
+            backgroundColor: "transparent",
+            },
+            {
+            backgroundColor: "rgba(250,249,249,0.7)",
+            backdropFilter:'blur(5px)',
+            duration: 2,
+            ease: "power1.inOut",
+            }
+        );
+        }, []);
   
     return(
       <>
-        <div className="w-[97%] h-12 m-auto flex-row-end justify-between sm:h-14">
+        <div className="w-[100%] h-12 m-auto flex-row-end justify-between sm:h-14 nav fixed top-0 left-0 z-50 p-2">
             <div className="w-40 flex-row-end justify-start">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[url('/bigStarWhite.png')] bg-contain bg-no-repeat bg-center rotate-270"></div>
                 <p className="text-background text-xl sm:text-2xl font-extrabold">bizN<span className="text-accent text-xl sm:text-2xl font-light">utritia</span></p>
@@ -36,7 +67,7 @@ const Header = ()=> {
                 </ul>
             </div>
 
-            <button className="hidden sm:block text-background bg-soft-alert m-0 rounded-3xl w-20 md:w-28 h-10 btnHover translate-y-3 soft-shadow">Call Now</button>
+            <button className="hidden sm:block text-background bg-soft-alert m-0 rounded-3xl w-20 md:w-28 h-10 btnHover soft-shadow">Call Now</button>
             
             {/* Mobile menu button */}
             <div className="mobile-menu-button sm:hidden">

@@ -14,6 +14,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong, faLaptopCode, faBullhorn} from "@fortawesome/free-solid-svg-icons";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
+//GSAP
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react"
+
 const Home = () => {
         /* Index for looping testimonial cards */
         const[currentIndex, setCurrentIndex] = useState(0);
@@ -37,6 +41,37 @@ const Home = () => {
             setCurrentIndex((prev)=> ((prev-1)+testimonialCards.length) % testimonialCards.length);
         }
         
+
+
+
+        //Lets now add taste by animating things on homepage
+
+               //Gsap animation
+               useGSAP(() => {
+                const navTween = gsap.timeline({
+                  scrollTrigger: {
+                    trigger: ".nav",
+                    start: "top top",
+                    end: "+=200",
+                    scrub: true,
+                  },
+                });
+            
+                navTween.fromTo(
+                  ".nav",
+                  {
+                    backgroundColor: "transparent",
+                  },
+                  {
+                    backgroundColor: "#00000050",
+                    backdropFilter: "blur(10px)",
+                    duration: 2,
+                    ease: "power1.inOut",
+                  }
+                );
+              }, []);
+
+
     return(
         <div className="bg-background">
             {/* This is the home landing page section */}
@@ -44,6 +79,9 @@ const Home = () => {
                     <div className="w-full h-screen bg-[url('/portfolioCOVER.png')] bg-cover sm:bg-bottom bg-[60%]" >
                         <div className="w-full h-screen bg-linear-to-r from-primary via-primary via-30% to-transparent">
                             <Header/>
+
+            <br /><br /> <br/>
+
                             <div className="w-full h-fit flex flex-row">
                                 <div className="w-fit h-[90vh] flex flex-col items-start p-[5%] justify-start  sm:pl-[5%] sm:pt-[10%] pt-[13%] lg:pl-16 lg:pt-16">
                                     <p className="sm:text-6xl text-5xl w-full sm:w-150  text-background">Your <span className="text-soft-alert font-extralight sm:text-background sm:font-normal">best</span> <span className="text-soft-alert font-extralight">partner in <span className="sm:text-soft-alert sm:font-extralight text-background font-normal">every</span></span> business <br />solution </p>

@@ -7,6 +7,12 @@ import Services from './pages/Services.jsx';
 import Pricing from './pages/Pricing.jsx';
 import CaseStudies from './pages/CaseStudies.jsx';
 
+//for animations
+import {ScrollTrigger, SplitText} from "gsap/all";
+import { gsap } from "gsap";
+gsap.registerPlugin(ScrollTrigger, SplitText);
+
+
 const App = () => {
   return (
   <Router>

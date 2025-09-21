@@ -15,7 +15,7 @@ const Pricing = () => {
              {/*HEADER */}
             <WhiteHeader/>
 
-            <br /><br /><br />
+            <br /><br /><br /><br /><br /> <br/>
 
              {/* SECTION1 */}
              <div>

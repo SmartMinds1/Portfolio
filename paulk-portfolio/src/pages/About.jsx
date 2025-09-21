@@ -11,6 +11,7 @@ const About = () => {
             {/* SECTION 1 */}
             <div className="bg-primary w-full h-fit">
                 <Header/>
+                <br /><br /> <br/>
                 <div className="w-full h-[60vh] flex-col-center justify-center">
                     <div className="w-[90%] lg:w-[78%] h-fit flex flex-col items-center sm:flex-row justify-evenly flex-wrap mb-32 mt-8">
                         <p className="h-fit w-full sm:w-1/2 lg:w-fit sm:pr-4 font-bold text-3xl text-background text-center sm:text-left">| Get to know <span className="headerSpan text-soft-alert"> about us </span></p>

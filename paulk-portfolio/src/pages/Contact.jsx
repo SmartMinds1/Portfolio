@@ -50,6 +50,8 @@ const Contact = ()=> {
            {/* CONTACT HEAD */}
             <WhiteHeader/>
         
+            <br /><br /> <br/>
+            
             {/* SECTION 1 */}
             <div className="w-full h-fit lg:pb-[6vh] bg-background">
                 <div className="h-[40vh] w-full flex items-center justify-center">
