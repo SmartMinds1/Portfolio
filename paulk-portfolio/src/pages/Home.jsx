@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SkillCard from "../components/SkillCard";
@@ -17,6 +17,10 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 //GSAP
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react"
+
+
+
+
 
 const Home = () => {
         /* Index for looping testimonial cards */
@@ -44,33 +48,55 @@ const Home = () => {
 
 
 
-        //Lets now add taste by animating things on homepage
+//Lets now add some taste by animating things on homepage
+   // const scrollRef = useRef([]);
+     //getting all the cards
+      //const cards = gsap.utils.toArray(scrollRef.current.children);
+    //animating each card
+      //cards.forEach((card)=>{})
 
-               //Gsap animation
-               useGSAP(() => {
-                const navTween = gsap.timeline({
-                  scrollTrigger: {
-                    trigger: ".nav",
-                    start: "top top",
-                    end: "+=200",
-                    scrub: true,
-                  },
-                });
-            
-                navTween.fromTo(
-                  ".nav",
-                  {
-                    backgroundColor: "transparent",
-                  },
-                  {
-                    backgroundColor: "#00000050",
-                    backdropFilter: "blur(10px)",
-                    duration: 2,
-                    ease: "power1.inOut",
-                  }
-                );
-              }, []);
+      const box1Ref = useRef(null);
+      const box2Ref = useRef(null);
+      const box3Ref = useRef(null);
+      const circle1Ref = useRef(null);
+      const circle2Ref = useRef(null);
+      const circle3Ref = useRef(null);
 
+    useGSAP(() => {
+      gsap.fromTo(
+        [box1Ref.current, box2Ref.current, box3Ref.current],// all boxes
+        { opacity: 0, y: 100 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: box1Ref.current, // first box triggers all
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          }
+        }
+      );
+    }, []);
+
+    useGSAP(() => {
+      gsap.fromTo(
+        [circle1Ref.current, circle2Ref.current, circle3Ref.current],// all circles
+        { opacity: 0, y: 100 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: circle1Ref.current, // first circle triggers all
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          }
+        }
+      );
+    }, []);
 
     return(
         <div className="bg-background">
@@ -105,9 +131,15 @@ const Home = () => {
              {/* SECTION 2 OUR SERVICES CARDS */}
              <div className="w-full h-fit">
                  <div className="h-fit w-[90%] lg:w-2/3 m-auto flex-row-center flex-wrap justify-evenly gap-6 mt-12">
-                    <SkillCard cardTitle="Web Development/ Design" cardDes="Build beautiful, responsive websites that grow your business." icon={<FontAwesomeIcon icon={faLaptopCode}/>} />
-                    <SkillCard cardTitle="Google ADs Management " cardDes="Running targeted ads that attract more customers fast."  icon={<FontAwesomeIcon icon={faGoogle} />} />
-                    <SkillCard cardTitle="Marketting specialist" cardDes="Promote your brand effectively to boost sales and visibility." icon={<FontAwesomeIcon icon={faBullhorn} />} />
+                    <div ref={box1Ref} className="w-fit h-fit">
+                        <SkillCard cardTitle="Web Development/ Design" cardDes="Build beautiful, responsive websites that grow your business." icon={<FontAwesomeIcon icon={faLaptopCode}/>} />
+                    </div>
+                    <div ref={box2Ref} className="w-fit h-fit">
+                        <SkillCard cardTitle="Google ADs Management " cardDes="Running targeted ads that attract more customers fast."  icon={<FontAwesomeIcon icon={faGoogle} />} />
+                    </div>
+                    <div ref={box3Ref} className="w-fit h-fit">
+                         <SkillCard cardTitle="Marketting specialist" cardDes="Promote your brand effectively to boost sales and visibility." icon={<FontAwesomeIcon icon={faBullhorn} />} />
+                    </div>
                  </div>
              </div>
 
@@ -127,9 +159,15 @@ const Home = () => {
                 <p className="header">| Let client statistics <span className="headerSpan">speak for us </span></p>
                 <p className="w-[90%]  md:w-1/2 text-md m-auto mt-4 text-text-muted text-left sm:text-center">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
                 <div className="w-2/3 m-auto h-fit flex flex-row items-center justify-evenly flex-wrap gap-4 mt-10">
-                    <StatsBox statsNum="500+" statsDes="Clients"/>
-                    <StatsBox statsNum="100+" statsDes="Businesses"/>
-                    <StatsBox statsNum="50+" statsDes="Websites"/>
+                    <div ref={circle1Ref} className="w-fit h-fit">
+                        <StatsBox statsNum="500+" statsDes="Clients"/>
+                    </div>
+                    <div ref={circle2Ref} className="w-fit h-fit">
+                        <StatsBox statsNum="100+" statsDes="Businesses"/>
+                    </div>
+                    <div ref={circle3Ref} className="w-fit h-fit">
+                        <StatsBox statsNum="50+" statsDes="Websites"/>
+                    </div>
                 </div>
              </div>
 
@@ -144,6 +182,26 @@ const Home = () => {
              </div>
 
              <br /><br /><br />
+
+             <div>
+                
+             </div>
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+             <div className="w-full bg-primary h-[90vh] flex flex-row">
+                <div id="testCard" className="bg-red-200 w-fit h-fit">
+                <SkillCard cardTitle="Web Development/ Design" cardDes="Build beautiful, responsive websites that grow your business." icon={<FontAwesomeIcon icon={faLaptopCode}/>} />
+                </div>
+                <div id="testCard" className="w-20 h-30 bg-green-500"></div>
+                <div id="testCard" className="w-20 h-30 bg-accent"></div>
+             </div>
+
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+             
+
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
             {/* FOOTER SECTION */}
             <Footer/>

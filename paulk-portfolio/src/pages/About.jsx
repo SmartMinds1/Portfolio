@@ -1,11 +1,40 @@
-import React from "react";
+import React, {useRef} from "react";
 import Header from "../components/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import TeamCard from "../components/TeamCard";
 import Footer from "../components/Footer";
+import campanyCEO from "../assets/smartProfile.jpeg";
+import developer from "../assets/Lauracia.webp";
+import marketer from "../assets/Juzman.webp";
+//GSAP
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react"
 
 const About = () => {
+    const box1Ref = useRef(null);
+    const box2Ref = useRef(null);
+    const box3Ref = useRef(null);
+
+    //Some animation tweaks
+    useGSAP(() => {
+        gsap.fromTo(
+          [box1Ref.current, box2Ref.current, box3Ref.current],// all boxes
+          { opacity: 0, y: 100 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.3,
+            scrollTrigger: {
+              trigger: box1Ref.current, // first box triggers all
+              start: "top 80%",
+              toggleActions: "play none none reverse"
+            }
+          }
+        );
+      }, []);
+
     return(
         <div className="bg-background">
             {/* SECTION 1 */}
@@ -33,7 +62,7 @@ const About = () => {
            {/* SECTION4 */}
             <div className="h-fit w-[90vw] m-auto flex flex-row items-center justify-center flex-wrap lg:flex-nowrap gap-10 lg:gap-0 ">
                 {/* img div */}
-                <div className="sm:w-1/3 min-w-[300px] h-[20rem] lg:translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
+                <div className="sm:w-1/3 min-w-[300px] h-[20rem] lg:translate-x-40 rounded-2xl bg-soft-alertbg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
                 {/*  services div */}
                 <div className="w-[95%] sm:w-[80%] h-full bg-background shadow-xl flex-row-center justify-start sm:justify-end min-w-[300px]">
                     <div className="h-fit w-full lg:w-4/5">
@@ -114,9 +143,15 @@ const About = () => {
                       <br /><br /><br />
                 {/*Team div */}
                 <div className="w-[95%] md:w-[85%] lg:w-2/3 h-fit m-auto flex-row-center justify-evenly flex-wrap gap-4">
-                    <TeamCard memberName="Gretchen Paul" memberDesc="Managing director"/>
-                    <TeamCard memberName="Bruno Marks" memberDesc="Our CEO"/>
-                    <TeamCard memberName="Fave Mwangi" memberDesc="Senior HR"/>
+                    <div ref={box1Ref} className="w-fit h-fit">
+                        <TeamCard memberName="Gretchen Paul" memberDesc="Managing director" teamImg={developer}/>
+                    </div>
+                    <div ref={box2Ref} className="w-fit h-fit">
+                        <TeamCard memberName="Mwangi Paul" memberDesc="Our CEO" teamImg={campanyCEO}/>
+                    </div>
+                    <div ref={box3Ref} className="w-fit h-fit">
+                        <TeamCard memberName="Fave Mwangi" memberDesc="Senior HR" teamImg={marketer}/>
+                    </div>
                 </div>
             </div>
 
