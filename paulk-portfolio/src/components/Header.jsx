@@ -40,7 +40,7 @@ const Header = ()=> {
             backgroundColor: "transparent",
             },
             {
-            backgroundColor: "rgba(250,249,249,0.7)",
+            backgroundColor: "#19192350",
             backdropFilter:'blur(5px)',
             duration: 2,
             ease: "power1.inOut",
@@ -61,7 +61,7 @@ const Header = ()=> {
                     <li><NavLink to="/" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>home</NavLink> </li>
                     <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>about</NavLink> </li>
                     <li><NavLink to="/services" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>services</NavLink> </li>
-                    <li><NavLink to="/case-studies" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>case-studies</NavLink> </li>
+                    <li><NavLink to="/case-studies" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>projects</NavLink> </li>
                     <li><NavLink to="/contact" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>contact</NavLink> </li>
                     <li><NavLink to="/pricing" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>pricing</NavLink> </li>
                 </ul>

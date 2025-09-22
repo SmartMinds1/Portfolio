@@ -15,10 +15,10 @@ const Pricing = () => {
              {/*HEADER */}
             <WhiteHeader/>
 
-            <br /><br /><br /><br /><br /> <br/>
+            <br /><br /><br /><br />
 
              {/* SECTION1 */}
-             <div>
+             <div className="sm:mt-8">
                 <p className="header">| Select Your <span className="text-secondary">best plan </span></p>
                 <p className="m-auto mt-4 text-text-muted w-[90%] md:w-[70%] lg:w-[50%] text-md text-center">Our results are measured in your success, real growth & higher traffic</p>
              </div>

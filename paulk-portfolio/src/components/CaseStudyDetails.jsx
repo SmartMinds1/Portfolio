@@ -75,7 +75,7 @@ export default function CaseStudyDetails({project, onClose}) {
           </p>
           <a
             href="/contact"
-            className="inline-block mt-5 px-6 py-3 bg-soft-alert text-white font-semibold rounded-xl shadow-2xl"
+            className="inline-block mt-5 px-6 py-3 bg-soft-alert text-white font-semibold rounded-xl shadow-2xl soft-shadow"
           >
             Start Your Project <span><FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/> </span>
           </a>

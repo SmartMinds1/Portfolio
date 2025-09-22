@@ -80,13 +80,13 @@ const Home = () => {
                         <div className="w-full h-screen bg-linear-to-r from-primary via-primary via-30% to-transparent">
                             <Header/>
 
-            <br /><br /> <br/>
+            <br /><br />
 
                             <div className="w-full h-fit flex flex-row">
                                 <div className="w-fit h-[90vh] flex flex-col items-start p-[5%] justify-start  sm:pl-[5%] sm:pt-[10%] pt-[13%] lg:pl-16 lg:pt-16">
                                     <p className="sm:text-6xl text-5xl w-full sm:w-150  text-background">Your <span className="text-soft-alert font-extralight sm:text-background sm:font-normal">best</span> <span className="text-soft-alert font-extralight">partner in <span className="sm:text-soft-alert sm:font-extralight text-background font-normal">every</span></span> business <br />solution </p>
                                     <br /><br />
-                                    <p className="text-sm text-bg-dark sm:mt-4 md:mt-8">Creating a powerful online presence by providing everything you  <br /> need to succeed!</p>
+                                    <p className="text-sm text-bg-dark sm:mt-4 md:mt-8 lg:mt-12">Creating a powerful online presence by providing everything you  <br /> need to succeed!</p>
                                     <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer blue-shadow">Explore more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/></button>
                                 </div>
                             </div>

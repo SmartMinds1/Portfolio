@@ -3,7 +3,7 @@ import React from "react";
 const Alert = ({children, onClose})=>{
 
     return(
-        <div className="min-w[270px] md:min-w[350px] max-w-[25%] h-[25vh] bg-background m-auto flex-col-center justify-evenly z-40 text-center">
+        <div className="min-w[270px] md:min-w[350px] h-[25vh] bg-background m-auto flex-col-center justify-evenly z-40 text-center rounded-xl">
            <div>
                <p className="w-[80%] text-center m-auto"> {children} </p>
            </div>

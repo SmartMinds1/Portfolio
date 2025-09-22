@@ -18,9 +18,9 @@ export default function CaseStudies() {
       {/* Header */}
       <WhiteHeader/>
 
-      <br /><br /> <br/>
+      <br />
 
-      <section className="py-16 px-6 md:px-12 bg-background">
+      <section className="py-16 px-6 md:px-12 bg-background sm:mt-8">
 
         {/* landing section */}
         <div>

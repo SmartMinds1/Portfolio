@@ -32,7 +32,7 @@ const Contact = ()=> {
               }
               
           catch(error){
-            setResponseMessage("ERROR! sending the message, Kindly try again later!");
+            setResponseMessage("ERROR! sending message, Kindly try again later!");
           }
       }
 
@@ -50,7 +50,7 @@ const Contact = ()=> {
            {/* CONTACT HEAD */}
             <WhiteHeader/>
         
-            <br /><br /> <br/>
+            <br /><br />
             
             {/* SECTION 1 */}
             <div className="w-full h-fit lg:pb-[6vh] bg-background">
@@ -95,7 +95,7 @@ const Contact = ()=> {
                 <div className="w-full flex md:flex-row flex-col flex-wrap items-center justify-evenly gap-8 lg:gap-0">
                       {/* chartForm */}
                       <form onSubmit={handleSubmit}>
-                        <div className="w-[95%] sm:w-140 h-fit lg:h-110 bg-background p-4 md:p-8 rounded-xl">
+                        <div className="w-[95%] sm:w-140 h-fit lg:h-110 bg-background p-4 md:p-8 rounded-xl m-auto">
                             <div className="w-full flex flex-col sm:flex-row gap-4">
                               <input 
                                 className="w-full sm:w-[40%] shadow-md h-12 p-4"

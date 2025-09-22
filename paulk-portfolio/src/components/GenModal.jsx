@@ -50,7 +50,7 @@ const GenModal = ({ isOpen, onClose, children}) => {
     >
       <div
         ref={modalRef}
-        className="modal-content"
+        className="modal-content rounded-xl"
         style={{
           padding: "0",
           minWidth: "290px",
