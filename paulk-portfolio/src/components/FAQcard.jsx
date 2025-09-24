@@ -1,12 +1,40 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
+
+//GSAP
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react"
 
 const FAQcard = ({faqAns, faqTitle})=>{
     const [toggleIcon, setToggleIcon] = useState(false);
 
+
+      //ref to each box
+      const faqRef = useRef(null);
+       
+    //cards  
+      useGSAP(() => {
+        gsap.fromTo(
+          faqRef.current,// all boxes
+          { opacity: 0, y: 100 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.3,
+            scrollTrigger: {
+              trigger: faqRef.current, // first box triggers all
+              start: "top 90%",
+              toggleActions: "play none none reverse"
+            }
+          }
+        );
+      }, []);
+
+
     return(
-    <details className="w-[95%] sm:w-[80%] md:w-[65%] lg:w-[50%] m-auto rounded-sm p-2 pt-8 pb-8 mb-4  shadow-lg" open={toggleIcon}>
+    <details ref={faqRef} className="w-[95%] sm:w-[80%] md:w-[65%] lg:w-[50%] m-auto rounded-sm p-2 pt-8 pb-8 mb-4  shadow-lg" open={toggleIcon}>
         <summary 
                 className="h-fit w-full cursor-pointer list-none text-lg flex-row-start flex-nowrap gap-2 justify-between" 
                 onClick={(e)=>{

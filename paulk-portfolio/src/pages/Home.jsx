@@ -44,24 +44,12 @@ const Home = () => {
 
 //Lets now add some taste by animating things on homepage
 
-   // const scrollRef = useRef([]);
-     //getting all the cards
-      //const cards = gsap.utils.toArray(scrollRef.current.children);
-    //animating each card
-      //cards.forEach((card)=>{})
-
-      //ref to each box
-      const box1Ref = useRef(null);
-      const box2Ref = useRef(null);
-      const box3Ref = useRef(null);
-
-      //ref to each circle
-   /*    const circle1Ref = useRef(null);
-      const circle2Ref = useRef(null);
-      const circle3Ref = useRef(null); */
-
+  //ref to each box
+    const box1Ref = useRef(null);
+    const box2Ref = useRef(null);
+    const box3Ref = useRef(null);
      
-    //cards  
+  //cards  
     useGSAP(() => {
       gsap.fromTo(
         [box1Ref.current, box2Ref.current, box3Ref.current],// all boxes
@@ -80,24 +68,18 @@ const Home = () => {
       );
     }, []);
 
-    //statistics circles
-   /*  useGSAP(() => {
-      gsap.fromTo(
-        [circle1Ref.current, circle2Ref.current, circle3Ref.current],// all circles
-        { opacity: 0, y: 100 },
+    //Landing text anim
+    useGSAP(() => {
+      gsap.fromTo( '.para',
+        { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
-          duration: 1,
-          stagger: 0.3,
-          scrollTrigger: {
-            trigger: circle1Ref.current, // first circle triggers all
-            start: "top 80%",
-            toggleActions: "play none none reverse"
-          }
+          delay: 0.3,
+          stagger: 0.3
         }
       );
-    }, []); */
+    }, []);
 
     return(
         <div className="bg-background">
@@ -110,11 +92,13 @@ const Home = () => {
             <br /><br />
 
                             <div className="w-full h-fit flex flex-row">
-                                <div className="w-fit h-[90vh] flex flex-col items-start p-[5%] justify-start  sm:pl-[5%] sm:pt-[10%] pt-[13%] lg:pl-16 lg:pt-16">
-                                    <p className="sm:text-6xl text-5xl w-full sm:w-150  text-background">Your <span className="text-soft-alert font-extralight sm:text-background sm:font-normal">best</span> <span className="text-soft-alert font-extralight">partner in <span className="sm:text-soft-alert sm:font-extralight text-background font-normal">every</span></span> business <br />solution </p>
+                                <div className="w-fit h-[90vh] flex flex-col items-start p-[5%] justify-start  sm:pl-[5%] sm:pt-[10%] pt-[13%] lg:pl-16 lg:pt-20">
+                                    <p className="sm:text-6xl text-5xl w-full sm:w-150  text-background para">Your <span className="text-soft-alert font-extralight sm:text-background sm:font-normal">best</span> <span className="text-soft-alert font-extralight">partner in <span className="sm:text-soft-alert sm:font-extralight text-background font-normal">every</span></span> business <br />solution </p>
                                     <br /><br />
-                                    <p className="text-sm text-bg-dark sm:mt-4 md:mt-8 lg:mt-12">Creating a powerful online presence by providing everything you  <br /> need to succeed!</p>
-                                    <button className="btn-primary mt-10 bg-secondary text-background cursor-pointer blue-shadow">Explore more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/></button>
+                                    <p className="text-sm text-bg-dark sm:mt-4 md:mt-8 lg:mt-12 para">Creating a powerful online presence by providing everything you  <br /> need to succeed!</p>
+                                    <p className="para">
+                                       <button className="btn-primary mt-14 bg-secondary text-background cursor-pointer blue-shadow">Explore more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/></button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -177,22 +161,7 @@ const Home = () => {
              <div>
                 
              </div>
-             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-
-             <div className="w-full bg-primary h-[90vh] flex flex-row">
-                <div id="testCard" className="bg-red-200 w-fit h-fit">
-                <SkillCard cardTitle="Web Development/ Design" cardDes="Build beautiful, responsive websites that grow your business." icon={<FontAwesomeIcon icon={faLaptopCode}/>} />
-                </div>
-                <div id="testCard" className="w-20 h-30 bg-green-500"></div>
-                <div id="testCard" className="w-20 h-30 bg-accent"></div>
-             </div>
-
-             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-             
-
-             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            
 
             {/* FOOTER SECTION */}
             <Footer/>

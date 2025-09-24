@@ -10,11 +10,15 @@ import marketer from "../assets/Juzman.webp";
 //GSAP
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react"
+import SellingPoints from "../components/sellingPoints";
 
 const About = () => {
     const box1Ref = useRef(null);
     const box2Ref = useRef(null);
     const box3Ref = useRef(null);
+
+    //paragraph cards
+    const paraCard = useRef([]);
 
     //Some animation tweaks
     useGSAP(() => {
@@ -28,6 +32,23 @@ const About = () => {
             stagger: 0.3,
             scrollTrigger: {
               trigger: box1Ref.current, // first box triggers all
+              start: "top 80%",
+              toggleActions: "play none none reverse"
+            }
+          }
+        );
+
+        //paragraph cards
+        gsap.fromTo(
+          paraCard.current,
+          { opacity: 0, y: 100 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.3,
+            scrollTrigger: {
+              trigger: paraCard.current,
               start: "top 80%",
               toggleActions: "play none none reverse"
             }
@@ -62,13 +83,13 @@ const About = () => {
            {/* SECTION4 */}
             <div className="h-fit w-[90vw] m-auto flex flex-row items-center justify-center flex-wrap lg:flex-nowrap gap-10 lg:gap-0 ">
                 {/* img div */}
-                <div className="sm:w-1/3 min-w-[300px] h-[20rem] lg:translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
+                <div ref={paraCard} className="sm:w-1/3 min-w-[300px] h-[20rem] lg:translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
                 {/*  services div */}
                 <div className="w-[95%] sm:w-[80%] h-full bg-background shadow-xl flex-row-center justify-start sm:justify-end min-w-[300px]">
                     <div className="h-fit w-full lg:w-4/5">
                         <p className="h-fit w-full font-bold text-3xl text-primary flex-row-center justify-start gap-2 pl-8 ">| Our <span className="headerSpan"> services </span></p>
                         <div className="w-ful h-fit min-h-100 sm:h-7/8 flex flex-col items-left justify-evenly pl-[8vw]">
-                            <div>
+                            <div> 
                                 <h3>Web Design & Development</h3>
                                 <p className="text-text-muted">We Build Appealing, responsive websites that grow your business.</p>
                             </div>
@@ -102,10 +123,10 @@ const About = () => {
 
                 {/* key selling points */}
                 <div className="h-fit">
-                    <p className="whyUs"> <FontAwesomeIcon icon={faCheckCircle} className="whyCheckbox"></FontAwesomeIcon>Quility services within your budget</p>
-                    <p className="whyUs"> <FontAwesomeIcon icon={faCheckCircle} className="whyCheckbox"></FontAwesomeIcon>Fast, Appealing, secure & Scalable websites</p>
-                    <p className="whyUs"> <FontAwesomeIcon icon={faCheckCircle} className="whyCheckbox"></FontAwesomeIcon>Great marketting skills to promote your business</p>
-                    <p className="whyUs"> <FontAwesomeIcon icon={faCheckCircle} className="whyCheckbox"></FontAwesomeIcon>Friendly customers support</p>
+                    <SellingPoints sellPoint="Quility services within your budget"/>
+                    <SellingPoints sellPoint="Fast, Appealing, secure & Scalable websites"/>
+                    <SellingPoints sellPoint="Great marketting skills to promote your business"/>
+                    <SellingPoints sellPoint="Friendly customers support"/>
                 </div>
             </div>
 
