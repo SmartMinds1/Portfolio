@@ -18,10 +18,6 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react"
 
-
-
-
-
 const Home = () => {
         /* Index for looping testimonial cards */
         const[currentIndex, setCurrentIndex] = useState(0);
@@ -46,22 +42,26 @@ const Home = () => {
         }
         
 
-
-
 //Lets now add some taste by animating things on homepage
+
    // const scrollRef = useRef([]);
      //getting all the cards
       //const cards = gsap.utils.toArray(scrollRef.current.children);
     //animating each card
       //cards.forEach((card)=>{})
 
+      //ref to each box
       const box1Ref = useRef(null);
       const box2Ref = useRef(null);
       const box3Ref = useRef(null);
-      const circle1Ref = useRef(null);
-      const circle2Ref = useRef(null);
-      const circle3Ref = useRef(null);
 
+      //ref to each circle
+   /*    const circle1Ref = useRef(null);
+      const circle2Ref = useRef(null);
+      const circle3Ref = useRef(null); */
+
+     
+    //cards  
     useGSAP(() => {
       gsap.fromTo(
         [box1Ref.current, box2Ref.current, box3Ref.current],// all boxes
@@ -80,7 +80,8 @@ const Home = () => {
       );
     }, []);
 
-    useGSAP(() => {
+    //statistics circles
+   /*  useGSAP(() => {
       gsap.fromTo(
         [circle1Ref.current, circle2Ref.current, circle3Ref.current],// all circles
         { opacity: 0, y: 100 },
@@ -96,7 +97,7 @@ const Home = () => {
           }
         }
       );
-    }, []);
+    }, []); */
 
     return(
         <div className="bg-background">
@@ -158,17 +159,7 @@ const Home = () => {
              <div className="w-full h-fit md:mt-8">
                 <p className="header">| Let client statistics <span className="headerSpan">speak for us </span></p>
                 <p className="w-[90%]  md:w-1/2 text-md m-auto mt-4 text-text-muted text-left sm:text-center">Our results are measured in your success—real growth, higher traffic, and more customers backed by proven numbers!</p>
-                <div className="w-2/3 m-auto h-fit flex flex-row items-center justify-evenly flex-wrap gap-4 mt-10">
-                    <div ref={circle1Ref} className="w-fit h-fit">
-                        <StatsBox statsNum="500+" statsDes="Clients"/>
-                    </div>
-                    <div ref={circle2Ref} className="w-fit h-fit">
-                        <StatsBox statsNum="100+" statsDes="Businesses"/>
-                    </div>
-                    <div ref={circle3Ref} className="w-fit h-fit">
-                        <StatsBox statsNum="50+" statsDes="Websites"/>
-                    </div>
-                </div>
+                <StatsBox/>
              </div>
 
              <br /><br /><br />

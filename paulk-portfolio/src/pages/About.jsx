@@ -62,7 +62,7 @@ const About = () => {
            {/* SECTION4 */}
             <div className="h-fit w-[90vw] m-auto flex flex-row items-center justify-center flex-wrap lg:flex-nowrap gap-10 lg:gap-0 ">
                 {/* img div */}
-                <div className="sm:w-1/3 min-w-[300px] h-[20rem] lg:translate-x-40 rounded-2xl bg-soft-alertbg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
+                <div className="sm:w-1/3 min-w-[300px] h-[20rem] lg:translate-x-40 rounded-2xl bg-soft-alert bg-[url('/aboutIntroTransformed.png')] bg-cover bg-[center] bg-no-repeat"></div>
                 {/*  services div */}
                 <div className="w-[95%] sm:w-[80%] h-full bg-background shadow-xl flex-row-center justify-start sm:justify-end min-w-[300px]">
                     <div className="h-fit w-full lg:w-4/5">
