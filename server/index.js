@@ -43,8 +43,8 @@ if (process.env.NODE_ENV === "production") {
 // Parse incoming JSON but limit it to a small file to avoid server crash.
 app.use(express.json({ limit: "10kb" }));
 
-// Routes
-app.use("/api/messages", messageRoutes); // Added Messages API
+// Routes APIs
+app.use("/api/messages", messageRoutes);
 
 // Health Check Route
 app.get("/", (req, res) => {

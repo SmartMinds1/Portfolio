@@ -9,6 +9,10 @@ import axios from "axios";
 import Alert from "../components/Alert";
 import GenModal from "../components/GenModal";
 
+//GSAP
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react"
+
 const Contact = ()=> {
       //states for input fields and feedback message from the API
       const[formData, setFormData] = useState({username:"", email:"", message:""});
@@ -44,6 +48,20 @@ const Contact = ()=> {
         }
       }, [responseMessage]);
 
+
+  //Lets now add some animations to our contacts page
+    useGSAP(() => {
+      gsap.fromTo( '.contact',
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          delay: 0.3,
+          stagger: 0.3
+        }
+      );
+    }, []);
+
     return(
         <div className="bg-background">
 
@@ -64,7 +82,7 @@ const Contact = ()=> {
                {/* contacts div */}
                <div className="w-[80vw] m-auto h-fit flex flex-row items-center justify-center flex-wrap-reverse gap-4">
                     {/* visit div */}
-                    <div className="w-140 m-auto h-fit sm:h-40 flex sm:flex-row flex-col items-center justify-evenly gap-4 sm:gap-0">
+                    <div className="w-140 m-auto h-fit sm:h-40 flex sm:flex-row flex-col items-center justify-evenly gap-4 sm:gap-0 contact">
                         <div className=" contactIconBox rounded-full bg-secondary shadow-[#89B0AE]"> <FontAwesomeIcon icon={faHomeAlt} className="contactIcon text-background"></FontAwesomeIcon> </div>
                         <p className="text-text"> Visit Us : </p>
                         <p className="text-text-muted ml-1 text-sm"> Twiga towers, 6th floor, Room 606, Murang'a Road, <br /> Opp Meridian Court Hotel, <br /> Nairobi Kenya </p>
@@ -72,11 +90,11 @@ const Contact = ()=> {
                 
                     {/* call Email div */}
                     <div className=" w-[95vw] sm:w-100">
-                        <div className="callEmailBox">
+                        <div className="callEmailBox contact">
                             <div className=" contactIconBox bg-background"> <FontAwesomeIcon icon={faPhoneFlip} className="contactIcon"></FontAwesomeIcon></div>
                             <p>Call Us : <span className="text-text-muted">+254 115 154 402</span> </p>
                         </div>
-                        <div className="callEmailBox">
+                        <div className="callEmailBox contact">
                             <div className="contactIconBox bg-background"> <FontAwesomeIcon icon={faEnvelopeCircleCheck} className="contactIcon"></FontAwesomeIcon></div>
                             <p>Email Us : <span className="text-text-muted">biznutritia@gmail.com</span> </p>
                         </div>
