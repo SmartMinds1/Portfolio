@@ -17,6 +17,9 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 //GSAP
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react"
+import ImageSlider from "../components/ImageSlider";
+import MobileMenu from "../components/MobileMenu";
+import WhatsapChart from "../components/WhatsapChat";
 
 const Home = () => {
         /* Index for looping testimonial cards */
@@ -161,6 +164,22 @@ const Home = () => {
              <div>
                 
              </div>
+
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+             <ImageSlider/>
+
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+             <MobileMenu/>
+
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+             <WhatsapChart/>
+
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             
 
             {/* FOOTER SECTION */}
