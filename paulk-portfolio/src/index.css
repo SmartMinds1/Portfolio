@@ -97,10 +97,10 @@ html, body{
       @apply cursor-pointer hover:brightness-90 hover:text-soft-alert duration-200;
     }
     .mobileList li{
-      @apply bg-background text-primary pl-4 w-full h-10 flex flex-row items-center;
+      @apply text-bg-dark pl-4 w-full h-10 flex flex-row items-center;
     }
     .mobileNavIcon{
-      @apply text-xl text-[#89B0AE] mr-3;
+      @apply text-xl text-background mr-3;
     }
     .navAngleIcon{
       @apply mr-2 float-end text-text-muted text-sm mt-2;

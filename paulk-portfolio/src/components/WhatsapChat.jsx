@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const WhatsapChart = ()=>{
     return(
@@ -7,9 +9,9 @@ const WhatsapChart = ()=>{
                 href={`https://wa.me/254115154402?text=${encodeURIComponent("Hello, Welcome to bizNutritia!")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="fixed bottom-5 right-5 w-14 h-14 rounded-full shadow-lg"
+                className="fixed bottom-5 right-1 sm:right-5 w-12 h-12 flex-row-center justify-center shadow-2xl"
                 >
-                <img src="/whatsapp-icon.png" alt="Chat on WhatsApp" className="w-full h-full" />
+                    <FontAwesomeIcon icon={faWhatsapp}  className="text-4xl text-green-500 animate-bounce"/>
                 </a>
 
         </div>

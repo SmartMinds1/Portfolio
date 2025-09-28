@@ -19,7 +19,6 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react"
 import ImageSlider from "../components/ImageSlider";
 import MobileMenu from "../components/MobileMenu";
-import WhatsapChart from "../components/WhatsapChat";
 
 const Home = () => {
         /* Index for looping testimonial cards */
@@ -167,17 +166,21 @@ const Home = () => {
 
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-             <ImageSlider/>
+          <div className="hidden">
+          <ImageSlider/>
+          </div>
 
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-             <MobileMenu/>
+            <div className="hidden">
+            <MobileMenu/>
+            </div>
 
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-             <WhatsapChart/>
+         
 
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             

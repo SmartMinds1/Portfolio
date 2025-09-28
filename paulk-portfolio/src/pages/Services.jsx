@@ -33,7 +33,7 @@ const Services = () => {
 
                 <div className=" h-fit lg:h-[94vh] w-full pb-4 flex-col-center justify-end mt-10 lg:mt-0">
                     <div className="sm:gap-8 w-full h-fit lg:mt-6 sm:mt-10 mt-6 md:h-[80vh] flex flex-col md:flex-row items-left md:items-center justify-center md:justify-start lg:justify-center flex-wrap">
-                        <div className="w-full md:w-1/2 mb-4 pl-2 lg:ml-0 h-1/2 flex-col-start justify-between">
+                        <div className="w-full md:w-1/2 mb-4 pl-2 lg:ml-0 h-1/2 flex-col-start justify-between overflow-x-hidden">
                             <div className=" pl-4 border-l-1 border-background w-[70%] md:w-[100%] md:max-w-110 service">
                                 <p className="h-full text-4xl md:text-5xl text-background sm:w-110 md:w-full font-bold">Services Designed to Build & <span className=" text-soft-alert headerSpan"> Scale Your Business </span></p>
                             </div>

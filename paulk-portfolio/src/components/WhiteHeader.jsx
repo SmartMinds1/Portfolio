@@ -17,6 +17,7 @@ import {
   import { gsap } from "gsap";
   import { useGSAP } from "@gsap/react"
   import {ScrollTrigger} from "gsap/all";
+  import MobileMenu from "./MobileMenu";
       
   gsap.registerPlugin(ScrollTrigger);
 
@@ -77,19 +78,9 @@ const Header = ()=> {
             </div>
         </div>
 
-        {/* Mobile Menu */}
-        {isOpen && (
-            <div className="bg-background absolute top-20 left-0 w-full h-[65vh] shadow-2xl flex-col-center z-50">
-                <ul className="pb-8 bg-background p text-sm flex-col-start justify-evenly w-[95%] h-full mobileList rounded-lg shadow-xl">
-                    <li> <Link to="/" className="w-full"> <FontAwesomeIcon icon={faHouse} className="mobileNavIcon"/> home <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link> </li>
-                    <li> <Link to="/about" className="w-full"> <FontAwesomeIcon icon={faUser} className="mobileNavIcon"/> about <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
-                    <li> <Link to="/services" className="w-full"> <FontAwesomeIcon icon={faGears} className="mobileNavIcon"/> services <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
-                    <li> <Link to="/case-studies" className="w-full"> <FontAwesomeIcon icon={faBriefcase} className="mobileNavIcon"/> case-studies <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
-                    <li> <Link to="/contact" className="w-full"> <FontAwesomeIcon icon={faEnvelope} className="mobileNavIcon"/> contact <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
-                    <li> <Link to="/pricing" className="w-full"> <FontAwesomeIcon icon={faTags} className="mobileNavIcon"/> pricing <FontAwesomeIcon icon={faAngleRight} className="navAngleIcon"/> </Link></li>
-                </ul>
-            </div>
-        )} 
+       
+       {/* Mobile Menu */}
+       <MobileMenu isOpen={isOpen}/>
 
       </>
     )

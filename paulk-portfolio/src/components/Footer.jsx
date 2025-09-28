@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Socials from "./Socials";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot, faMobileAlt} from "@fortawesome/free-solid-svg-icons";
+import WhatsapChart from "./WhatsapChat";
 
 const Footer = ()=> {
     return(
@@ -59,6 +60,9 @@ const Footer = ()=> {
                 </div>
             </div>
         </div>
+        
+        <WhatsapChart/>
+
 
         {/* footer copyright */}
          <div className="flex-row-center flex-wrap w-full h-fit pt-4 pb-4 gap-2 sm:gap-0 text-bg-dark bg-[#1d1d25] text-xs">
