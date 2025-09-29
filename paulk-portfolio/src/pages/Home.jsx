@@ -166,21 +166,9 @@ const Home = () => {
 
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-          <div className="hidden">
-          <ImageSlider/>
-          </div>
-
-             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-            <div className="hidden">
-            <MobileMenu/>
-            </div>
-
-             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-         
+              <div className="hidden">
+                   <ImageSlider/>
+              </div>
 
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             

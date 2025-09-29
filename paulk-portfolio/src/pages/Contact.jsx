@@ -158,7 +158,7 @@ const Contact = ()=> {
 
                       {/* Form caption */}
                       <div className="w-fit sm:scale-none sm:w-[25rem] h-[70vh] flex flex-col items-center justify-evenly">
-                              <div class=" w-64 h-64 rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] bg-[url('/CasualConversation.webp')] bg-cover bg-[center] bg-no-repeat bg-soft-alert"></div>
+                              <div className=" w-64 h-64 rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] bg-[url('/CasualConversation.webp')] bg-cover bg-[center] bg-no-repeat bg-soft-alert"></div>
                               <p className=" w-[80%] text-center text-bg-dark">Fill out the form, and we'll get back to you within<span className="text-background font-bold text-xl"> 24 hours.</span> </p>
                       </div>
                 </div>
