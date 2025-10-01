@@ -6,11 +6,13 @@ import Contact from './pages/Contact.jsx';
 import Services from './pages/Services.jsx';
 import Pricing from './pages/Pricing.jsx';
 import CaseStudies from './pages/CaseStudies.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 
 const App = () => {
   return (
   <Router>
+      <ScrollToTop />
     <Routes>
       {/* <Route path="*" element={<NotFound />} /> */}
       <Route path="/" element={<Home/>} />

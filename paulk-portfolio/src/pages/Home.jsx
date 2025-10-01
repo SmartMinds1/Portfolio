@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import Header from "../components/Header";
+import HomeHeader from "../components/HomeHeader";
 import Footer from "../components/Footer";
 import SkillCard from "../components/SkillCard";
 import StatsBox from "../components/StatsBox";
@@ -18,7 +18,6 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react"
 import ImageSlider from "../components/ImageSlider";
-import MobileMenu from "../components/MobileMenu";
 
 const Home = () => {
         /* Index for looping testimonial cards */
@@ -89,7 +88,7 @@ const Home = () => {
             <div className="w-full bg-primary">
                     <div className="w-full h-screen bg-[url('/portfolioCOVER.png')] bg-cover sm:bg-bottom bg-[60%]" >
                         <div className="w-full h-screen bg-linear-to-r from-primary via-primary via-30% to-transparent">
-                            <Header/>
+                            <HomeHeader/>
 
             <br /><br />
 

@@ -1,57 +1,17 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { 
-    faBars, 
-    faTimes,
-    faHouse, 
-    faUser, 
-    faGears, 
-    faBriefcase, 
-    faEnvelope, 
-    faTags, 
-    faAngleRight
-  } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
-  //for animations
-  import { gsap } from "gsap";
-  import { useGSAP } from "@gsap/react"
-  import {ScrollTrigger} from "gsap/all";
   import MobileMenu from "./MobileMenu";
-      
-  gsap.registerPlugin(ScrollTrigger);
 
 const Header = ()=> {
   //mobile menu control 
   const [isOpen, setIsOpen] = useState(false);
 
-          //Gsap animation
-          useGSAP(() => {
-            const navTween = gsap.timeline({
-              scrollTrigger: {
-                trigger: ".nav",
-                start: "bottom top",
-                scrub: true,
-              },
-            });
-        
-            navTween.fromTo(
-              ".nav",
-              {
-                backgroundColor: "transparent",
-              },
-              {
-                backgroundColor: "rgba(250,249,249,0.7)",
-                backdropFilter:'blur(5px)',
-                duration: 2,
-                ease: "power1.inOut",
-              }
-            );
-          }, []);
-  
     return(
       <>
-        <div className="w-[100%] h-12 m-auto flex-row-end justify-between sm:h-14 nav fixed top-0 left-0 z-50 p-2 pl-[5%] pr-[5%]">
+        <div className="w-[100%] h-12 m-auto flex-row-end justify-between sm:h-14 fixed top-0 left-0 z-50 p-2 pl-[5%] pr-[5%] bg-[rgba(250,249,249,0.7)] backdrop-blur-[5px]">
             <div className="w-40 flex-row-end justify-start">
                 <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[url('/bigStarBlack.png')] bg-contain bg-no-repeat bg-center rotate-270"></div>
                 <p className="text-primary text-xl sm:text-2xl font-extrabold">bizN<span className="text-accent text-xl sm:text-2xl font-light">utritia</span></p>
