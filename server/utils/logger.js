@@ -1,31 +1,24 @@
-// Centralized logger using Winston
+// Centralized logger using Winston. It writes down what happened, when, how serious it was, and sometimes which file did it.
 const { createLogger, format, transports } = require("winston");
 
-const logger = createLogger({
-  level: process.env.LOG_LEVEL || "info", // Default logging level
-  format: format.combine(
-    format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }), // Time formatting
-    format.errors({ stack: true }), // Include stack trace for errors
-    format.colorize(), // Colorize logs by level (info, error, etc.)
-    format.printf(
-      ({ timestamp, level, message, stack }) =>
-        stack
-          ? `${timestamp} [${level}]: ${message}\n${stack}` // Log stack for errors
-          : `${timestamp} [${level}]: ${message}` // Log normal messages
-    )
-  ),
-  transports: [
-    new transports.Console({
-      handleExceptions: true, // Log uncaught exceptions
-    }),
-  ],
-  exitOnError: false, // Prevent logger from crashing the app
-});
+const isProd = process.env.NODE_ENV === "production";
 
-// Handle graceful shutdown
-process.on("SIGINT", () => {
-  logger.info("🔌 Logger shutting down gracefully.");
-  process.exit(0);
+const logger = createLogger({
+  level: process.env.LOG_LEVEL || "info",
+  format: isProd
+    ? format.combine(format.timestamp(), format.json())
+    : format.combine(
+        format.colorize(),
+        format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
+        format.errors({ stack: true }),
+        format.printf(({ timestamp, level, message, stack }) =>
+          stack
+            ? `${timestamp} [${level}]: ${message}\n${stack}`
+            : `${timestamp} [${level}]: ${message}`
+        )
+      ),
+  transports: [new transports.Console({ handleExceptions: true })],
+  exitOnError: false,
 });
 
 module.exports = logger;

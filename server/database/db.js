@@ -27,20 +27,7 @@ const pool = new Pool({
 
 // Handle errors in the pool
 pool.on("error", (err) => {
-  logger.error(`PostgreSQL connection error: ${err.message}`);
-});
-
-// Graceful shutdown handling when the server stops
-process.on("SIGINT", async () => {
-  try {
-    logger.info("Closing PostgreSQL connection pool...");
-    await pool.end(); // Close the pool when the server shuts down
-    logger.info("PostgreSQL pool closed.");
-    process.exit(0);
-  } catch (err) {
-    logger.error(`Error closing PostgreSQL pool: ${err.message}`);
-    process.exit(1);
-  }
+  logger.error(`Unexpected PostgreSQL connection error: ${err.message}`);
 });
 
 module.exports = pool;
