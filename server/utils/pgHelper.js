@@ -1,3 +1,4 @@
+//This file provides a simplified query for use within our models when sending queries
 const pool = require("../database/db");
 
 // Simple query wrapper

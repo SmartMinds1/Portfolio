@@ -11,7 +11,7 @@ const commonMiddleware = (app) => {
   // Controling which domains are allowed to access our backend
   const allowedOrigins = process.env.ALLOWED_ORIGINS
     ? process.env.ALLOWED_ORIGINS.split(",")
-    : ["https://smartygrandhotel.com"];
+    : ["https://biznutritia.com"];
 
   const corsOptions = {
     origin: (origin, callback) => {

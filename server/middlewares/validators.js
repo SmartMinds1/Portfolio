@@ -9,8 +9,10 @@ exports.usernameValidation = body("username")
   .replace(/[ \t]{3,}/g, "  ")
   .escape()
   .toLowerCase()
-  .isLength({ min: 3, max: 20 })
-  .withMessage("Username must be at least 3 - 20 characters long.");
+  .isLength({ min: 3 })
+  .withMessage("Username must be at least 3 characters long.")
+  .isLength({ max: 20 })
+  .withMessage("Username must be not exceed 20 characters long.");
 
 exports.emailValidation = body("email")
   .notEmpty()

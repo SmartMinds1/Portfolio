@@ -21,7 +21,7 @@ const registerLimiter = isProduction
     })
   : noop;
 
-//Lets Protect against brute-force password guessing
+//Lets Protect against BRUTE-FORCE password guessing
 const loginLimiter = isProduction
   ? rateLimit({
       windowMs: 15 * 60 * 1000,

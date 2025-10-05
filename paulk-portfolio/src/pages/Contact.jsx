@@ -19,7 +19,7 @@ const Contact = ()=> {
       const[responseMessage, setResponseMessage] = useState("");
       const [showModal, setShowModal] = useState(false);
 
-      //The handle change function sets the formdata with the user inputs
+      //The handle change function inserts user inputs to the formdata
       const handleChange = (e)=>{
         setFormData({...formData, [e.target.name]: e.target.value})
       }

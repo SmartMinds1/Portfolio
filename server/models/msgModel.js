@@ -1,3 +1,4 @@
+//This is the endpoint file for all of our requests. The queries submits requests to the server and gets back the feedback
 // models/msgModel.js
 const { query } = require("../utils/pgHelper");
 
