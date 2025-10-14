@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Socials from "./Socials";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLocationDot, faMobileAlt} from "@fortawesome/free-solid-svg-icons";
@@ -27,10 +27,11 @@ const Footer = ()=> {
                     <div  className="footerList">
                         <p className="font-bold text-lg">Pages</p>
                         <ul className="text-bg-dark flex flex-col justify-between gap-2 footerLink">
-                            <li> <Link to="/" ></Link> home</li>
-                            <li>about</li>
-                            <li>services</li>
-                            <li>contact</li>
+                            <li><NavLink to="/" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>home</NavLink> </li>
+                            <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>about</NavLink> </li>
+                            <li><NavLink to="/services" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>services</NavLink> </li>
+                            <li><NavLink to="/contact" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>contact</NavLink> </li>
+                            <li><NavLink to="/pricing" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>pricing</NavLink> </li>
                         </ul>
                     </div>
 
