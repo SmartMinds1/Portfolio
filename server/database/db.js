@@ -11,6 +11,9 @@ const pool = new Pool({
   max: 10, // Maximum number of connections in the pool
   idleTimeoutMillis: 30000, // Close idle connections after 30 seconds
   connectionTimeoutMillis: 10000, // 10 seconds timeout for acquiring a connection
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 // Test the connection to ensure it's working
