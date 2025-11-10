@@ -5,6 +5,7 @@ const pool = require("./database/db");
 const logger = require("./utils/logger");
 const errorHandler = require("./middlewares/errorHandler");
 const commonMiddleware = require("./middlewares/common");
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -39,19 +40,32 @@ app.get("/health", (req, res) => {
 });
 
 /* ------------------------------
-   3. ERROR HANDLING
+   3. SERVING THE FRONT-END
+--------------------------------*/
+// Serve the React build folder
+const clientBuildPath = path.join(__dirname, "../paulk-portfolio/dist");
+
+app.use(express.static(clientBuildPath));
+
+// Catch-all route for React SPA
+app.get(/.*/, (req, res) => {
+  res.sendFile(path.join(clientBuildPath, "index.html"));
+});
+
+/* ------------------------------
+   4. ERROR HANDLING
 --------------------------------*/
 app.use(errorHandler);
 
 /* ------------------------------
-   4. SERVER STARTUP
+   5. SERVER STARTUP
 --------------------------------*/
 app.listen(PORT, () => {
   logger.info(` Server is running on http://localhost:${PORT}`);
 });
 
 /* ------------------------------
-   5. GRACEFUL SHUTDOWN
+   6. GRACEFUL SHUTDOWN
 --------------------------------*/
 process.on("SIGINT", async () => {
   try {

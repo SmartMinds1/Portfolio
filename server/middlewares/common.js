@@ -1,14 +1,15 @@
-//This file defines a function (commonMiddleware) that registers essential middlewares for: Security, CORS and JSON request parsing
 const cors = require("cors");
 const express = require("express");
 const helmet = require("helmet");
 const logger = require("../utils/logger");
 
+const isDev = process.env.NODE_ENV !== "production"; // ✅ add this line
+
 const commonMiddleware = (app) => {
   // Securing our app by setting HTTP headers
   app.use(helmet());
 
-  // Controling which domains are allowed to access our backend
+  // Controlling which domains are allowed to access our backend
   const allowedOrigins = process.env.ALLOWED_ORIGINS
     ? process.env.ALLOWED_ORIGINS.split(",")
     : ["https://biznutritia.com"];
@@ -18,7 +19,7 @@ const commonMiddleware = (app) => {
       if (
         !origin ||
         allowedOrigins.includes(origin) ||
-        (isDev && /^http:\/\/localhost:\d+$/.test(origin))
+        (isDev && /^http:\/\/localhost:\d+$/.test(origin)) // ✅ now works
       ) {
         callback(null, true);
       } else {
