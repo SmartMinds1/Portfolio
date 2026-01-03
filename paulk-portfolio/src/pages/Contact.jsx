@@ -234,7 +234,7 @@ const Contact = ()=> {
                   </Alert>
               </GenModal>
 
-            <br /><br /><br /><br /><br /><br />
+            <br /><br />
 
             <Footer/>
         </div>

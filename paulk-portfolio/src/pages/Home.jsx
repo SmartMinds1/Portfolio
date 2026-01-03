@@ -44,7 +44,6 @@ const Home = () => {
         
 
 //Lets now add some taste by animating things on homepage
-
   //ref to each box
     const box1Ref = useRef(null);
     const box2Ref = useRef(null);

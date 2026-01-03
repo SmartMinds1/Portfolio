@@ -7,7 +7,7 @@ import WhatsapChart from "./WhatsapChat";
 
 const Footer = ()=> {
     return(
-       <div className="w-full h-90 bg-primary flex flex-col items-center justify-between">
+       <div className="w-full h-90vh bg-primary flex flex-col items-center justify-between">
         <div className="flex-row-center flex-wrap justify-center lg:justify-evenly w-full h-fit pb-12 pt-8 bg-primary">
             {/* logo div */}
             <div className=" w-full lg:w-70 h-fit flex-row-center lg:flex-col-start flex-wrap lg:justify-start justify-evenly gap-2 p-2">
