@@ -10,14 +10,14 @@ const Header = ()=> {
   
     return(
       <>
-        <div className="w-[100%] h-12 m-auto flex-row-end justify-between sm:h-14 fixed top-0 left-0 z-50 p-2 pl-[5%] pr-[5%] bg-[#19192350] backdrop-blur-[5px]">
+        <div className="w-[100%] h-12 m-auto flex-row-end justify-between sm:h-14 fixed top-0 left-0 z-50 p-2 pl-[1%] pr-[5%] bg-[#19192350] backdrop-blur-[5px]">
             <div className="w-40 flex-row-end justify-start">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[url('/bigStarWhite.png')] bg-contain bg-no-repeat bg-center rotate-270"></div>
-                <p className="text-background text-xl sm:text-2xl font-extrabold">bizN<span className="text-accent text-xl sm:text-2xl font-light">utritia</span></p>
+                <div className="w-7 h-7 bg-[url('/bigStarWhite.png')] bg-contain bg-no-repeat bg-center rotate-270"></div>
+                <p className="text-background text-base sm:text-lg font-extrabold">bizN<span className="text-accent text-base sm:text-lg font-light">utritia</span></p>
             </div>
             
             <div className="sm:block hidden  w-[55%] md:w-[50%] lg:w-[40%]">
-                <ul className="text-background text-sm headerLink flex-row-center justify-evenly w-full h-fit">
+                <ul className="text-background text-xs tracking-wide headerLink flex-row-center justify-evenly w-full h-fit">
                     <li><NavLink to="/" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>home</NavLink> </li>
                     <li><NavLink to="/about" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>about</NavLink> </li>
                     <li><NavLink to="/services" className={({ isActive }) => isActive ? "text-soft-alert" : ""}>services</NavLink> </li>
