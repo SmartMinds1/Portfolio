@@ -2,7 +2,6 @@ import React, {useRef} from "react";
 import Header from "../components/Header";
 import TeamCard from "../components/TeamCard";
 import Footer from "../components/Footer";
-import campanyCEO from "../assets/smartProfile.jpeg";
 import developer from "../assets/Lauracia.webp";
 import marketer from "../assets/Juzman.webp";
 //GSAP
@@ -163,13 +162,13 @@ const About = () => {
                 {/*Team div */}
                 <div className="w-[95%] md:w-[85%] lg:w-2/3 h-fit m-auto flex-row-center justify-evenly flex-wrap gap-4">
                     <div ref={box1Ref} className="w-fit h-fit">
-                        <TeamCard memberName="Gretchen Paul" memberDesc="Managing director" teamImg={developer}/>
+                        <TeamCard memberName="Gretchen Mike" memberDesc="Graphic Designer" teamImg={developer}/>
                     </div>
                     <div ref={box2Ref} className="w-fit h-fit">
-                        <TeamCard memberName="Mwangi Paul" memberDesc="Our CEO" teamImg={campanyCEO}/>
+                        <TeamCard memberName="Mwangi Paul" memberDesc="Developer" teamImg="/PROFILE5.png"/>
                     </div>
                     <div ref={box3Ref} className="w-fit h-fit">
-                        <TeamCard memberName="Fave Mwangi" memberDesc="Senior HR" teamImg={marketer}/>
+                        <TeamCard memberName="Sam Johnes" memberDesc="Marketer" teamImg={marketer}/>
                     </div>
                 </div>
             </div>
