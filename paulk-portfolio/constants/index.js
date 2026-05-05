@@ -38,31 +38,38 @@ export const enterprisePlan = [
 //-------------------A list of Case studies-------------------
 export const case_studies = [
   {
-    title: "Boosting Online Sales for TrendyWear",
+    title: "Serify - Movies subscription platform",
     description:
-      "Revamped their e-commerce website with a mobile-first design and integrated Google Ads campaigns. Result: 45% sales growth in 2 months.",
-    image: "https://via.placeholder.com/600x400",
+      "A web platform that enables users to subscribe to premium movies, live sports, and global TV channels using secure payment methods like PayPal and card payments.",
+    image: "/SerirfyMockUp2.png",
     link: "trendywear",
   },
   {
-    title: "Helping Café Aroma Reach New Customers",
+    title: "Topbrand - Natural products suppliers",
     description:
-      "We ran a local ads campaign targeting coffee lovers within 10km. Their daily foot traffic doubled within 6 weeks.",
-    image: "https://via.placeholder.com/600x400",
+      "TopBrand Suppliers connect Africa’s finest products to the world with efficiency and trust.",
+    image: "TopbrandMockUp1.png",
     link: "cafe-aroma",
   },
   {
-    title: "A New Digital Face for Majani Insurance",
+    title: "Smartygrand - Hotel booking website",
     description:
-      "Designed and built a professional, SEO-friendly site. Improved client inquiries by 60% and boosted trust with a modern design.",
-    image: "https://via.placeholder.com/600x400",
+      "Designed a quick, reliable  and secure hotel booking platform. This site allows seamless reservations and related inquiries.",
+    image: "SmartyGrandMockUp.png",
     link: "majani-insurance",
   },
   {
-    title: "Music Artist Promo – 100K Views in 1 Month",
+    title: "SmartVen - Loans application platform",
     description:
-      "Launched a targeted YouTube ad campaign for an emerging artist. Generated over 100K views and 4K new subscribers.",
-    image: "https://via.placeholder.com/600x400",
+      "This site provides easy, first & fair access to micro-financing solutions for small businesses, women, farmers and everyday people.",
+    image: "SmarVenMockUp.png",
+    link: "music-promo",
+  },
+  {
+    title: "Biznutritia - Digital solutions site",
+    description:
+      "Creating stunning and secure websites, running targeted Google Ads that bring real customers and other digital solutions.",
+    image: "bizNutritiaMockUp.png",
     link: "music-promo",
   },
 ];

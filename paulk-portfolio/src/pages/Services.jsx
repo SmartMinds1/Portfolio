@@ -74,20 +74,20 @@ const Services = () => {
                     <div className="w-[100%] sm:w-[1/2] md:w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
                         <ul className="pl-8 flex flex-col gap-2 text-text-muted">
-                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> <span>Custom website design (built for your brand)</span></li>
-                            <li className="list-disc ml-6"> Responsive design</li>
-                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> High-performance speed optimization</li>
-                            <li className="list-disc ml-6"> Secure and scalable back-end development</li>
-                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> E-commerce setup (if needed)</li>
-                            <li className="list-disc ml-6"> SEO-friendly structure for better search visibility</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> <span>Custom website design (built for your brand)</span></li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Responsive design </li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> High-performance speed optimization</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Secure and scalable back-end development</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> E-commerce setup (if needed)</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> SEO-friendly structure for better search visibility</li>
                         </ul>
                         <br />
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
                         <p  className="text-text-muted">Instead of just “having a website,” you’ll have a sales tool that loads fast, looks professional, and guides visitors to take action.</p>
 
                         <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
-                            <button className="btn-primary text-background bg-primary m-0">book now</button>
-                            <button className="btn-primary text-text bg-transparent border-1 border-primary m-0">get quote</button>
+                            <button className="btn-primary bg-soft-alert text-white m-0">book now</button>
+                            <button className="btn-primary border-1 border-soft-alert text-black bg-transparent m-0">get quote</button>
                         </div>
                     </div>
                 </div>
@@ -111,18 +111,18 @@ const Services = () => {
                     <div className="w-[100%] sm:w-[1/2] md:w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
                         <ul className="pl-8 flex flex-col gap-2 text-text-muted">
-                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> Display Ads (build awareness with visual banners)</li>
-                            <li className="list-disc ml-6"> Search Ads </li>
-                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> YouTube Ads (reach audiences with engaging video campaigns)</li>
-                            <li className="list-disc ml-6"> Conversion tracking setup</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Display Ads (build awareness with visual banners)</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Search Ads</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> YouTube Ads (reach audiences with engaging video campaigns)</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Conversion tracking setup</li>
                         </ul>
                         <br />
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">Client Benefit</p>
                         <p  className="text-text-muted">You’ll know exactly where your money goes and you’ll see real, measurable results like more leads, sales, or signups.</p>
 
                         <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
-                            <button className="btn-primary text-background bg-primary m-0">book now</button>
-                            <button className="btn-primary text-text bg-transparent border-1 border-primary m-0">get quote</button>
+                            <button className="btn-primary bg-soft-alert text-white m-0">book now</button>
+                            <button className="btn-primary border-1 border-soft-alert text-black bg-transparent m-0">get quote</button>
                         </div>
                     </div>
 
@@ -152,10 +152,10 @@ const Services = () => {
                     <div className="w-[100%] sm:w-[1/2] md:w-4/7 h-fit p-4">
                         <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
                         <ul className="pl-8 flex flex-col gap-2 text-text-muted">
-                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> Google Analytics (GA4) setup & reporting</li>
-                            <li className="list-disc ml-6"> Custom conversion tracking (sales, signups, calls, etc.) </li>
-                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="text-soft-alert mr-1.5 pt-1"/> Performance dashboards for easy monitoring </li>
-                            <li className="list-disc ml-6"> Ongoing optimization (continuous tweaks to improve results) </li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Google Analytics (GA4) setup & reporting</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Custom conversion tracking (sales, signups, calls, etc.)</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Performance dashboards for easy monitoring </li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Ongoing optimization (continuous tweaks to improve results) </li>
                         </ul>
                         <br />
                         <p className="text-2xl font-bold text-accent pb-2 pt-4">Client Benefit</p>
@@ -163,8 +163,8 @@ const Services = () => {
 
 
                         <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
-                            <button className="btn-primary text-background bg-primary m-0 ">book now</button>
-                            <button className="btn-primary text-text bg-transparent border-1 border-primary m-0">get quote</button>
+                            <button className="btn-primary bg-soft-alert text-white m-0 ">book now</button>
+                            <button className="btn-primary border-1 border-soft-alert text-black bg-transparent m-0">get quote</button>
                         </div>
                     </div>
                 </div>

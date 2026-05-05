@@ -7,7 +7,7 @@ import WhatsapChart from "./WhatsapChat";
 
 const Footer = ()=> {
     return(
-       <div className="w-full h-90vh bg-primary flex flex-col items-center justify-between">
+       <div className="w-full h-90vh flex flex-col items-center justify-between">
         <div className="flex-row-center flex-wrap justify-center lg:justify-evenly w-full h-fit pb-12 pt-8 bg-primary">
             {/* logo div */}
             <div className=" w-full lg:w-70 h-fit flex-row-center lg:flex-col-start flex-wrap lg:justify-start justify-evenly gap-2 p-2">
@@ -16,7 +16,7 @@ const Footer = ()=> {
                         <div className="w-7 h-7 bg-[url('/bigStarWhite.png')] bg-contain bg-no-repeat bg-center rotate-270"></div>
                         <p className="text-background text-base sm:text-lg font-extrabold">bizN<span className="text-accent text-base sm:text-lg font-light">utritia</span></p>
                     </div>
-                    <p className="w-[90%] text-md text-bg-dark text-sm mt-4 pl-4">Ideas that grow, connections that scale.</p>
+                    <p className="w-[90%] text-md text-bg-dark text-sm mt-4 pl-4">Nurturing businesses to reach their full potential</p>
                 </div>
                 <button className="btn-primary text-background bg-accent mt-0 lg:mt-12 blue-shadow">Call Now</button>
             </div>
@@ -66,7 +66,7 @@ const Footer = ()=> {
 
 
         {/* footer copyright */}
-         <div className="flex-row-center flex-wrap w-full h-fit pt-4 pb-4 gap-2 sm:gap-0 text-bg-dark bg-[#1d1d25] text-xs">
+         <div className="flex-row-center flex-wrap w-full h-fit pt-4 pb-4 gap-2 sm:gap-0 text-bg-dark bg-primary/98 text-xs">
             <div className="w-full sm:w-[55%] sm:h-full h-1/2 flex-row-center justify-center sm:justify-end">
                 <p>&copy; 2025 biznutritia.com</p>
             </div>

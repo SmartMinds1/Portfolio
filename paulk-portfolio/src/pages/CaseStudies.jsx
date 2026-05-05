@@ -20,37 +20,43 @@ export default function CaseStudies() {
 
       <br />
 
-      <section className="py-16 px-6 md:px-12 bg-background sm:mt-8">
-
         {/* landing section */}
-        <div>
+        <div className="mt-20">
             <p className="header text-primary">| Our Work in <span className="headerSpan"> Action </span></p>
-            <p className="m-auto mt-4 text-text-muted w-[95%] md:w-[70%] lg:w-[50%] text-md text-center">Real projects, real results. Explore how we’ve helped clients grow
+            <p className="m-auto mt-4 text-text-muted w-[95%] md:w-[70%] lg:w-[50%] text-md text-center">Real projects, real results. Explore how We’ve helped clients grow
               through smart design and digital strategy. </p>
         </div>
 
-        <br /><br /><br /><br />
+        <br /><br />
         
         {/* Accessing all case studies dynamically */}
-        <div className="grid gap-8 md:grid-cols-2 w-full m-auto">
+        <div className="w-full m-auto">
           {case_studies.map((project, index) => (
-            <div key={index} className="rounded-2xl bg-background shadow-lg hover:shadow-2xl transition duration-300">
-              <div className="overflow-hidden rounded-t-2xl">
+            <div key={index} className="w-full mb-10 md:mb-15 flex-col-center justify-center">
+           
+              <div className="flex-col-center justify-center">
+                <h3 className="text-xl font-semibold text-gray-800 w-[80%] sm:w-[60%] text-center">{index+1}. 
+                   <span className="text-accent"> {project.title.split("-")[0]}</span>
+                   {"-"}
+                   <span> {project.title.split("-")[1]}</span>
+                </h3>
+                <p className="mt-3 text-gray-600 font-light tracking-wide w-[90%] sm:w-[80%] lg:w-[60%] m-auto sm:text-center mb-6">{project.description}</p>
+                {/* <button onClick={()=> {setShowModal(true); setProjectCase(project.link);}} className="inline-block mt-4 px-5 py-2 bg-accent text-background rounded-xl shadow blue-shadow"> View Details <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/> </button> */}
+              </div>
+
+              <div className="overflow-hidden flex-col-center justify-center  bg-green-600">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-56 object-cover hover:scale-105 transition duration-500"
+                  className="w-full max-w-[1200px] h-auto text-text-muted text-sm object-cover hover:scale-105 transition duration-500"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
-                <p className="mt-3 text-gray-600">{project.description}</p>
-                <button onClick={()=> {setShowModal(true); setProjectCase(project.link);}} className="inline-block mt-4 px-5 py-2 bg-accent text-background rounded-xl shadow blue-shadow"> View Details <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/> </button>
-              </div>
+
+              <button onClick={()=> {setShowModal(true); setProjectCase(project.link);}} className="inline-block mt-5 mb-5 cursor-pointer px-5 py-2 bg-accent text-background rounded-xl shadow blue-shadow"> live site <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/> </button>
             </div>
           ))}
         </div>
-      </section>
+  
 
       <br /><br /><br />
 

@@ -6,11 +6,11 @@ html, body{
 }
 
 @theme{
-  --color-primary: #191923;
-  --color-secondary: #3B82F6;
-  --color-accent:#3B82F6;
+  --color-primary: #111827;
+  --color-secondary: #14B8A6;  /* #3B82F6 */
+  --color-accent:#14B8A6;
   --color-background:hsl(0,9%,98%);
-  --color-soft-alert: #F59E0B;
+  --color-soft-alert: #22C55E;/* #F59E0B */
   --color-text:hsl(0,0%,5%);
   --color-text-muted:hsl(0,0%,40%);
 
@@ -91,7 +91,7 @@ html, body{
       @apply font-bold text-3xl text-primary sm:w-full  w-[95%] text-center;
     }
     .headerSpan{
-      @apply font-light text-3xl;
+      @apply font-light text-3xl text-soft-alert;
     }
     .headerLink li{
       @apply cursor-pointer hover:brightness-90 hover:text-soft-alert duration-200;
@@ -144,6 +144,10 @@ html, body{
  }
  .callEmailBox{
   @apply w-full h-fit  flex flex-row items-center justify-start mb-8;
+ }
+
+ .serviceList{
+  @apply text-soft-alert mr-1.5 pt-1 text-xs;
  }
  
 }
