@@ -92,15 +92,14 @@ const Home = () => {
             <br /><br />
 
                             <div className="w-full h-fit flex flex-row">
-                                <div className="w-fit h-[90vh] flex flex-col items-start p-[5%] justify-start  sm:pl-[5%] sm:pt-[10%] pt-[13%] lg:pl-16 lg:pt-20">
+                                <div className="w-fit h-[90vh] flex flex-col items-start p-[5%] justify-start  sm:pl-[5%] sm:pt-[12%] pt-[13%] lg:pl-16 lg:pt-24">
                                     <p className="sm:text-6xl text-5xl w-full sm:w-150  text-background para">Your <span className="text-soft-alert font-extralight sm:text-background sm:font-normal">best</span> <span className="text-soft-alert font-extralight">partner in <span className="sm:text-soft-alert sm:font-extralight text-background font-normal">every</span></span> business <br />solution </p>
-                                    <br /><br />
-                                    <p className="text-sm text-bg-dark sm:mt-4 md:mt-8 lg:mt-12 para">Creating a powerful online presence by providing everything you need to succeed!</p>
+                                    <p className="text-sm text-bg-dark mt-8 lg:mt-12 para">Creating a powerful online presence by providing everything you need to succeed!</p>
                                     <p className="para">
                                        <button className="btn-primary mt-14 bg-secondary text-background cursor-pointer blue-shadow">Explore more <FontAwesomeIcon icon={faArrowRightLong} className="translate-y-0.5 animate-pulse"/></button>
                                     </p>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
             </div>
