@@ -28,7 +28,8 @@ export default function TitanicForm() {
     setResult(null);
   
     try {
-      const res = await fetch("http://127.0.0.1:8000/predict", {
+      // const res = await fetch("http://127.0.0.1:8000/predict", {               //local
+      const res = await fetch("https://biznutritia-ai.onrender.com/predict", {    //live
         method: "POST",
         headers: {
           "Content-Type": "application/json",
