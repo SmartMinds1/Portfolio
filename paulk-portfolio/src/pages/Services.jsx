@@ -170,8 +170,49 @@ const Services = () => {
                 </div>
             </div>
 
-        <br /><br /><br /><br /><br />
+            <br /><br /><br />
 
+            {/*  SECTION 3 */}
+            <div className="w-[95%] lg:w-[80vw] m-auto h-fit"> {/* p-4 pl-[20vh] pr-[20vh] */}
+                <div>
+                    <p className="header">| AI Solutions  <span className="headerSpan">Developement </span></p>
+                    <p className="m-auto mt-4 text-text-muted w-[100%] md:w-[90%] lg:w-[80%] text-md text-left sm:text-center">We build end-to-end predictive AI systems that integrate machine learning models into production-ready APIs and web applications.</p>
+                </div>
+
+                <br /><br />
+
+                <div className="h-fit flex flex-col md:flex-row items-center justify-center md:gap-2 lg:gap-12">
+                    {/*  image div */}
+                    <div className="card-scale md:hidden w-[95%] h-[86vh] sm:w-[65%]  md:w-[40%] lg:w-1/3 md:h-[25.8rem] shadow-2xl rounded-2xl bg-[url('/googleAds.png')] bg-[45%] bg-cover bg-no-repeat"></div>
+
+                    <div className="w-[100%] sm:w-[1/2] md:w-4/7 h-fit p-4">
+                        <p className="text-2xl font-bold text-secondary pb-2 pt-4">What’s Included</p>
+                        <ul className="pl-8 flex flex-col gap-2 text-text-muted">
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> End-to-end machine learning system (from dataset to working prediction API)</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Custom AI model training tailored to your business data (classification, prediction, or forecasting)</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Production-ready FastAPI microservice for real-time predictions</li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Seamless integration with your existing website, app, or backend system </li>
+                            <li className="flex-row-start justify-start"> <FontAwesomeIcon icon={faCheck} className="serviceList"/> Clean data preprocessing pipeline (handling missing values, encoding, feature engineering)</li>
+                        </ul>
+                        <br />
+                        <p className="text-2xl font-bold text-secondary pb-2 pt-4">Business Value</p>
+                        <p  className="text-text-muted">
+                            Instead of guessing decisions, your business will use data-driven predictions powered by AI. 
+                            You’ll be able to turn raw data into actionable insights through a live system that responds in real time.
+                        </p>
+
+                        <div className="w-full h-fit mt-8 flex flex-row items-center justify-start gap-2 ">
+                            <button className="btn-primary bg-soft-alert text-white m-0">book now</button>
+                            <button className="btn-primary border-1 border-soft-alert text-black bg-transparent m-0">get quote</button>
+                        </div>
+                    </div>
+
+                    {/* second image div which shows on medium devices */}
+                    <div className="card-scale hidden md:block w-[95%] h-[86vh] sm:w-[65%]  md:w-[40%] lg:w-1/3 md:h-[25.8rem] shadow-2xl rounded-2xl bg-[url('/googleAds.png')] bg-[45%] bg-cover bg-no-repeat"></div>
+                </div>
+            </div>
+
+            <br /><br /><br /><br /><br />
              
             <Footer/>
         </div>

@@ -18,6 +18,7 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react"
 import ImageSlider from "../components/ImageSlider";
+import TitanicForm from "../ai/TitanicForm";
 
 const Home = () => {
         /* Index for looping testimonial cards */
@@ -166,6 +167,10 @@ const Home = () => {
               <div className="hidden">
                    <ImageSlider/>
               </div>
+             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+             
+             {/* AI model test form */}
+             <TitanicForm/>
 
              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             
